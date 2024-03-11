@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [LeadRatSuite]]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Utilities.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" name="Leadrat Test(failed)(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testCases.Tc001_AddLead">
+        <methods>
+          <include name="teardown"/>
+          <include name="set"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.Tc001_AddLead -->
+    </classes>
+  </test> <!-- Leadrat Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [LeadRatSuite]] -->

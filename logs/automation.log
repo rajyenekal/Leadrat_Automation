@@ -1,0 +1,99 @@
+22:42:23.356 [main] INFO  testCases.BaseTest - --Navigated to https://demo.leadrat.com/login --
+22:42:25.724 [main] INFO  testCases.BaseTest - Logged in Successfully
+22:42:28.064 [main] INFO  testCases.BaseTest - Entereres nmubihibur  5952118342 nmubihibur@kjusi.com
+22:42:38.817 [main] INFO  testCases.BaseTest - Lead Added Successfully
+22:46:33.355 [main] INFO  testCases.BaseTest - --Navigated to https://demo.leadrat.com/login --
+22:46:35.153 [main] INFO  testCases.BaseTest - Logged in Successfully
+22:46:37.775 [main] INFO  testCases.BaseTest - Entereres dwoxavabit  3913255357 dwoxavabit@lsume.com
+22:46:58.202 [main] INFO  testCases.BaseTest - --Navigated to https://demo.leadrat.com/login --
+22:47:00.230 [main] INFO  testCases.BaseTest - Logged in Successfully
+22:47:02.380 [main] INFO  testCases.BaseTest - Entereres mcuxobisev  6296882272 mcuxobisev@rrori.com
+22:47:12.526 [main] INFO  testCases.BaseTest - Lead Added Successfully
+22:48:49.946 [main] INFO  LeadRatSuite - --Navigated to https://demo.leadrat.com/login --
+22:49:23.522 [main] INFO  LeadRatSuite - --Navigated to https://demo.leadrat.com/login --
+22:49:41.995 [main] INFO  LeadRatSuite - --Navigated to https://demo.leadrat.com/login --
+22:50:17.638 [main] INFO  testCases.BaseTest - --Navigated to https://demo.leadrat.com/login --
+22:50:19.605 [main] INFO  testCases.BaseTest - Logged in Successfully
+22:50:21.673 [main] INFO  testCases.BaseTest - Entereres bseyavoqib  2581859073 bseyavoqib@zdala.com
+22:50:31.378 [main] INFO  testCases.BaseTest - Lead Added Successfully
+22:53:11.061 [main] INFO  testCases.BaseTest - --Navigated to https://demo.leadrat.com/login --
+22:53:15.321 [main] INFO  testCases.BaseTest - Logged in Successfully
+22:53:17.115 [main] INFO  testCases.BaseTest - Entereres pbusacerej  7054528050 pbusacerej@kmanu.com
+22:53:26.702 [main] INFO  testCases.BaseTest - Lead Added Successfully
+08:19:16.297 [main] INFO  testCases.BaseTest - --Navigated to https://demo.leadrat.com/login --
+08:20:42.711 [main] INFO  testCases.BaseTest - --Navigated to https://demo.leadrat.com/login --
+08:20:45.621 [main] INFO  testCases.BaseTest - Logged in Successfully
+08:20:47.743 [main] INFO  testCases.BaseTest - Entereres dgegikuyuj  6582019192 dgegikuyuj@mhose.com
+08:21:04.262 [main] INFO  testCases.BaseTest - --Navigated to https://demo.leadrat.com/login --
+08:21:08.191 [main] INFO  testCases.BaseTest - Logged in Successfully
+08:21:10.124 [main] INFO  testCases.BaseTest - Entereres msiciyusib  2631289073 msiciyusib@xqate.com
+08:27:06.485 [main] INFO  testCases.BaseTest - --Navigated to https://demo.leadrat.com/login --
+08:51:27.404 [main] INFO  testCases.BaseTest - --Navigated to https://demo.leadrat.com/login --
+08:51:30.955 [main] INFO  testCases.BaseTest - Logged in Successfully
+08:51:42.500 [main] INFO  testCases.BaseTest - Entereres lwimivumip  3598620768 lwimivumip@ksada.com
+08:59:51.953 [main] INFO  testCases.BaseTest - --Navigated to https://demo.leadrat.com/login --
+08:59:53.558 [main] INFO  testCases.BaseTest - Logged in Successfully
+08:59:55.697 [main] INFO  testCases.BaseTest - Entereres bbexafafih  3860076925 bbexafafih@wsoca.com
+09:00:04.129 [main] INFO  testCases.BaseTest - Lead Added Successfully
+09:03:35.582 [main] INFO  api.test.TC0001 - ---- Creating NinetyNineAcres Lead ----
+09:03:41.328 [main] INFO  api.test.TC0001 - ---- NinetyNineAcres Lead Created ----
+09:03:41.333 [main] INFO  api.test.TC0001 - ---- Creating Housing Lead ----
+09:03:43.054 [main] INFO  api.test.TC0001 - ---- Housing Lead Created ----
+09:03:43.056 [main] INFO  api.test.TC0001 - ---- Creating RoofandFloor Lead ----
+09:03:44.590 [main] INFO  api.test.TC0001 - ---- RoofandFloor Lead Created ----
+09:03:44.593 [main] INFO  api.test.TC0001 - ---- Creating MicrosoftAds Lead ----
+09:03:46.128 [main] INFO  api.test.TC0001 - ---- MicrosoftAds Lead Created ----
+09:04:44.207 [main] INFO  testCases.BaseTest - --Navigated to https://demo.leadrat.com/login --
+09:04:47.486 [main] INFO  testCases.BaseTest - Logged in Successfully
+09:04:49.355 [main] INFO  testCases.BaseTest - Entereres gpulezeney  4878558517 gpulezeney@ysaxu.com
+09:04:57.610 [main] INFO  testCases.BaseTest - Lead Added Successfully
+09:04:57.967 [main] INFO  api.test.TC0001 - ---- Creating NinetyNineAcres Lead ----
+09:05:03.970 [main] INFO  api.test.TC0001 - ---- NinetyNineAcres Lead Created ----
+09:05:03.974 [main] INFO  api.test.TC0001 - ---- Creating Housing Lead ----
+09:05:05.492 [main] INFO  api.test.TC0001 - ---- Housing Lead Created ----
+09:05:05.495 [main] INFO  api.test.TC0001 - ---- Creating RoofandFloor Lead ----
+09:05:07.084 [main] INFO  api.test.TC0001 - ---- RoofandFloor Lead Created ----
+09:05:07.087 [main] INFO  api.test.TC0001 - ---- Creating MicrosoftAds Lead ----
+09:05:08.667 [main] INFO  api.test.TC0001 - ---- MicrosoftAds Lead Created ----
+10:26:10.205 [main] INFO  testCases.BaseTest - --Navigated to https://demo.leadrat.com/login --
+10:26:13.525 [main] INFO  testCases.BaseTest - Logged in Successfully
+10:26:15.898 [main] INFO  testCases.BaseTest - Entereres vsogegoliw  4091338962 vsogegoliw@qlaya.com
+10:26:18.719 [main] INFO  api.test.TC0001 - ---- Creating NinetyNineAcres Lead ----
+10:26:26.633 [main] INFO  api.test.TC0001 - ---- NinetyNineAcres Lead Created ----
+10:26:26.637 [main] INFO  api.test.TC0001 - ---- Creating Housing Lead ----
+10:26:28.369 [main] INFO  api.test.TC0001 - ---- Housing Lead Created ----
+10:26:28.372 [main] INFO  api.test.TC0001 - ---- Creating RoofandFloor Lead ----
+10:26:29.891 [main] INFO  api.test.TC0001 - ---- RoofandFloor Lead Created ----
+10:26:29.894 [main] INFO  api.test.TC0001 - ---- Creating MicrosoftAds Lead ----
+10:26:31.544 [main] INFO  api.test.TC0001 - ---- MicrosoftAds Lead Created ----
+21:46:37.682 [main] INFO  testCases.BaseTest - --Navigated to https://demo.leadrat.com/login --
+21:46:59.687 [main] INFO  api.test.TC0001 - ---- Creating NinetyNineAcres Lead ----
+21:47:06.676 [main] INFO  api.test.TC0001 - ---- NinetyNineAcres Lead Created ----
+21:47:06.679 [main] INFO  api.test.TC0001 - ---- Creating Housing Lead ----
+21:47:08.684 [main] INFO  api.test.TC0001 - ---- Housing Lead Created ----
+21:47:08.689 [main] INFO  api.test.TC0001 - ---- Creating RoofandFloor Lead ----
+21:47:10.975 [main] INFO  api.test.TC0001 - ---- RoofandFloor Lead Created ----
+21:47:10.979 [main] INFO  api.test.TC0001 - ---- Creating MicrosoftAds Lead ----
+21:47:12.910 [main] INFO  api.test.TC0001 - ---- MicrosoftAds Lead Created ----
+22:16:17.810 [main] INFO  testCases.BaseTest - --Navigated to https://demo.leadrat.com/login --
+22:16:56.377 [main] INFO  testCases.BaseTest - --Navigated to https://demo.leadrat.com/login --
+22:18:30.753 [main] INFO  testCases.BaseTest - --Navigated to https://demo.leadrat.com/login --
+22:20:33.358 [main] INFO  testCases.BaseTest - --Navigated to https://demo.leadrat.com/login --
+22:20:35.694 [main] INFO  testCases.BaseTest - Logged in Successfully
+22:24:43.697 [main] INFO  testCases.BaseTest - --Navigated to https://demo.leadrat.com/login --
+22:24:46.949 [main] INFO  testCases.BaseTest - Logged in Successfully
+22:29:07.434 [main] INFO  testCases.BaseTest - --Navigated to https://demo.leadrat.com/login --
+22:29:09.863 [main] INFO  testCases.BaseTest - Logged in Successfully
+22:31:37.687 [main] INFO  testCases.BaseTest - --Navigated to https://demo.leadrat.com/login --
+22:31:41.580 [main] INFO  testCases.BaseTest - Logged in Successfully
+22:34:19.015 [main] INFO  testCases.BaseTest - --Navigated to https://demo.leadrat.com/login --
+22:34:21.362 [main] INFO  testCases.BaseTest - Logged in Successfully
+22:34:23.850 [main] INFO  testCases.BaseTest - Entereres pzolatevet  4439425849 pzolatevet@nzuvi.com
+22:58:37.350 [main] INFO  testCases.BaseTest - --Navigated to https://demo.leadrat.com/login --
+22:58:40.103 [main] INFO  testCases.BaseTest - Logged in Successfully
+22:58:42.337 [main] INFO  testCases.BaseTest - Entereres tziliguwig  5865410715 tziliguwig@yxame.com
+22:58:52.327 [main] INFO  testCases.BaseTest - Lead Added Successfully
+22:59:38.367 [main] INFO  testCases.BaseTest - --Navigated to https://demo.leadrat.com/login --
+22:59:42.717 [main] INFO  testCases.BaseTest - Logged in Successfully
+22:59:45.475 [main] INFO  testCases.BaseTest - Entereres ydadisetih  6782410800 ydadisetih@wlava.com
+22:59:55.476 [main] INFO  testCases.BaseTest - Lead Added Successfully
