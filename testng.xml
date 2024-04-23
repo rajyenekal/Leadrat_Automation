@@ -3,15 +3,21 @@
 <suite name="LeadRatSuite">
 	
 	<listeners> 
-		<listener class-name="Utilities.ExtentReportManager"></listener>
+		<listener class-name="test.base.ExtentReportManager1"></listener>
 	</listeners>
 	
 	<test name="Leadrat Test">
 
 	<parameter name="browser" value="chrome"/>
 	 <classes>
-      <class name="testCases.Tc001_AddLead"/>
-     <!--  <class name="api.test.TC0001"/>-->
+     
+   <class name="testCases.Tc001_AddLead"/>
+   
+   <!-- <class name="testCases.TC_DDTTest_002"/>-->
+   <!-- <class name="api.test.TC0001_api"/>-->
+   	<!--<class name="testCases.dummy"/> 
+   		<class name="testCases.Tc0002_AddData"/>-->
+     
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

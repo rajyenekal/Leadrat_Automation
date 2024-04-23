@@ -251,7 +251,7 @@ public class AddLeadPage extends BasePage{
 		jse.jsClick(saveLead);
 		waits.waitTillVisible(leadAddedMsg);
         //ldriver.navigate().refresh();
-		WebElement leadName=ldriver.findElement(By.xpath("//label[@title='"+Name+"']"));
+		WebElement leadName=ldriver.findElement(By.xpath("//div[@title='"+Name+"']"));
 		return leadName.isDisplayed();
 		
 	}

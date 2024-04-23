@@ -1,7 +1,12 @@
 package Utilities;
 
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
-
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -10,6 +15,7 @@ import org.openqa.selenium.interactions.Actions;
 public class ActionsUtil {
 
 	Actions actions ;
+	//public static WebDriver driver ;
 	
 	public ActionsUtil(WebDriver driver) {
 		actions = new Actions(driver);
@@ -55,4 +61,5 @@ public class ActionsUtil {
 	public Boolean isSelected(WebElement element) {
 		return element.isSelected();
 	}
+	
 }

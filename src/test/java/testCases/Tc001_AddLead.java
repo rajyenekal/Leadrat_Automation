@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import Utilities.RandomDataUtil;
 import pomPages.AddLeadPage;
 import pomPages.LoginPage;
+import test.base.BaseTest;
 
 
 public class Tc001_AddLead extends BaseTest{
@@ -26,7 +27,7 @@ public class Tc001_AddLead extends BaseTest{
 		long phoneNo = RandomDataUtil.getPhoneNo();
 
 		alp.enterData(userName, phoneNo, email);
-		logger.info("Entereres "+userName+"  "+phoneNo+" "+email+"");
+		logger.info("Entered "+userName+"  "+phoneNo+" "+email+"");
 		alp.otherdata("amit", "hsr", "6000000", "8000000");
 		alp.anotherData("1500");
 		alp.propType();
