@@ -6,7 +6,6 @@ pool:
 
 variables:
   JAVA_HOME: '/usr/lib/jvm/java-7-openjdk-amd64'
-  MAVEN_HOME: '/usr/share/maven'
 
 steps:
 - script: |
@@ -18,9 +17,6 @@ steps:
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
-    mavenVersionOption: 'Path'
-    mavenPath: '$(MAVEN_HOME)/bin/mvn'
     mavenOptions: '-Xmx3072m'
-    publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    mavenAuthenticateFeed: false
     goals: 'clean install'
