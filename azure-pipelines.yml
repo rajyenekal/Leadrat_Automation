@@ -24,3 +24,4 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'clean install'
+    options: '-Djava.home=$(JAVA_HOME_7_X64)'
