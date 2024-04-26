@@ -6,8 +6,7 @@ pool:
 
 variables:
   JAVA_HOME: '/usr/lib/jvm/java-7-openjdk-amd64'
-  MAVEN_HOME: '/path/to/maven-3.9.6'
-  MAVEN_EXECUTABLE: '$(MAVEN_HOME)/bin/mvn'
+  MAVEN_HOME: '/usr/share/maven'
 
 steps:
 - script: |
@@ -20,7 +19,7 @@ steps:
   inputs:
     mavenPomFile: 'pom.xml'
     mavenVersionOption: 'Path'
-    mavenPath: '$(MAVEN_EXECUTABLE)'
+    mavenPath: '$(MAVEN_HOME)/bin/mvn'
     mavenOptions: '-Xmx3072m'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
