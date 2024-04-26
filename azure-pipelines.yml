@@ -19,8 +19,4 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
-
-- script: |
-    java -jar $(System.DefaultWorkingDirectory)/target/your-artifact.jar
-  displayName: 'Run Maven project as if locally'
+    goals: 'clean install'
