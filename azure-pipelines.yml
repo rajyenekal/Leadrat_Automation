@@ -10,12 +10,11 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: UseJavaVersion@1
-  inputs:
-    versionSpec: '1.7'
-    jdkArchitectureOption: 'x64'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.7'
+- script: |
+    sudo apt-get install -y openjdk-7-jdk
+    sudo update-alternatives --set java /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+    java -version
+  displayName: 'Install and use JDK 1.7'
 
 - task: Maven@3
   inputs:
