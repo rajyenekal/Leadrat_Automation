@@ -5,13 +5,12 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
-  JAVA_HOME_7_X64: '/usr/lib/jvm/java-7-openjdk-amd64'
+  JAVA_HOME: '/usr/lib/jvm/java-7-openjdk-amd64'
 
 steps:
 - script: |
     sudo apt-get install -y openjdk-7-jdk
-    echo "##vso[task.setvariable variable=PATH]$(JAVA_HOME_7_X64)/bin:$(PATH)"
-    echo "##vso[task.setvariable variable=JAVA_HOME]$(JAVA_HOME_7_X64)"
+    echo "##vso[task.setvariable variable=PATH]$(JAVA_HOME)/bin:$(PATH)"
     java -version
   displayName: 'Install and use JDK 1.7'
 
@@ -19,9 +18,6 @@ steps:
   inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.7'
-    jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'clean install'
