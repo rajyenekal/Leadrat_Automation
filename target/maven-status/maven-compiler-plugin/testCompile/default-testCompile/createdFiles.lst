@@ -1,7 +1,9 @@
-api\utilities\ExtentReportManager.class
 testCases\Tc001_AddLead.class
-api\payload\Payload.class
-api\test\TC0001.class
-api\endpoints\leadCreation.class
-testCases\BaseTest.class
-api\endpoints\Routes.class
+testCases\dummy.class
+test\base\ExtentReportManager.class
+test\base\ExtentReportManager1.class
+test\base\BaseTest.class
+testCases\TC_DDTTest_002.class
+api\test\TC0001_api.class
+test\base\DummyBase.class
+testCases\Tc0002_AddData.class

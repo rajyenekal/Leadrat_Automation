@@ -1,5 +1,6 @@
 package Utilities;
 
+import java.util.Calendar;
 import java.util.Random;
 
 public class RandomDataUtil {
@@ -9,6 +10,9 @@ public class RandomDataUtil {
         long randomNumber = 1000000000L + random.nextLong(9000000000L);
 		return randomNumber;
 	}
+	
+	
+	
 	public static String getName() {
         String vowels = "aeiou";
         String consonants = "bcdfghjklmnpqrstvwxyz";
@@ -58,4 +62,44 @@ public class RandomDataUtil {
         return randomNameBuilder.toString();
     }
    
+	public static String getranName() {
+        StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+        if (stackTrace.length >= 3) {
+            StackTraceElement caller = stackTrace[2]; // Index 2 is the caller of this method
+            String methodName = caller.getMethodName();
+
+            Calendar currentDate = Calendar.getInstance();
+            int year = currentDate.get(Calendar.YEAR);
+            int month = currentDate.get(Calendar.MONTH) + 1; // Adding 1 because months are zero-based
+            int day = currentDate.get(Calendar.DAY_OF_MONTH);
+            int hour = currentDate.get(Calendar.HOUR_OF_DAY);
+            int minute = currentDate.get(Calendar.MINUTE);
+            int second = currentDate.get(Calendar.SECOND);
+
+            String yearShort = Integer.toString(year).substring(2); // Last two digits of the year
+            String monthNum = String.format("%02d", month);
+            String dayNum = String.format("%02d", day);
+
+            hour = (hour % 12 == 0) ? 12 : hour % 12;
+
+            String hour12 = String.format("%02d", hour);
+            String minuteNum = String.format("%02d", minute);
+            String secondNum = String.format("%02d", second);
+
+            String dateFormat = dayNum + "/" + monthNum + "/" + yearShort;
+
+            return methodName + "_" + hour12 + ':' + minuteNum + ':' + secondNum + " _" + dateFormat;
+        }
+        return "Unknown";
+    }
+
+	
+//	public static String getMethodName() {
+//        // Use reflection to get the name of the calling method
+//        StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+//        if (stackTrace.length >= 3) {
+//            return stackTrace[2].getMethodName(); // Index 2 is the caller of this method
+//        }
+//        return "Unknown";
+//    }
 }

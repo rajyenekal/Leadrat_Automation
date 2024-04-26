@@ -7,14 +7,16 @@
   <test thread-count="5" name="Leadrat Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.Tc001_AddLead">
+      <class name="api.test.TC0002_api">
         <methods>
-          <include name="addingLead"/>
-          <include name="teardown"/>
-          <include name="setUp"/>
-          <include name="setup"/>
+          <include name="addLead"/>
         </methods>
-      </class> <!-- testCases.Tc001_AddLead -->
+      </class> <!-- api.test.TC0002_api -->
+      <class name="api.test.TC0003_api">
+        <methods>
+          <include name="adddata"/>
+        </methods>
+      </class> <!-- api.test.TC0003_api -->
     </classes>
   </test> <!-- Leadrat Test(failed) -->
 </suite> <!-- Failed suite [LeadRatSuite] -->

@@ -144,7 +144,7 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;LeadRatSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;listeners&gt;
-    &lt;listener class-name=&quot;Utilities.ExtentReportManager&quot;/&gt;
+    &lt;listener class-name=&quot;test.base.ExtentReportManager1&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Leadrat Test&quot; verbose=&quot;0&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
@@ -193,12 +193,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addingLead')
 data.setCell(0, 2, 'testCases.Tc001_AddLead')
-data.setCell(0, 3, 15276);
+data.setCell(0, 3, 20879);
 window.suiteTableData['LeadRatSuite']= { tableData: data, tableDiv: 'times-div-LeadRatSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
               <div id="times-div-LeadRatSuite">
               </div> <!-- times-div-LeadRatSuite -->
             </div> <!-- times-div -->
@@ -231,19 +231,15 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">4313 ms</span>
+                <span class="method-start">4207 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addingLead</span>
-                <span class="method-start">7782 ms</span>
+                <span class="method-start">6728 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=addingLead status=SUCCESS method=Tc001_AddLead.addingLead()[pri:0, instance:testCas...)</span>
-                <span class="method-start">23084 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">23518 ms</span>
+                <span class="method-start">27628 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

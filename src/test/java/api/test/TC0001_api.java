@@ -4,17 +4,14 @@ package api.test;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.nullValue;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
 
 import api.endpoints.leadCreation;
 import io.restassured.response.Response;
+import test.base.Api_Token;
 
-public class TC0001_api {
+public class TC0001_api extends Api_Token {
 	
-    private static final Logger logger = LogManager.getLogger(TC0001_api.class);
-    
     
     @Test(enabled = true)
     public void magicBricks() {
@@ -25,7 +22,7 @@ public class TC0001_api {
 
             response.then()
             .statusCode(200)
-            .log().all()
+            .log().body()
             .assertThat()
             .body("succeeded", equalTo(true),
                     "message", nullValue(),
@@ -42,7 +39,7 @@ public class TC0001_api {
 
 
 	    @Test(enabled = true)
-	    public void postHousing() {
+	    public void Housing() {
 	        try {
 	            logger.info("---- Creating Housing Lead ----");
 	
@@ -50,7 +47,7 @@ public class TC0001_api {
 	
 	            response.then()
 	            .statusCode(200)
-	            .log().all()
+	            .log().body()
 	            .assertThat()
 	            .body("succeeded", equalTo(true),
 	                    "message", nullValue(),
@@ -75,7 +72,7 @@ public class TC0001_api {
 	
 	            response.then()
 	            .statusCode(200)
-	            .log().all()
+	            .log().body()
 	            .assertThat()
 	            .body("succeeded", equalTo(true),
 	                    "message", nullValue(),
@@ -99,7 +96,7 @@ public class TC0001_api {
 	
 	            response.then()
 	            .statusCode(200)
-	            .log().all()
+	            .log().body()
 	            .assertThat()
 	            .body("succeeded", equalTo(true),
 	                    "message", nullValue(),
@@ -123,7 +120,7 @@ public class TC0001_api {
 
 	            response.then()
 	            .statusCode(200)
-	            .log().all()
+	            .log().body()
 	            .assertThat()
 	            .body("succeeded", equalTo(true),
 	                    "message", nullValue(),
@@ -142,7 +139,7 @@ public class TC0001_api {
 	    }
 	    
 	    @Test(enabled = true)
-	    public void postmicrosoftAds() {
+	    public void microsoftAds() {
 	        try {
 	            logger.info("---- Creating MicrosoftAds Lead ----");
 	
@@ -150,7 +147,7 @@ public class TC0001_api {
 	
 	            response.then()
 	            .statusCode(200)
-	            .log().all()
+	            .log().body()
 	            .assertThat()
 	            .body("succeeded", equalTo(true),
 	                    "message", nullValue(),
@@ -174,7 +171,7 @@ public class TC0001_api {
 	
 	            response.then()
 	            .statusCode(200)
-	            .log().all()
+	            .log().body()
 	            .assertThat()
 	            .body("succeeded", equalTo(true),
 	                    "message", nullValue(),
@@ -198,7 +195,7 @@ public class TC0001_api {
 	
 	            response.then()
 	            .statusCode(200)
-	            .log().all()
+	            .log().body()
 	            .assertThat()
 	            .body("succeeded", equalTo(true),
 	                    "message", nullValue(),
@@ -214,7 +211,7 @@ public class TC0001_api {
 	    }
 	    
 	    @Test(enabled = true)
-	    public void postRoofFloor() {
+	    public void roofFloor() {
 	        try {
 	            logger.info("---- Creating RoofandFloor Lead ----");
 	
@@ -222,7 +219,7 @@ public class TC0001_api {
 	
 	            response.then()
 	            .statusCode(200)
-	            .log().all()
+	            .log().body()
 	            .assertThat()
 	            .body("succeeded", equalTo(true),
 	                    "message", nullValue(),
@@ -248,7 +245,7 @@ public class TC0001_api {
 	
 	            response.then()
 	            .statusCode(200)
-	            .log().all()
+	            .log().body()
 	            .assertThat()
 	            .body("succeeded", equalTo(true),
 	                    "message", nullValue(),
@@ -273,7 +270,7 @@ public class TC0001_api {
 	
 	            response.then()
 	            .statusCode(200)
-	            .log().all()
+	            .log().body()
 	            .assertThat()
 	            .body("succeeded", equalTo(true),
 	                    "message", nullValue(),
@@ -287,7 +284,4 @@ public class TC0001_api {
 	            throw e;
 	        }
 	    }
-	
-	   
-    
-}
+	}

@@ -9,15 +9,18 @@
 	<test name="Leadrat Test">
 
 	<parameter name="browser" value="chrome"/>
+	
 	 <classes>
      
-   <class name="testCases.Tc001_AddLead"/>
-   
+  <!-- <class name="testCases.Tc001_AddLead"/>-->
    <!-- <class name="testCases.TC_DDTTest_002"/>-->
-   <!-- <class name="api.test.TC0001_api"/>-->
+       	<class name="api.test.TC0001_api"/>
+       	<class name="api.test.TC0002_api"/>
+       	<class name="api.test.TC0003_api"/>
    	<!--<class name="testCases.dummy"/> 
-   		<class name="testCases.Tc0002_AddData"/>-->
+   	    <class name="testCases.Tc0002_AddData"/>-->
      
     </classes>
+    
   </test> <!-- Test -->
 </suite> <!-- Suite -->

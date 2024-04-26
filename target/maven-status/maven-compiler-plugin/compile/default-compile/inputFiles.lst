@@ -1,8 +1,13 @@
+C:\Users\New User\eclipse-workspace1\LeadRat_Automation\src\main\java\api\endpoints\addLeadAPI.java
+C:\Users\New User\eclipse-workspace1\LeadRat_Automation\src\main\java\api\endpoints\leadCreation.java
+C:\Users\New User\eclipse-workspace1\LeadRat_Automation\src\main\java\api\endpoints\Routes.java
+C:\Users\New User\eclipse-workspace1\LeadRat_Automation\src\main\java\api\payload\Payload.java
+C:\Users\New User\eclipse-workspace1\LeadRat_Automation\src\main\java\pomPages\AddDataPage.java
 C:\Users\New User\eclipse-workspace1\LeadRat_Automation\src\main\java\pomPages\AddLeadPage.java
 C:\Users\New User\eclipse-workspace1\LeadRat_Automation\src\main\java\pomPages\BasePage.java
 C:\Users\New User\eclipse-workspace1\LeadRat_Automation\src\main\java\pomPages\LoginPage.java
 C:\Users\New User\eclipse-workspace1\LeadRat_Automation\src\main\java\Utilities\ActionsUtil.java
-C:\Users\New User\eclipse-workspace1\LeadRat_Automation\src\main\java\Utilities\ExtentReportManager.java
+C:\Users\New User\eclipse-workspace1\LeadRat_Automation\src\main\java\Utilities\ExtentReportManagerMail.java
 C:\Users\New User\eclipse-workspace1\LeadRat_Automation\src\main\java\Utilities\JavaScriptUtil.java
 C:\Users\New User\eclipse-workspace1\LeadRat_Automation\src\main\java\Utilities\RandomDataUtil.java
 C:\Users\New User\eclipse-workspace1\LeadRat_Automation\src\main\java\Utilities\ReadConfigFile.java

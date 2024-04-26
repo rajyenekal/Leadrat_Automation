@@ -9,46 +9,21 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">LeadRatSuite</th></tr>
-<tr><td><a href="#t0">Leadrat Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">62,445</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Leadrat Test</a></td><td class="num">12</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">47,979</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">LeadRatSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Leadrat Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testCases.Tc001_AddLead</td><td><a href="#m0">addingLead</a></td><td rowspan="1">1713887899166</td><td rowspan="1">45753</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">LeadRatSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Leadrat Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="10">api.test.TC0001_api</td><td><a href="#m0">Housing</a></td><td rowspan="1">1714109898080</td><td rowspan="1">6877</td></tr><tr class="passedeven"><td><a href="#m1">NinetyNineAcres</a></td><td rowspan="1">1714109904986</td><td rowspan="1">2533</td></tr><tr class="passedeven"><td><a href="#m2">commonFloor</a></td><td rowspan="1">1714109907523</td><td rowspan="1">3259</td></tr><tr class="passedeven"><td><a href="#m3">estateDekho</a></td><td rowspan="1">1714109910784</td><td rowspan="1">3289</td></tr><tr class="passedeven"><td><a href="#m4">googleAds</a></td><td rowspan="1">1714109914075</td><td rowspan="1">3070</td></tr><tr class="passedeven"><td><a href="#m5">magicBricks</a></td><td rowspan="1">1714109917148</td><td rowspan="1">3056</td></tr><tr class="passedeven"><td><a href="#m6">microsoftAds</a></td><td rowspan="1">1714109920206</td><td rowspan="1">3061</td></tr><tr class="passedeven"><td><a href="#m7">quikrHomes</a></td><td rowspan="1">1714109923269</td><td rowspan="1">8093</td></tr><tr class="passedeven"><td><a href="#m8">roofFloor</a></td><td rowspan="1">1714109931365</td><td rowspan="1">5109</td></tr><tr class="passedeven"><td><a href="#m9">website</a></td><td rowspan="1">1714109936476</td><td rowspan="1">2861</td></tr><tr class="passedodd"><td rowspan="1">api.test.TC0002_api</td><td><a href="#m10">addLead</a></td><td rowspan="1">1714109939344</td><td rowspan="1">4300</td></tr><tr class="passedeven"><td rowspan="1">api.test.TC0003_api</td><td><a href="#m11">adddata</a></td><td rowspan="1">1714109943646</td><td rowspan="1">2061</td></tr></tbody>
 </table>
-<h2>Leadrat Test</h2><h3 id="m0">testCases.Tc001_AddLead#addingLead</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@role=&apos;option&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at Utilities.WaitsUtil.waitTillVisible(WaitsUtil.java:19)
-	at pomPages.AddLeadPage.otherdata(AddLeadPage.java:199)
-	at testCases.Tc001_AddLead.addingLead(Tc001_AddLead.java:31)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@role=&apos;option&apos;]&quot;}
-  (Session info: chrome=124.0.6367.61)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [12b2fac16ffb118f7416d896ff52e19c, findElement {using=xpath, value=//div[@role=&apos;option&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58978}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58978/devtoo..., se:cdpVersion: 124.0.6367.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 12b2fac16ffb118f7416d896ff52e19c
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy35.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
-	... 31 more
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Leadrat Test</h2><h3 id="m0">api.test.TC0001_api#Housing</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">api.test.TC0001_api#NinetyNineAcres</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">api.test.TC0001_api#commonFloor</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">api.test.TC0001_api#estateDekho</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">api.test.TC0001_api#googleAds</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">api.test.TC0001_api#magicBricks</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">api.test.TC0001_api#microsoftAds</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">api.test.TC0001_api#quikrHomes</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">api.test.TC0001_api#roofFloor</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">api.test.TC0001_api#website</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">api.test.TC0002_api#addLead</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">api.test.TC0003_api#adddata</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

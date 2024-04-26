@@ -27,8 +27,11 @@ public class Routes {
 	
 	public static String commonFloor_url=base_url+"/CommonFloor";
 
+	public static String tokenUrl = "https://identity-api-prd.azurewebsites.net/api/tokens";
 	
-	
+	public static String leadUrl = "https://prd-lrb-webapi.leadrat.com/api/v1/lead";
+
+	public static String dataUrl = "https://prd-lrb-webapi.leadrat.com/api/v1/prospect";
 
 	
 	public static String magicBricks_key = "OTRkOTQ4YmUtNWFkOC00ZDUwLWI5MTItMzZhMWFlZTdkMzE1";
