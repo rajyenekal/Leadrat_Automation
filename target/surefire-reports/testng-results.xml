@@ -1,36 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-24T17:00:37 IST" name="LeadRatSuite" finished-at="2024-04-24T17:01:05 IST" duration-ms="28499">
+  <suite started-at="2024-04-26T14:37:42 IST" name="LeadRatSuite" finished-at="2024-04-26T14:38:28 IST" duration-ms="46236">
     <groups>
     </groups>
-    <test started-at="2024-04-24T17:00:37 IST" name="Leadrat Test" finished-at="2024-04-24T17:01:05 IST" duration-ms="28499">
-      <class name="testCases.Tc001_AddLead">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.Tc001_AddLead@6f1de4c7]" started-at="2024-04-24T17:00:37 IST" name="setup" finished-at="2024-04-24T17:00:41 IST" duration-ms="4196" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2024-04-26T14:37:42 IST" name="Leadrat Test" finished-at="2024-04-26T14:38:28 IST" duration-ms="46236">
+      <class name="api.test.TC0001_api">
+        <test-method signature="Housing()[pri:0, instance:api.test.TC0001_api@55562aa9]" started-at="2024-04-26T14:37:42 IST" name="Housing" finished-at="2024-04-26T14:37:48 IST" duration-ms="6001" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.Tc001_AddLead@6f1de4c7]" started-at="2024-04-24T17:00:41 IST" name="setUp" finished-at="2024-04-24T17:00:44 IST" duration-ms="2520" status="PASS">
+        </test-method> <!-- Housing -->
+        <test-method signature="NinetyNineAcres()[pri:0, instance:api.test.TC0001_api@55562aa9]" started-at="2024-04-26T14:37:48 IST" name="NinetyNineAcres" finished-at="2024-04-26T14:37:51 IST" duration-ms="2593" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="addingLead()[pri:0, instance:testCases.Tc001_AddLead@6f1de4c7]" started-at="2024-04-24T17:00:44 IST" name="addingLead" finished-at="2024-04-24T17:01:05 IST" duration-ms="20879" status="PASS">
+        </test-method> <!-- NinetyNineAcres -->
+        <test-method signature="commonFloor()[pri:0, instance:api.test.TC0001_api@55562aa9]" started-at="2024-04-26T14:37:51 IST" name="commonFloor" finished-at="2024-04-26T14:37:54 IST" duration-ms="3053" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addingLead -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.Tc001_AddLead@6f1de4c7]" started-at="2024-04-24T17:01:05 IST" name="teardown" finished-at="2024-04-24T17:01:05 IST" duration-ms="425" status="PASS">
+        </test-method> <!-- commonFloor -->
+        <test-method signature="estateDekho()[pri:0, instance:api.test.TC0001_api@55562aa9]" started-at="2024-04-26T14:37:54 IST" name="estateDekho" finished-at="2024-04-26T14:37:56 IST" duration-ms="2381" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testCases.Tc001_AddLead -->
+        </test-method> <!-- estateDekho -->
+        <test-method signature="googleAds()[pri:0, instance:api.test.TC0001_api@55562aa9]" started-at="2024-04-26T14:37:56 IST" name="googleAds" finished-at="2024-04-26T14:37:59 IST" duration-ms="2720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleAds -->
+        <test-method signature="magicBricks()[pri:0, instance:api.test.TC0001_api@55562aa9]" started-at="2024-04-26T14:37:59 IST" name="magicBricks" finished-at="2024-04-26T14:38:00 IST" duration-ms="1750" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- magicBricks -->
+        <test-method signature="microsoftAds()[pri:0, instance:api.test.TC0001_api@55562aa9]" started-at="2024-04-26T14:38:00 IST" name="microsoftAds" finished-at="2024-04-26T14:38:08 IST" duration-ms="7666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- microsoftAds -->
+        <test-method signature="quikrHomes()[pri:0, instance:api.test.TC0001_api@55562aa9]" started-at="2024-04-26T14:38:08 IST" name="quikrHomes" finished-at="2024-04-26T14:38:11 IST" duration-ms="2901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quikrHomes -->
+        <test-method signature="roofFloor()[pri:0, instance:api.test.TC0001_api@55562aa9]" started-at="2024-04-26T14:38:11 IST" name="roofFloor" finished-at="2024-04-26T14:38:17 IST" duration-ms="6449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- roofFloor -->
+        <test-method signature="website()[pri:0, instance:api.test.TC0001_api@55562aa9]" started-at="2024-04-26T14:38:17 IST" name="website" finished-at="2024-04-26T14:38:23 IST" duration-ms="5930" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- website -->
+      </class> <!-- api.test.TC0001_api -->
+      <class name="api.test.TC0003_api">
+        <test-method signature="adddata()[pri:0, instance:api.test.TC0003_api@555cf22]" started-at="2024-04-26T14:38:26 IST" name="adddata" finished-at="2024-04-26T14:38:28 IST" duration-ms="1766" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adddata -->
+      </class> <!-- api.test.TC0003_api -->
+      <class name="api.test.TC0002_api">
+        <test-method signature="addLead()[pri:0, instance:api.test.TC0002_api@58ffcbd7]" started-at="2024-04-26T14:38:23 IST" name="addLead" finished-at="2024-04-26T14:38:26 IST" duration-ms="2718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addLead -->
+      </class> <!-- api.test.TC0002_api -->
     </test> <!-- Leadrat Test -->
   </suite> <!-- LeadRatSuite -->
 </testng-results>

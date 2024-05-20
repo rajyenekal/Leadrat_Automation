@@ -33,7 +33,7 @@ public class TC0003_api extends Api_Token {
                         "data", matchesRegex(uuidRegex));
 
         uniqueId = response.jsonPath().getString("data");
-        logger.info("---- New Data Created with ID Token: " + uniqueId);
+        logger.info("---- New Data Created with ID Token: " + uniqueId + "\n");
     }
 
 }

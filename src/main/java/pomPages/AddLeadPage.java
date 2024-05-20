@@ -55,7 +55,7 @@ public class AddLeadPage extends BasePage{
 	@CacheLookup
 	WebElement assignedTo1;
 	
-	@FindBy(xpath="//div[@role='option']")
+	@FindBy(xpath="//div[@role=\"option\"]")
 	@CacheLookup
 	WebElement popOption;
 	
@@ -63,7 +63,7 @@ public class AddLeadPage extends BasePage{
 	@CacheLookup
 	WebElement location;
 	
-	@FindBy(xpath="//div[@role='option']")
+	@FindBy(xpath="//input[@type=\"checkbox\"]/..")
 	@CacheLookup
 	WebElement popOption1;
 	
@@ -83,7 +83,7 @@ public class AddLeadPage extends BasePage{
 	@CacheLookup
 	WebElement areaMeasure;
 	
-	@FindBy(xpath="//div[@role='option']//span[.='Sq. Feet']")
+	@FindBy(xpath="//div[contains(@class,'ng-option')]//span[.='Sq. Feet']")
 	@CacheLookup
 	WebElement squareFt;
 	
@@ -113,7 +113,6 @@ public class AddLeadPage extends BasePage{
 		optionData.click();
 	}
 	
-	
 	@FindBy(xpath="//label[@for='4']")
 	@CacheLookup
 	WebElement bhkCount;
@@ -121,7 +120,6 @@ public class AddLeadPage extends BasePage{
 	@FindBy(xpath="//label[@for='Duplex']")
 	@CacheLookup
 	WebElement bhkType;
-	
 	
 	@FindBy(xpath="//ng-select[@name='projectsList']//input")
 	@CacheLookup
@@ -134,7 +132,6 @@ public class AddLeadPage extends BasePage{
 	@FindBy(xpath="//ng-select[@formcontrolname='agencyName']//input")
 	@CacheLookup
 	WebElement agencyName;
-	
 	
 	@FindBy(xpath="//ng-select[@placeholder='Select Profession']//input")
 	@CacheLookup
@@ -164,8 +161,6 @@ public class AddLeadPage extends BasePage{
 	@CacheLookup
 	WebElement leadNote;
 	
-	
-	
 	@FindBy(xpath="//button[contains(@class,'btn') and .='Save']")
 	@CacheLookup
 	WebElement saveLead;
@@ -173,9 +168,6 @@ public class AddLeadPage extends BasePage{
 	@FindBy(xpath="//div[.='Lead added Successfully']")
 	@CacheLookup
 	WebElement leadAddedMsg;
-	
-	
-	
 	
 	public void clickaddLeadBtn() {
 		waits.waitTillClickable(addLeadBtn);

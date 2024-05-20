@@ -9,6 +9,7 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 public class addLeadAPI {
+	
 static ReadConfigFile rcf = new ReadConfigFile();
 
 	
@@ -46,6 +47,7 @@ static ReadConfigFile rcf = new ReadConfigFile();
 				.post(Routes.dataUrl);
 		return response;
 	}
-
+	
+	
 	
 }

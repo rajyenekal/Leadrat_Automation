@@ -29,7 +29,7 @@ public class TC0001_api extends Api_Token {
                     "errors", nullValue(),
                     "data", equalTo(true));
 
-            logger.info("---- MagicBricks Lead Created ----");
+            logger.info("---- MagicBricks Lead Created ----"+"\n");
             
         } catch (Exception e) {
             logger.error("An error occurred during MagicBricks Lead Creation:", e);
@@ -54,7 +54,7 @@ public class TC0001_api extends Api_Token {
 	                    "errors", nullValue(),
 	                    "data", equalTo(true));
 	
-	            logger.info("---- Housing Lead Created ----");
+	            logger.info("---- Housing Lead Created ----"+"\n");
 	            
 	        } catch (Exception e) {
 	            logger.error("An error occurred during Housing Lead Creation:", e);
@@ -79,7 +79,7 @@ public class TC0001_api extends Api_Token {
 	                    "errors", nullValue(),
 	                    "data", equalTo(true));
 	
-	            logger.info("---- NinetyNineAcres Lead Created ----");
+	            logger.info("---- NinetyNineAcres Lead Created ----"+"\n");
 	            
 	        } catch (Exception e) {
 	            logger.error("An error occurred during NinetyNineAcres Lead Creation:", e);
@@ -103,7 +103,7 @@ public class TC0001_api extends Api_Token {
 	                    "errors", nullValue(),
 	                    "data", equalTo(true));
 	
-	            logger.info("---- QuikrHomes Lead Created ----");
+	            logger.info("---- QuikrHomes Lead Created ----"+"\n");
 	            
 	        } catch (Exception e) {
 	            logger.error("An error occurred during QuikrHomes Lead Creation:", e);
@@ -127,7 +127,7 @@ public class TC0001_api extends Api_Token {
 	                    "errors", nullValue(),
 	                    "data", equalTo(true));
 
-	            logger.info("---- Website Lead Created ----");
+	            logger.info("---- Website Lead Created ----"+"\n");
 	            
 	        } catch (AssertionError assertionError) {
 	            logger.error("Assertion error occurred during Website Lead Creation:", assertionError);
@@ -154,7 +154,7 @@ public class TC0001_api extends Api_Token {
 	                    "errors", nullValue(),
 	                    "data", equalTo(true));
 	
-	            logger.info("---- MicrosoftAds Lead Created ----");
+	            logger.info("---- MicrosoftAds Lead Created ----"+"\n");
 	            
 	        } catch (Exception e) {
 	            logger.error("An error occurred during MicrosoftAds Lead Creation:", e);
@@ -178,7 +178,7 @@ public class TC0001_api extends Api_Token {
 	                    "errors", nullValue(),
 	                    "data", equalTo(true));
 	
-	            logger.info("---- EstateDekho Lead Created ----");
+	            logger.info("---- EstateDekho Lead Created ----"+"\n");
 	            
 	        } catch (Exception e) {
 	            logger.error("An error occurred during EstateDekho Lead Creation:", e);
@@ -202,7 +202,7 @@ public class TC0001_api extends Api_Token {
 	                    "errors", nullValue(),
 	                    "data", equalTo(true));
 	
-	            logger.info("---- RealEstaeIndia Lead Created ----");
+	            logger.info("---- RealEstaeIndia Lead Created ----"+"\n");
 	            
 	        } catch (Exception e) {
 	            logger.error("An error occurred during RealEstaeIndia Lead Creation:", e);
@@ -226,7 +226,7 @@ public class TC0001_api extends Api_Token {
 	                    "errors", nullValue(),
 	                    "data", equalTo(true));
 	
-	            logger.info("---- RoofandFloor Lead Created ----");
+	            logger.info("---- RoofandFloor Lead Created ----"+"\n");
 	            
 	        } catch (Exception e) {
 	            logger.error("An error occurred during RoofandFloor Lead Creation", e);
@@ -252,7 +252,7 @@ public class TC0001_api extends Api_Token {
 	                    "errors", nullValue(),
 	                    "data", equalTo(true));
 	
-	            logger.info("---- GoogleAds Lead Created ----");
+	            logger.info("---- GoogleAds Lead Created ----"+"\n");
 	            
 	        } catch (Exception e) {
 	            logger.error("An error occurred during GoogleAds Lead Creation:", e);
@@ -277,7 +277,7 @@ public class TC0001_api extends Api_Token {
 	                    "errors", nullValue(),
 	                    "data", equalTo(true));
 	
-	            logger.info("---- commonFloor Lead Created ----");
+	            logger.info("---- commonFloor Lead Created ----"+"\n");
 	            
 	        } catch (Exception e) {
 	            logger.error("An error occurred during commonFloor Lead Creation:", e);

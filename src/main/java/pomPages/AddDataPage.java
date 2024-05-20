@@ -9,6 +9,7 @@ import org.openqa.selenium.support.FindBy;
 
 import Utilities.ActionsUtil;
 import Utilities.JavaScriptUtil;
+import Utilities.StaleElementHandler;
 import Utilities.WaitsUtil;
 
 public class AddDataPage extends BasePage {
@@ -20,6 +21,7 @@ public class AddDataPage extends BasePage {
 	ActionsUtil aut = new ActionsUtil(ldriver);
 	WaitsUtil waits = new WaitsUtil(ldriver);
 	JavaScriptUtil jse = new JavaScriptUtil(ldriver);
+	StaleElementHandler stl = new StaleElementHandler(ldriver);
 	
 	@FindBy(xpath="//a[@class='leftnav-item' and text()='Data']")
 	@CacheLookup
@@ -29,11 +31,11 @@ public class AddDataPage extends BasePage {
 	@CacheLookup
 	WebElement dataMngt;
 	
-	@FindBy(xpath="//*[@id='btnAddNewProspects']")
+	@FindBy(id="btnAddNewProspects")
 	@CacheLookup
 	WebElement addDataBtn;
 	
-	@FindBy(xpath="//h4[.='Add Data']")
+	@FindBy(xpath="//h4[contains(.,'Add Data')]")
 	@CacheLookup
 	WebElement addData;
 	
@@ -58,7 +60,9 @@ public class AddDataPage extends BasePage {
 		//waits.waitTillVisible(addDataBtn);
 		waits.waitTillClickable(addDataBtn);
 		//addDataBtn.isDisplayed();
-		addDataBtn.click();
+		WebElement refreshedEle = stl.handleStaleElement(addDataBtn);
+		refreshedEle.click();
+		waits.waitTillVisible(addData);
 		addData.isDisplayed();
 		dataName.sendKeys(name);
 		phoneNo.sendKeys(num);
@@ -201,29 +205,9 @@ public class AddDataPage extends BasePage {
 	@CacheLookup
 	WebElement possessionDate;
 	
-	public void addData(String coName,String role,String src,String cls,String channel,String executive,String execNo,String custLoc,String note) {
-		companyName.sendKeys(coName);
-		designation.sendKeys(role);
-		possessionDate.click();
-		waits.waitTillClickable(todayDate);
-		todayDate2.click();
-		sourcingManager.sendKeys(src);
-		selectOption(src);
-		closingManager.sendKeys(cls);
-		selectOption(cls);
-		channelPartnerList.sendKeys(channel);
-		selectOption(channel);
-		executiveName.sendKeys(executive);
-		executiveNO.sendKeys(execNo);
-		custLocation.sendKeys(custLoc);
-		custLocation.sendKeys(Keys.ENTER);
-		selectOption(cls);
-		notes.sendKeys(note);
-
-
-	}
 	
-	@FindBy(xpath="//span[contains(@class,'calendar-cell-today')]")
+	
+	@FindBy(xpath="//div//span[contains(@class,'calendar-cell-today')]")
 	@CacheLookup
 	WebElement todayDate;
 	
@@ -260,7 +244,30 @@ public class AddDataPage extends BasePage {
 	WebElement notes;
 	
 	
-	
+	public void addData(String coName,String role,String src,String cls,String channel,String executive,String execNo,String custLoc,String note) throws InterruptedException {
+		companyName.sendKeys(coName);
+		designation.sendKeys(role);
+		possessionDate.click();
+		//waits.waitTillClickable(todayDate);
+		Thread.sleep(500);
+		//stl.handleStaleElement(todayDate2);
+		jse.jsClick(todayDate);
+		
+		//todayDate.click();
+		sourcingManager.sendKeys(src);
+		selectOption(src);
+		closingManager.sendKeys(cls);
+		selectOption(cls);
+		channelPartnerList.sendKeys(channel);
+		selectOption(channel);
+		executiveName.sendKeys(executive);
+		executiveNO.sendKeys(execNo);
+		custLocation.sendKeys(custLoc);
+		custLocation.sendKeys(Keys.ENTER);
+		selectOption(cls);
+		notes.sendKeys(note);
+
+	}
 	
 	
 }

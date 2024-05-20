@@ -11,8 +11,6 @@ public class RandomDataUtil {
 		return randomNumber;
 	}
 	
-	
-	
 	public static String getName() {
         String vowels = "aeiou";
         String consonants = "bcdfghjklmnpqrstvwxyz";
@@ -63,7 +61,9 @@ public class RandomDataUtil {
     }
    
 	public static String getranName() {
+		
         StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+        
         if (stackTrace.length >= 3) {
             StackTraceElement caller = stackTrace[2]; // Index 2 is the caller of this method
             String methodName = caller.getMethodName();
@@ -93,13 +93,4 @@ public class RandomDataUtil {
         return "Unknown";
     }
 
-	
-//	public static String getMethodName() {
-//        // Use reflection to get the name of the calling method
-//        StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
-//        if (stackTrace.length >= 3) {
-//            return stackTrace[2].getMethodName(); // Index 2 is the caller of this method
-//        }
-//        return "Unknown";
-//    }
 }

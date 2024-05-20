@@ -17,6 +17,9 @@ public class Api_Token {
 	 protected String uniqueId;
 	 protected static String idToken;
 	 protected static String BearerToken;
+	 protected String projectUniqueId;
+	 protected String propertyUniqueId;
+
 
 	
 	public static String getToken() {

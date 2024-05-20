@@ -40,6 +40,6 @@ public class TC0002_api {
                         "data", matchesRegex(uuidRegex));
 
          uniqueId = response.jsonPath().getString("data");
-        logger.info("---- New Lead Created with ID Token: " + uniqueId);
+        logger.info("---- New Lead Created with ID Token: " + uniqueId+"\n");
     }
 }

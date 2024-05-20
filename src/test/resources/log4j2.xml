@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Configuration status="WARN"> 
+<Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="log4j2.xsd" status="WARN"> 
 
     <Properties>
 		<Property name="basePath">./logs</Property>
@@ -9,11 +10,14 @@
 
   <Appenders>
     <Console name="Console" target="SYSTEM_OUT">
-      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+     <!--  <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>-->
+            <PatternLayout pattern="%C - %msg%n"/>
+
     </Console>
     
       <RollingFile name="File" fileName="${basePath}/automation.log" filePattern="${basePath}/automation-%d{yyyy-MM-dd}.log">
-     <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+                 <PatternLayout pattern="%C - %msg%n"/>
+
       <SizeBasedTriggeringPolicy size="50000" />
    </RollingFile>
   </Appenders>

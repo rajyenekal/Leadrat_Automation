@@ -1,9 +1,11 @@
 testCases\Tc001_AddLead.class
 testCases\dummy.class
-test\base\ExtentReportManager.class
+api\test\TC0003_api.class
+api\test\TC0002_api.class
 test\base\ExtentReportManager1.class
 test\base\BaseTest.class
 testCases\TC_DDTTest_002.class
 api\test\TC0001_api.class
 test\base\DummyBase.class
 testCases\Tc0002_AddData.class
+test\base\Api_Token.class

@@ -4,7 +4,11 @@ public class Routes {
 
 	public static String base_url="https://connect.leadrat.com/api/v1/integration";
 	
-	//User module
+	public static String prd_Url ="https://prd-lrb-webapi.leadrat.com/api/v1";
+	
+	public static String tokenUrl = "https://identity-api-prd.azurewebsites.net/api/tokens";
+	
+
 	public static String magicBricks_url=base_url+"/MagicBricks";
 
 	public static String housing_url=base_url+"/Housing";
@@ -27,12 +31,23 @@ public class Routes {
 	
 	public static String commonFloor_url=base_url+"/CommonFloor";
 
-	public static String tokenUrl = "https://identity-api-prd.azurewebsites.net/api/tokens";
 	
-	public static String leadUrl = "https://prd-lrb-webapi.leadrat.com/api/v1/lead";
+	public static String leadUrl = prd_Url+"/lead";
 
-	public static String dataUrl = "https://prd-lrb-webapi.leadrat.com/api/v1/prospect";
+	public static String dataUrl = prd_Url+"/prospect";
+	
+	public static String propertyUrl = prd_Url+"/Property";
+	
+	public static String projectUrl = prd_Url+"/project";
+	
+	public static String unitUrl = projectUrl+"/unittype";
 
+	public static String blockUrl = projectUrl+"/block";
+
+	public static String ameniyUrl = projectUrl+"/amenities";
+	
+	public static String galleryUrl = projectUrl+"/gallery";
+	
 	
 	public static String magicBricks_key = "OTRkOTQ4YmUtNWFkOC00ZDUwLWI5MTItMzZhMWFlZTdkMzE1";
 	
@@ -56,12 +71,6 @@ public class Routes {
 
 	public static String commonFloor_key = "NDMyNjIzYzYtN2JiMi00NTY1LWJkM2MtYzc1MjQ4YzhhMGY5";
 
-	
-	
-	
-
-
-
-	
+	public static String reqres = " https://reqres.in/api/users?page=2";
 
 }
