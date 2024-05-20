@@ -24,7 +24,7 @@ jobs:
       mavenPomFile: 'pom.xml'
       mavenOptions: '-Xmx3072m'
       mavenAuthenticateFeed: false
-      goals: 'clean install'
+      goals: 'clean install -e -X'
     displayName: 'Build with Maven'
 
   
