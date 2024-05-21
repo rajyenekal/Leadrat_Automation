@@ -24,22 +24,12 @@ jobs:
       mavenPomFile: 'pom.xml'
       mavenOptions: '-Xmx3072m'
       mavenAuthenticateFeed: false
-      goals: 'clean install'
+      goals: 'clean install -e -X'
     displayName: 'Build with Maven'
 
-  - script: |
-      wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-      sudo dpkg -i google-chrome-stable_current_amd64.deb
-      sudo apt-get install -f
-      sudo apt-get install -y unzip
-      wget -N https://chromedriver.storage.googleapis.com/`curl -s https://chromedriver.storage.googleapis.com/LATEST_RELEASE`/chromedriver_linux64.zip
-      unzip chromedriver_linux64.zip
-      sudo mv chromedriver /usr/local/bin/chromedriver
-      sudo chmod +x /usr/local/bin/chromedriver
-      google-chrome --version
-      chromedriver --version
-    displayName: 'Install Chrome and ChromeDriver'
+  
 
   - script: |
-      mvn test
+     mvn clean install -e -X
+
     displayName: 'Run All Tests'
