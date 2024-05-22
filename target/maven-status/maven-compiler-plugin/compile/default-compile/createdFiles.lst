@@ -1,3 +1,5 @@
+api\endpoints\AddProjProp.class
+mobPages\baseScreen.class
 pomPages\BasePage.class
 api\endpoints\leadCreation.class
 pomPages\AddDataPage.class
@@ -5,10 +7,13 @@ api\endpoints\Routes.class
 pomPages\LoginPage.class
 Utilities\WaitsUtil.class
 Utilities\ReadConfigFile.class
+mobPages\loginScreen.class
+Utilities\StaleElementHandler.class
 api\endpoints\addLeadAPI.class
 Utilities\XLUtils.class
 api\payload\Payload.class
 Utilities\ActionsUtil.class
+mobPages\addLeadScreen.class
 pomPages\AddLeadPage.class
 Utilities\JavaScriptUtil.class
 Utilities\RandomDataUtil.class

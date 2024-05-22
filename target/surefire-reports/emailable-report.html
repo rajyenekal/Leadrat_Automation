@@ -9,36 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">LeadRatSuite</th></tr>
-<tr><td><a href="#t0">Leadrat Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">43,696</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Leadrat Test</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">20,368</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">LeadRatSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Leadrat Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">web.test.Tc001_AddLead</td><td><a href="#m0">addingLead</a></td><td rowspan="1">1716222788594</td><td rowspan="1">32304</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">LeadRatSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Leadrat Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">api.test.TC0002_api</td><td><a href="#m0">addLead</a></td><td rowspan="1">1716399495974</td><td rowspan="1">7549</td></tr><tr class="passedodd"><td rowspan="1">api.test.TC0003_api</td><td><a href="#m1">adddata</a></td><td rowspan="1">1716399503588</td><td rowspan="1">2133</td></tr><tr class="passedeven"><td rowspan="5">api.test.TC0004_api</td><td><a href="#m2">testAmenity</a></td><td rowspan="1">1716399508480</td><td rowspan="1">1503</td></tr><tr class="passedeven"><td><a href="#m3">testBlock</a></td><td rowspan="1">1716399507884</td><td rowspan="1">590</td></tr><tr class="passedeven"><td><a href="#m4">testGallery</a></td><td rowspan="1">1716399509992</td><td rowspan="1">588</td></tr><tr class="passedeven"><td><a href="#m5">testProject</a></td><td rowspan="1">1716399505727</td><td rowspan="1">1387</td></tr><tr class="passedeven"><td><a href="#m6">testUnit</a></td><td rowspan="1">1716399507121</td><td rowspan="1">757</td></tr><tr class="passedodd"><td rowspan="2">api.test.TC0005_api</td><td><a href="#m7">moreInfo</a></td><td rowspan="1">1716399512926</td><td rowspan="1">2983</td></tr><tr class="passedodd"><td><a href="#m8">testProperty</a></td><td rowspan="1">1716399510583</td><td rowspan="1">2335</td></tr></tbody>
 </table>
-<h2>Leadrat Test</h2><h3 id="m0">web.test.Tc001_AddLead#addingLead</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ng-select[@formcontrolname=&apos;agencyName&apos;]//input&quot;}
-  (Session info: chrome=124.0.6367.209)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [acfd46a54d60e749a5e8fef5b6e39228, findElement {using=xpath, value=//ng-select[@formcontrolname=&apos;agencyName&apos;]//input}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.209, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57389}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57389/devtoo..., se:cdpVersion: 124.0.6367.209, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: acfd46a54d60e749a5e8fef5b6e39228
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy29.sendKeys(Unknown Source)
-	at pomPages.AddLeadPage.moreData(AddLeadPage.java:229)
-	at web.test.Tc001_AddLead.addingLead(Tc001_AddLead.java:34)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Leadrat Test</h2><h3 id="m0">api.test.TC0002_api#addLead</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">api.test.TC0003_api#adddata</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">api.test.TC0004_api#testAmenity</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">api.test.TC0004_api#testBlock</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">api.test.TC0004_api#testGallery</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">api.test.TC0004_api#testProject</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">api.test.TC0004_api#testUnit</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">api.test.TC0005_api#moreInfo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">api.test.TC0005_api#testProperty</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
