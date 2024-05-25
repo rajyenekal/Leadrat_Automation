@@ -1,12 +1,11 @@
-package test.base;
 
+package test.base;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.text.SimpleDateFormat;
 import java.util.Base64;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.Properties;
 
 import javax.activation.DataHandler;
@@ -35,7 +34,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-public class ExtentReportManagerMailreport  implements ITestListener {
+public class ExtentReportManagerMailreport implements ITestListener {
 
     public ExtentSparkReporter sparkReporter;
     public ExtentReports extent;
@@ -44,12 +43,10 @@ public class ExtentReportManagerMailreport  implements ITestListener {
     public WebDriver driver;
 
     public void onStart(ITestContext testContext) {
-    	
-    	Calendar cal = Calendar.getInstance();
-    	SimpleDateFormat sdf = new SimpleDateFormat("hh.mm.ss a.dd.MM.yyyy");
-    	String timeStamp = sdf.format(cal.getTime());
 
-    	 repName = "Test-Report-" + timeStamp + ".html";
+    	Calendar cal = Calendar.getInstance();
+        SimpleDateFormat sdf = new SimpleDateFormat("hh.mm.ss a.dd.MM.yyyy");
+        repName = "Test-Report-" + sdf.format(cal.getTime()) + ".html";
 
         sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName);
         sparkReporter.config().setDocumentTitle("LeadRat Automation Project");
@@ -88,7 +85,7 @@ public class ExtentReportManagerMailreport  implements ITestListener {
                 String screenshotPath;
                 if (isMobTest(result)) {
                     screenshotPath = MobBase.captureScreenshot(result.getName());
-                    
+
                 } else {
                     screenshotPath = BaseTest.captureScreenshot(result.getName());
                 }
@@ -107,11 +104,10 @@ public class ExtentReportManagerMailreport  implements ITestListener {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        
+
         // Add image
         addImageToReport(test, "leadrat_logo.jpg");
     }
-
 
     public void onTestSkipped(ITestResult result) {
         test = extent.createTest(result.getName());
@@ -132,19 +128,19 @@ public class ExtentReportManagerMailreport  implements ITestListener {
         String className = result.getTestClass().getName();
         return (" " + className.toLowerCase() + " ").contains("api");
     }
-    
+
     private boolean isMobTest(ITestResult result) {
         String className = result.getTestClass().getName();
         return (" " + className.toLowerCase() + " ").contains("mob");
     }
 
-    
+
     private void sendEmail() {
-        final String username = "digilanterndigi@gmail.com"; 
-        final String password = "fslr iwfg hhaz clnj"; 
+        final String username = "digilanterndigi@gmail.com";
+        final String password = "fslr iwfg hhaz clnj";
 
         Properties props = new Properties();
-        
+
         props.put("mail.smtp.auth", "true");
         props.put("mail.smtp.starttls.enable", "true");
         props.put("mail.smtp.ssl.trust", "smtp.gmail.com"); // Trust the Gmail SMTP server
@@ -165,11 +161,11 @@ public class ExtentReportManagerMailreport  implements ITestListener {
 
             // Add multiple recipients
             InternetAddress[] recipients = {
-               // new InternetAddress("rajneesh.k@leadrat.com"),
-                new InternetAddress("rajyenekal@gmail.com"),
-               // new InternetAddress("sudesh@leadrat.com"),
-               // new InternetAddress("jayakumar.k@leadrat.com"),
-               //new InternetAddress("keerthanaraosj@gmail.com"),
+                    // new InternetAddress("rajneesh.k@leadrat.com"),
+                    new InternetAddress("rajyenekal@gmail.com"),
+                    // new InternetAddress("sudesh@leadrat.com"),
+                    // new InternetAddress("jayakumar.k@leadrat.com"),
+                    //new InternetAddress("keerthanaraosj@gmail.com"),
 
             };
             message.setRecipients(Message.RecipientType.TO, recipients);
@@ -213,7 +209,7 @@ public class ExtentReportManagerMailreport  implements ITestListener {
             throw new RuntimeException(e);
         }
     }
-    
+
     private void addImageToReport(ExtentTest test, String imageName) {
         String imagePath = "./src/test/resources/image/" + imageName;
         File imageFile = new File(imagePath);
@@ -222,10 +218,10 @@ public class ExtentReportManagerMailreport  implements ITestListener {
             try {
                 // Read the image file into a byte array
                 byte[] imageData = Files.readAllBytes(imageFile.toPath());
-                
+
                 // Convert the byte array to Base64 encoding
                 String base64Image = Base64.getEncoder().encodeToString(imageData);
-                
+
                 // Embed the Base64 encoded image into HTML content of the Extent report
                 test.log(Status.INFO, "<div align='center'><img src='data:image/jpeg;base64," + base64Image + "' width='25%' height='25%'/></div>");
             } catch (IOException e) {
