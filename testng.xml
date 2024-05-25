@@ -15,11 +15,11 @@
    <!--  <class name="web.test.Tc001_AddLead"/>
   <class name="web.test.TC_DDTTest_002"/>-->
     
-        <!--  <class name="api.test.TC0001_api"/>
+        <!--  <class name="api.test.TC0001_api"/>-->
        	<class name="api.test.TC0002_api"/>
         <class name="api.test.TC0003_api"/>
         <class name="api.test.TC0004_api"/>
-      	<class name="api.test.TC0005_api"/>-->
+      	<class name="api.test.TC0005_api"/>
 
 		<class name="web.test.Tc001_AddLead"/>
 
