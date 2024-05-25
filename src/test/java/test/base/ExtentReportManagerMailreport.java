@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.text.SimpleDateFormat;
 import java.util.Base64;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Properties;
 
@@ -43,9 +44,12 @@ public class ExtentReportManagerMailreport  implements ITestListener {
     public WebDriver driver;
 
     public void onStart(ITestContext testContext) {
-        String timeStamp = new SimpleDateFormat("hh.mm.ss a.dd.MM.yyyy").format(new Date());
+    	
+    	Calendar cal = Calendar.getInstance();
+    	SimpleDateFormat sdf = new SimpleDateFormat("hh.mm.ss a.dd.MM.yyyy");
+    	String timeStamp = sdf.format(cal.getTime());
 
-    	repName = "Test-Report-" + timeStamp + ".html";
+    	 repName = "Test-Report-" + timeStamp + ".html";
 
         sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName);
         sparkReporter.config().setDocumentTitle("LeadRat Automation Project");
