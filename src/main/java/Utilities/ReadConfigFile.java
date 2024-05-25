@@ -8,7 +8,7 @@ public class ReadConfigFile {
 	Properties prop;
 	
 	public ReadConfigFile() {
-		File file=new File("./Configurations/config.properties");
+		File file=new File("./Configurations/Config.properties");
 		
 		try {
 			FileInputStream fis=new FileInputStream(file);
@@ -22,7 +22,6 @@ public class ReadConfigFile {
 	
 		public String getappurl() {
 			String url=prop.getProperty("Url");
-			
 			return url;
 			
 		}

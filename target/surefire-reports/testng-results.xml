@@ -2,50 +2,50 @@
 <testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-22T23:08:15 IST" name="LeadRatSuite" finished-at="2024-05-22T23:08:35 IST" duration-ms="20368">
+  <suite started-at="2024-05-25T11:31:47 IST" name="LeadRatSuite" finished-at="2024-05-25T11:32:05 IST" duration-ms="18022">
     <groups>
     </groups>
-    <test started-at="2024-05-22T23:08:15 IST" name="Leadrat Test" finished-at="2024-05-22T23:08:35 IST" duration-ms="20368">
+    <test started-at="2024-05-25T11:31:47 IST" name="Leadrat Test" finished-at="2024-05-25T11:32:05 IST" duration-ms="18022">
       <class name="api.test.TC0003_api">
-        <test-method signature="adddata()[pri:0, instance:api.test.TC0003_api@6ff65192]" started-at="2024-05-22T23:08:23 IST" name="adddata" finished-at="2024-05-22T23:08:25 IST" duration-ms="2133" status="PASS">
+        <test-method signature="adddata()[pri:0, instance:api.test.TC0003_api@6ff65192]" started-at="2024-05-25T11:31:54 IST" name="adddata" finished-at="2024-05-25T11:31:56 IST" duration-ms="2093" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- adddata -->
       </class> <!-- api.test.TC0003_api -->
       <class name="api.test.TC0002_api">
-        <test-method signature="addLead()[pri:0, instance:api.test.TC0002_api@2002348]" started-at="2024-05-22T23:08:15 IST" name="addLead" finished-at="2024-05-22T23:08:23 IST" duration-ms="7549" status="PASS">
+        <test-method signature="addLead()[pri:0, instance:api.test.TC0002_api@2002348]" started-at="2024-05-25T11:31:48 IST" name="addLead" finished-at="2024-05-25T11:31:54 IST" duration-ms="6125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addLead -->
       </class> <!-- api.test.TC0002_api -->
       <class name="api.test.TC0004_api">
-        <test-method signature="testProject()[pri:1, instance:api.test.TC0004_api@2dd80673]" started-at="2024-05-22T23:08:25 IST" name="testProject" finished-at="2024-05-22T23:08:27 IST" duration-ms="1387" status="PASS">
+        <test-method signature="testProject()[pri:1, instance:api.test.TC0004_api@2dd80673]" started-at="2024-05-25T11:31:56 IST" name="testProject" finished-at="2024-05-25T11:31:57 IST" duration-ms="1245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProject -->
-        <test-method signature="testUnit()[pri:2, instance:api.test.TC0004_api@2dd80673]" started-at="2024-05-22T23:08:27 IST" name="testUnit" finished-at="2024-05-22T23:08:27 IST" duration-ms="757" status="PASS">
+        <test-method signature="testUnit()[pri:2, instance:api.test.TC0004_api@2dd80673]" started-at="2024-05-25T11:31:57 IST" name="testUnit" finished-at="2024-05-25T11:31:58 IST" duration-ms="714" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUnit -->
-        <test-method signature="testBlock()[pri:3, instance:api.test.TC0004_api@2dd80673]" started-at="2024-05-22T23:08:27 IST" name="testBlock" finished-at="2024-05-22T23:08:28 IST" duration-ms="590" status="PASS">
+        <test-method signature="testBlock()[pri:3, instance:api.test.TC0004_api@2dd80673]" started-at="2024-05-25T11:31:58 IST" name="testBlock" finished-at="2024-05-25T11:31:59 IST" duration-ms="500" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBlock -->
-        <test-method signature="testAmenity()[pri:4, instance:api.test.TC0004_api@2dd80673]" started-at="2024-05-22T23:08:28 IST" name="testAmenity" finished-at="2024-05-22T23:08:29 IST" duration-ms="1503" status="PASS">
+        <test-method signature="testAmenity()[pri:4, instance:api.test.TC0004_api@2dd80673]" started-at="2024-05-25T11:31:59 IST" name="testAmenity" finished-at="2024-05-25T11:32:00 IST" duration-ms="1421" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAmenity -->
-        <test-method signature="testGallery()[pri:5, instance:api.test.TC0004_api@2dd80673]" started-at="2024-05-22T23:08:29 IST" name="testGallery" finished-at="2024-05-22T23:08:30 IST" duration-ms="588" status="PASS">
+        <test-method signature="testGallery()[pri:5, instance:api.test.TC0004_api@2dd80673]" started-at="2024-05-25T11:32:00 IST" name="testGallery" finished-at="2024-05-25T11:32:00 IST" duration-ms="361" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGallery -->
       </class> <!-- api.test.TC0004_api -->
       <class name="api.test.TC0005_api">
-        <test-method signature="testProperty()[pri:1, instance:api.test.TC0005_api@acdb094]" started-at="2024-05-22T23:08:30 IST" name="testProperty" finished-at="2024-05-22T23:08:32 IST" duration-ms="2335" status="PASS">
+        <test-method signature="testProperty()[pri:1, instance:api.test.TC0005_api@acdb094]" started-at="2024-05-25T11:32:00 IST" name="testProperty" finished-at="2024-05-25T11:32:03 IST" duration-ms="2418" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProperty -->
-        <test-method signature="moreInfo()[pri:2, instance:api.test.TC0005_api@acdb094]" started-at="2024-05-22T23:08:32 IST" name="moreInfo" finished-at="2024-05-22T23:08:35 IST" duration-ms="2983" status="PASS">
+        <test-method signature="moreInfo()[pri:2, instance:api.test.TC0005_api@acdb094]" started-at="2024-05-25T11:32:03 IST" name="moreInfo" finished-at="2024-05-25T11:32:05 IST" duration-ms="2672" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- moreInfo -->
