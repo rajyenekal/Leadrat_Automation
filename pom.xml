@@ -160,7 +160,6 @@
 		    <artifactId>javax.mail</artifactId>
 		    <version>1.6.2</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.itextpdf/itextpdf -->
 		<!-- https://mvnrepository.com/artifact/io.appium/java-client -->
 			<dependency>
 			    <groupId>io.appium</groupId>

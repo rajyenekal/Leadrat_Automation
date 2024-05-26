@@ -104,7 +104,7 @@ public class AddLeadPage extends BasePage{
 	WebElement propType1;
 
 	@FindBy(xpath="//ng-select[@formcontrolname='propSubType']//input")
-	@CacheLookup
+	@CacheLookup 
 	WebElement propSubType;
 	
 	public void clickOption(String data) {
@@ -169,6 +169,19 @@ public class AddLeadPage extends BasePage{
 	@CacheLookup
 	WebElement leadAddedMsg;
 	
+	@FindBy(xpath="//*[.='Project(s)']")
+	@CacheLookup
+	WebElement projectTxt;
+	
+	@FindBy(xpath="//*[.='Property(s)']")
+	@CacheLookup
+	WebElement propertyTxt;
+	
+	@FindBy(xpath="//div[contains(@class,'checkbox-container')]")
+	@CacheLookup
+	WebElement propOpt;
+	
+	
 	public void clickaddLeadBtn() {
 		waits.waitTillClickable(addLeadBtn);
 		jse.jsClick(addLeadBtn);
@@ -223,11 +236,15 @@ public class AddLeadPage extends BasePage{
 		aut.isSelected(bhkCount);
 		bhkType.click();
 		aut.isSelected(bhkType);
+		waits.waitTillClickable(projectsList);
 		projectsList.sendKeys(project);
 		clickOption(project);
+		projectTxt.click();
 		propertiesList.sendKeys(property);
+		clickOption(property);
+		projectTxt.click();
 		agencyName.sendKeys(agency);
-		clickOption(agency);
+		propertyTxt.click();
 		selectProfession.sendKeys(profession);
 		clickOption(profession);
 		companyName.sendKeys(company);

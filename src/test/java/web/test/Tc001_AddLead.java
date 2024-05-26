@@ -31,7 +31,7 @@ public class Tc001_AddLead extends BaseTest{
 		alp.otherdata("amit", "hsr", "6000000", "8000000");
 		alp.anotherData("1500");
 		alp.propType();
-		alp.moreData("House", "VILLA", "New Dawn VILLA ", "99", "Business", "Leadrat", "QA", "Automated Lead");
+		alp.moreData("House", "VILLA", "Aamor", "99", "Business", "Leadrat", "QA", "Automated Lead");
 		
 		if(alp.saveLead(userName)) {
 			logger.info("Lead Added Successfully");

@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-25T20:35:07 IST" name="LeadRatSuite" finished-at="2024-05-25T20:35:43 IST" duration-ms="36745">
+  <suite started-at="2024-05-26T00:10:26 IST" name="LeadRatSuite" finished-at="2024-05-26T00:11:05 IST" duration-ms="39938">
     <groups>
     </groups>
-    <test started-at="2024-05-25T20:35:07 IST" name="Leadrat Test" finished-at="2024-05-25T20:35:43 IST" duration-ms="36745">
+    <test started-at="2024-05-26T00:10:26 IST" name="Leadrat Test" finished-at="2024-05-26T00:11:05 IST" duration-ms="39938">
       <class name="web.test.Tc001_AddLead">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:web.test.Tc001_AddLead@6913c1fb]" started-at="2024-05-25T20:35:07 IST" name="setup" finished-at="2024-05-25T20:35:11 IST" duration-ms="3561" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:web.test.Tc001_AddLead@6913c1fb]" started-at="2024-05-26T00:10:26 IST" name="setup" finished-at="2024-05-26T00:10:31 IST" duration-ms="4486" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:web.test.Tc001_AddLead@6913c1fb]" started-at="2024-05-25T20:35:11 IST" name="setUp" finished-at="2024-05-25T20:35:14 IST" duration-ms="3563" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:web.test.Tc001_AddLead@6913c1fb]" started-at="2024-05-26T00:10:31 IST" name="setUp" finished-at="2024-05-26T00:10:34 IST" duration-ms="2877" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addingLead()[pri:0, instance:web.test.Tc001_AddLead@6913c1fb]" started-at="2024-05-25T20:35:14 IST" name="addingLead" finished-at="2024-05-25T20:35:43 IST" duration-ms="28527" status="FAIL">
+        <test-method signature="addingLead()[pri:0, instance:web.test.Tc001_AddLead@6913c1fb]" started-at="2024-05-26T00:10:34 IST" name="addingLead" finished-at="2024-05-26T00:11:05 IST" duration-ms="31295" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//ng-select[@formcontrolname='agencyName']//input"}
@@ -31,9 +31,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a30cb70368171b61f5adaae3ff4659b4, findElement {using=xpath, value=//ng-select[@formcontrolname='agencyName']//input}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.112, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53089}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53089/devtoo..., se:cdpVersion: 125.0.6422.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a30cb70368171b61f5adaae3ff4659b4]]>
+Command: [517bfa853fc0e97b65e80561f6199e9a, findElement {using=xpath, value=//ng-select[@formcontrolname='agencyName']//input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.112, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62853}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62853/devtoo..., se:cdpVersion: 125.0.6422.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 517bfa853fc0e97b65e80561f6199e9a]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//ng-select[@formcontrolname='agencyName']//input"}
@@ -42,9 +42,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a30cb70368171b61f5adaae3ff4659b4, findElement {using=xpath, value=//ng-select[@formcontrolname='agencyName']//input}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.112, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53089}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53089/devtoo..., se:cdpVersion: 125.0.6422.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a30cb70368171b61f5adaae3ff4659b4
+Command: [517bfa853fc0e97b65e80561f6199e9a, findElement {using=xpath, value=//ng-select[@formcontrolname='agencyName']//input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.112, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62853}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62853/devtoo..., se:cdpVersion: 125.0.6422.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 517bfa853fc0e97b65e80561f6199e9a
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -64,7 +64,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at jdk.proxy2/jdk.proxy2.$Proxy32.sendKeys(Unknown Source)
-at pomPages.AddLeadPage.moreData(AddLeadPage.java:229)
+at pomPages.AddLeadPage.moreData(AddLeadPage.java:246)
 at web.test.Tc001_AddLead.addingLead(Tc001_AddLead.java:34)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -100,7 +100,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addingLead -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:web.test.Tc001_AddLead@6913c1fb]" started-at="2024-05-25T20:35:43 IST" name="teardown" finished-at="2024-05-25T20:35:43 IST" duration-ms="358" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:web.test.Tc001_AddLead@6913c1fb]" started-at="2024-05-26T00:11:05 IST" name="teardown" finished-at="2024-05-26T00:11:05 IST" duration-ms="439" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

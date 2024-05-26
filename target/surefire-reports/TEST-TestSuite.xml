@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="67.122" tests="10" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="39.392" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\New User\AppData\Local\Temp\surefire1669961916380091672\surefirebooter-20240525160101285_3.jar C:\Users\New User\AppData\Local\Temp\surefire1669961916380091672 2024-05-25T16-01-00_905-jvmRun1 surefire-20240525160101285_1tmp surefire_0-20240525160101285_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\New User\AppData\Local\Temp\surefire6687621368986272781\surefirebooter-20240526213031777_3.jar C:\Users\New User\AppData\Local\Temp\surefire6687621368986272781 2024-05-26T21-30-31_339-jvmRun1 surefire-20240526213031777_1tmp surefire_0-20240526213031777_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\New User\eclipse-workspace1\LeadRat_Automation\target\test-classes;C:\Users\New User\eclipse-workspace1\LeadRat_Automation\target\classes;C:\Users\New User\.m2\repository\org\seleniumhq\selenium\selenium-java\4.15.0\selenium-java-4.15.0.jar;C:\Users\New User\.m2\repository\org\seleniumhq\selenium\selenium-api\4.15.0\selenium-api-4.15.0.jar;C:\Users\New User\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.15.0\selenium-chrome-driver-4.15.0.jar;C:\Users\New User\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\New User\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.15.0\selenium-chromium-driver-4.15.0.jar;C:\Users\New User\.m2\repository\org\seleniumhq\selenium\selenium-json\4.15.0\selenium-json-4.15.0.jar;C:\Users\New User\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.15.0\selenium-manager-4.15.0.jar;C:\Users\New User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.15.0\selenium-devtools-v117-4.15.0.jar;C:\Users\New User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.15.0\selenium-devtools-v118-4.15.0.jar;C:\Users\New User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.15.0\selenium-devtools-v119-4.15.0.jar;C:\Users\New User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.15.0\selenium-devtools-v85-4.15.0.jar;C:\Users\New User\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.15.0\selenium-edge-driver-4.15.0.jar;C:\Users\New User\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.15.0\selenium-firefox-driver-4.15.0.jar;C:\Users\New User\.m2\repository\org\seleniumhq\selenium\selenium-http\4.15.0\selenium-http-4.15.0.jar;C:\Users\New User\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\New User\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.15.0\selenium-ie-driver-4.15.0.jar;C:\Users\New User\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.15.0\selenium-remote-driver-4.15.0.jar;C:\Users\New User\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\New User\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\New User\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\New User\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\New User\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\New User\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\New User\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\New User\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\New User\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\New User\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\New User\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\New User\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\New User\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\New User\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\New User\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\New User\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\New User\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\New User\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\New User\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\New User\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\New User\.m2\repository\org\seleniumhq\selenium\selenium-os\4.15.0\selenium-os-4.15.0.jar;C:\Users\New User\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\New User\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.15.0\selenium-safari-driver-4.15.0.jar;C:\Users\New User\.m2\repository\org\seleniumhq\selenium\selenium-support\4.15.0\selenium-support-4.15.0.jar;C:\Users\New User\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\New User\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\New User\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\New User\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\New User\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\New User\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\New User\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\New User\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\New User\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\New User\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\New User\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\New User\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\New User\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\New User\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\New User\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\New User\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\New User\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\New User\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\New User\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\New User\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\New User\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\New User\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\New User\.m2\repository\commons-io\commons-io\2.13.0\commons-io-2.13.0.jar;C:\Users\New User\.m2\repository\org\sikuli\sikuli-api\1.2.0\sikuli-api-1.2.0.jar;C:\Users\New User\.m2\repository\org\sikuli\sikuli-core\1.2.2\sikuli-core-1.2.2.jar;C:\Users\New User\.m2\repository\org\bytedeco\javacpp\0.9\javacpp-0.9.jar;C:\Users\New User\.m2\repository\org\bytedeco\javacpp-presets\opencv\2.4.9-0.9\opencv-2.4.9-0.9.jar;C:\Users\New User\.m2\repository\org\piccolo2d\piccolo2d-extras\1.3.1\piccolo2d-extras-1.3.1.jar;C:\Users\New User\.m2\repository\org\piccolo2d\piccolo2d-core\1.3.1\piccolo2d-core-1.3.1.jar;C:\Users\New User\.m2\repository\org\slf4j\slf4j-api\1.6.6\slf4j-api-1.6.6.jar;C:\Users\New User\.m2\repository\org\apache\logging\log4j\log4j-api\2.22.1\log4j-api-2.22.1.jar;C:\Users\New User\.m2\repository\org\apache\logging\log4j\log4j-core\2.22.1\log4j-core-2.22.1.jar;C:\Users\New User\.m2\repository\io\rest-assured\rest-assured\5.3.2\rest-assured-5.3.2.jar;C:\Users\New User\.m2\repository\org\apache\groovy\groovy\4.0.11\groovy-4.0.11.jar;C:\Users\New User\.m2\repository\org\apache\groovy\groovy-xml\4.0.11\groovy-xml-4.0.11.jar;C:\Users\New User\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\New User\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\New User\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\New User\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\New User\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\New User\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\New User\.m2\repository\io\rest-assured\xml-path\5.3.2\xml-path-5.3.2.jar;C:\Users\New User\.m2\repository\io\rest-assured\json-path\5.3.2\json-path-5.3.2.jar;C:\Users\New User\.m2\repository\org\apache\groovy\groovy-json\4.0.11\groovy-json-4.0.11.jar;C:\Users\New User\.m2\repository\io\rest-assured\rest-assured-common\5.3.2\rest-assured-common-5.3.2.jar;C:\Users\New User\.m2\repository\org\json\json\20231013\json-20231013.jar;C:\Users\New User\.m2\repository\com\github\scribejava\scribejava-apis\8.3.1\scribejava-apis-8.3.1.jar;C:\Users\New User\.m2\repository\com\github\scribejava\scribejava-core\8.3.1\scribejava-core-8.3.1.jar;C:\Users\New User\.m2\repository\com\github\scribejava\scribejava-java8\8.3.1\scribejava-java8-8.3.1.jar;C:\Users\New User\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.3\jackson-databind-2.12.3.jar;C:\Users\New User\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.3\jackson-annotations-2.12.3.jar;C:\Users\New User\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.3\jackson-core-2.12.3.jar;C:\Users\New User\.m2\repository\io\rest-assured\json-schema-validator\5.1.1\json-schema-validator-5.1.1.jar;C:\Users\New User\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\New User\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\New User\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\New User\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\New User\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\New User\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\New User\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\New User\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\New User\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\New User\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\New User\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\New User\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\New User\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\New User\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\New User\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\New User\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\New User\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\New User\.m2\repository\com\sun\mail\javax.mail\1.6.2\javax.mail-1.6.2.jar;C:\Users\New User\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\New User\.m2\repository\io\appium\java-client\9.0.0\java-client-9.0.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\New User\AppData\Local\Temp\surefire1669961916380091672\surefirebooter-20240525160101285_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\New User\AppData\Local\Temp\surefire6687621368986272781\surefirebooter-20240526213031777_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.10+11-LTS-240"/>
@@ -56,608 +56,17 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="addLead" classname="api.test.TC0002_api" time="6.452">
-    <system-out><![CDATA[test.base.Api_Token - ---- Generating Bearer Token ----
-test.base.Api_Token - ---- Bearer Token Generated : Bearer eyJraWQiOiJhaUp4ZitQMXhVbmsxcHZrTTZzNVhLZWZlVTloVmVvdVFkN1g5K3ZRZ1lvPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyODQ0YzJkZC0yM2VlLTRmNDktODIyMS02ZjI3YTk1NTE2ZjQiLCJjdXN0b206bWZhX2VuYWJsZWQiOiJGYWxzZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiY3VzdG9tOnBhc3Nfc3RhbXAiOiJJakl3TWpRdE1ESXRNRFZVTURVNk1URTZNRFl1TWpZM05UazRXaUk9IiwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoLTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGgtMV9oV0doQzNPUzkiLCJjdXN0b206dXNlcl9pZCI6ImRlbW9fUmFqYW5lZXNoIiwicGhvbmVfbnVtYmVyX3ZlcmlmaWVkIjpmYWxzZSwiY29nbml0bzp1c2VybmFtZSI6InJhamFuZWVzaCIsImN1c3RvbTp0ZW5hbnRfaWQiOiJkZW1vIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiUmFqYW5lZXNoIiwiZ2l2ZW5fbmFtZSI6IlJhamFuZWVzaCIsIm9yaWdpbl9qdGkiOiIwZTZhNjI0MS04MGFlLTRlNTUtYjhjYi01NGQwMjE3M2JiN2EiLCJhdWQiOiI1Y205OTFuNXN1Ym5rb2VkOGlwY2xwNDg2byIsImV2ZW50X2lkIjoiYjdmZjZmNjEtZmU2Ny00ZDYwLWJiZWItZTQxOWU4YjViNGUwIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTY2MzMwNjcsInBob25lX251bWJlciI6Iis5MTk3NDE4NDYxOTciLCJleHAiOjE3MTY2MzY2NjcsImlhdCI6MTcxNjYzMzA2NywiZmFtaWx5X25hbWUiOiJLIEIiLCJqdGkiOiIxOTIyOWFjOC0yZjZiLTQ4YmUtYmY2Mi0yOGE5Njc4NmUyM2QiLCJlbWFpbCI6InJhamFuZWVzaEBnbWFpbC5jb20ifQ.cc1_z7hq_WR8_Us0P0dJFYFKKdLbUeSrZJlm_hdytmd2z9ZIBML_a8aOuIgyDs0wnUqRmiPya4EnrLb6Ry_uX9qOx1E75xkOd7sfwvx4qsAGTINPeSF1-BUa9Br4czP9BHLCFZMLnuHrIG0NzsImRzlZuP8J7ZHjpKwHerv5tNRLz4dCOvGwDBjU9Nk-xGIR7073XL_ELNZhV7LE3g2g86SYleXh6c4Dv8jeVKlkUK_sMpkjBoAMzkJExP1y1oZSmS77x0V0kV0MxcHaDNYX0E-ue3V8fT90kNXj21lUsa-0nT2CR45kv2QYnYK8zIAThJClM6QZtj_pwWcXZNc1Qg----
-api.test.TC0002_api - ---- Creating new Lead ----
-{
-    "succeeded": true,
-    "message": null,
-    "errors": null,
-    "data": "3ba6943b-b6d0-4393-ad4d-49a16b09ed9a"
-}
-api.test.TC0002_api - ---- New Lead Created with ID Token: 3ba6943b-b6d0-4393-ad4d-49a16b09ed9a
-
-]]></system-out>
-  </testcase>
-  <testcase name="adddata" classname="api.test.TC0003_api" time="1.766">
-    <system-out><![CDATA[test.base.Api_Token - ---- Generating Bearer Token ----
-test.base.Api_Token - ---- Bearer Token Generated : Bearer eyJraWQiOiJhaUp4ZitQMXhVbmsxcHZrTTZzNVhLZWZlVTloVmVvdVFkN1g5K3ZRZ1lvPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyODQ0YzJkZC0yM2VlLTRmNDktODIyMS02ZjI3YTk1NTE2ZjQiLCJjdXN0b206bWZhX2VuYWJsZWQiOiJGYWxzZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiY3VzdG9tOnBhc3Nfc3RhbXAiOiJJakl3TWpRdE1ESXRNRFZVTURVNk1URTZNRFl1TWpZM05UazRXaUk9IiwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoLTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGgtMV9oV0doQzNPUzkiLCJjdXN0b206dXNlcl9pZCI6ImRlbW9fUmFqYW5lZXNoIiwicGhvbmVfbnVtYmVyX3ZlcmlmaWVkIjpmYWxzZSwiY29nbml0bzp1c2VybmFtZSI6InJhamFuZWVzaCIsImN1c3RvbTp0ZW5hbnRfaWQiOiJkZW1vIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiUmFqYW5lZXNoIiwiZ2l2ZW5fbmFtZSI6IlJhamFuZWVzaCIsIm9yaWdpbl9qdGkiOiIzMmY0MDE1NS1mMjViLTQ3NmYtODFkYy03MDE4ZjlhZTk3MDgiLCJhdWQiOiI1Y205OTFuNXN1Ym5rb2VkOGlwY2xwNDg2byIsImV2ZW50X2lkIjoiOWU4MjJlZDEtMjdmOC00MWE0LWI4MGYtYWMxNzA1Mjg3NGZhIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTY2MzMwNzEsInBob25lX251bWJlciI6Iis5MTk3NDE4NDYxOTciLCJleHAiOjE3MTY2MzY2NzEsImlhdCI6MTcxNjYzMzA3MSwiZmFtaWx5X25hbWUiOiJLIEIiLCJqdGkiOiJmZGQ2Y2MwZi1lMjRjLTRhYWEtOWUzMS00N2Q1YzM4YzNkNDEiLCJlbWFpbCI6InJhamFuZWVzaEBnbWFpbC5jb20ifQ.HRljSVaXmCZCXcGozEHlaz3PQlnYRZEhDcLIO1lzIDNt2uFZ_-sNBh_QTRwVhvZf69rP-u7MMaW1hKrQ_9mgcReCE7gU6Ro0sv7k249EXJcZTvz-XvmZf8ETx6g6kUGzEqAHZdKS92xN8E_tYREyOCX2RlATZZnjxj33Fxkmcu2gOP6la8zxfretThVND7lU1DlCp4BV98XGUe5luulqI3Q3xZqShfWei0aEF3h9DAgjeYrRazRVRKlbE0Yw0QPlqymx_HgaAH3NH4vv7Yj8fIUrYGWI_PldN13A5oEGg80a19pHDzTJDHafjxYdblTwerKIKDBIdUx6IBpkSGOYmg----
-api.test.TC0003_api - ---- Creating new Data ----
-{
-    "succeeded": true,
-    "message": null,
-    "errors": null,
-    "data": "fff2f36b-8d81-4558-bfe7-3d353570b0d0"
-}
-api.test.TC0003_api - ---- New Data Created with ID Token: fff2f36b-8d81-4558-bfe7-3d353570b0d0
-
-]]></system-out>
-  </testcase>
-  <testcase name="testProject" classname="api.test.TC0004_api" time="1.005">
-    <system-out><![CDATA[test.base.Api_Token - ---- Generating Bearer Token ----
-test.base.Api_Token - ---- Bearer Token Generated : Bearer eyJraWQiOiJhaUp4ZitQMXhVbmsxcHZrTTZzNVhLZWZlVTloVmVvdVFkN1g5K3ZRZ1lvPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyODQ0YzJkZC0yM2VlLTRmNDktODIyMS02ZjI3YTk1NTE2ZjQiLCJjdXN0b206bWZhX2VuYWJsZWQiOiJGYWxzZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiY3VzdG9tOnBhc3Nfc3RhbXAiOiJJakl3TWpRdE1ESXRNRFZVTURVNk1URTZNRFl1TWpZM05UazRXaUk9IiwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoLTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGgtMV9oV0doQzNPUzkiLCJjdXN0b206dXNlcl9pZCI6ImRlbW9fUmFqYW5lZXNoIiwicGhvbmVfbnVtYmVyX3ZlcmlmaWVkIjpmYWxzZSwiY29nbml0bzp1c2VybmFtZSI6InJhamFuZWVzaCIsImN1c3RvbTp0ZW5hbnRfaWQiOiJkZW1vIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiUmFqYW5lZXNoIiwiZ2l2ZW5fbmFtZSI6IlJhamFuZWVzaCIsIm9yaWdpbl9qdGkiOiJiZGViOWUwNC1kOWRkLTQ0NGYtOGZhMS00NjJjMTkxYzI5NzQiLCJhdWQiOiI1Y205OTFuNXN1Ym5rb2VkOGlwY2xwNDg2byIsImV2ZW50X2lkIjoiMzFjNGIwNjAtOGIwNC00Y2UzLTgxYjQtMzI4ZmFhYTgwODE0IiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTY2MzMwNzIsInBob25lX251bWJlciI6Iis5MTk3NDE4NDYxOTciLCJleHAiOjE3MTY2MzY2NzIsImlhdCI6MTcxNjYzMzA3MiwiZmFtaWx5X25hbWUiOiJLIEIiLCJqdGkiOiJiODRmNGRiNy03ODQwLTQyOTItODY0Ny1mZjIxOGQ0NzlhNTUiLCJlbWFpbCI6InJhamFuZWVzaEBnbWFpbC5jb20ifQ.XA24a56tLsxh9JaD0OzQ39xt83DAgDaszTov8U4VdvpB2Hwq1_tSqdaNtRoQUTHmh_YsjPUhfbXRqflXibwJLkxM-Ep09rcFKxsqRTZOYwFJk6QWu1npisg0H-jPX48DBaSTquHD3306bVKZTfjBSXVtUyDqPo4f3e4gxLuO2U7lT_MYcN8rEuLoSf5Qil9KyJeIdwKQR8UOzSdRL1_hMUDjP9nmewq0iJF2RnesUs4-NeEdyH3QiPFB6B4ZL63YTnhJNYNL3UbjC8ssamuSo_ihFuU3WMcN_JEq0VMkMuT6bMKCn5XoClXRsiySXNTxot5wR0TvjCalqrpAIYHNog----
-api.test.TC0004_api - ---- Creating new Project ----
-{
-    "succeeded": true,
-    "message": null,
-    "errors": null,
-    "data": "83c74b8e-5e84-4591-bbae-b6fc82509e11"
-}
-api.test.TC0004_api - ---- New Project Created with ID Token: 83c74b8e-5e84-4591-bbae-b6fc82509e11
-
-]]></system-out>
-  </testcase>
-  <testcase name="testUnit" classname="api.test.TC0004_api" time="0.618">
-    <system-out><![CDATA[api.test.TC0004_api - ---- Creating new Unit ----
-{
-    "succeeded": true,
-    "message": null,
-    "errors": null,
-    "data": "34dae513-2b5e-4f08-84b4-c498488fa542"
-}
-api.test.TC0004_api - ---- New Unit Created with ID Token: 34dae513-2b5e-4f08-84b4-c498488fa542
-
-]]></system-out>
-  </testcase>
-  <testcase name="testBlock" classname="api.test.TC0004_api" time="0.715">
-    <system-out><![CDATA[api.test.TC0004_api - ---- Creating new Block ----
-{
-    "succeeded": true,
-    "message": null,
-    "errors": null,
-    "data": "7e6a2f98-bef2-4c15-a0b7-4fe788dea373"
-}
-api.test.TC0004_api - ---- New Block Created with ID Token: 7e6a2f98-bef2-4c15-a0b7-4fe788dea373
-
-]]></system-out>
-  </testcase>
-  <testcase name="testAmenity" classname="api.test.TC0004_api" time="1.514">
-    <system-out><![CDATA[api.test.TC0004_api - ---- Adding Amenities ----
-{
-    "succeeded": true,
-    "message": null,
-    "errors": null,
-    "data": "83c74b8e-5e84-4591-bbae-b6fc82509e11"
-}
-api.test.TC0004_api - ---- New Unit Created with ID Token: 83c74b8e-5e84-4591-bbae-b6fc82509e11
-
-]]></system-out>
-  </testcase>
-  <testcase name="testGallery" classname="api.test.TC0004_api" time="0.438">
-    <system-out><![CDATA[api.test.TC0004_api - ---- Adding images to project Gallery ----
-{
-    "succeeded": true,
-    "message": null,
-    "errors": null,
-    "data": "83c74b8e-5e84-4591-bbae-b6fc82509e11"
-}
-api.test.TC0004_api - ---- Images added to project gallery with ID Token: 83c74b8e-5e84-4591-bbae-b6fc82509e11
-
-]]></system-out>
-  </testcase>
-  <testcase name="testProperty" classname="api.test.TC0005_api" time="1.469">
-    <system-out><![CDATA[test.base.Api_Token - ---- Generating Bearer Token ----
-test.base.Api_Token - ---- Bearer Token Generated : Bearer eyJraWQiOiJhaUp4ZitQMXhVbmsxcHZrTTZzNVhLZWZlVTloVmVvdVFkN1g5K3ZRZ1lvPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyODQ0YzJkZC0yM2VlLTRmNDktODIyMS02ZjI3YTk1NTE2ZjQiLCJjdXN0b206bWZhX2VuYWJsZWQiOiJGYWxzZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiY3VzdG9tOnBhc3Nfc3RhbXAiOiJJakl3TWpRdE1ESXRNRFZVTURVNk1URTZNRFl1TWpZM05UazRXaUk9IiwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoLTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGgtMV9oV0doQzNPUzkiLCJjdXN0b206dXNlcl9pZCI6ImRlbW9fUmFqYW5lZXNoIiwicGhvbmVfbnVtYmVyX3ZlcmlmaWVkIjpmYWxzZSwiY29nbml0bzp1c2VybmFtZSI6InJhamFuZWVzaCIsImN1c3RvbTp0ZW5hbnRfaWQiOiJkZW1vIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiUmFqYW5lZXNoIiwiZ2l2ZW5fbmFtZSI6IlJhamFuZWVzaCIsIm9yaWdpbl9qdGkiOiI1NTk1OTk4Ni03MmQyLTQwZDItYTJhYy0wZTJkMjdmNzEzNGYiLCJhdWQiOiI1Y205OTFuNXN1Ym5rb2VkOGlwY2xwNDg2byIsImV2ZW50X2lkIjoiMzk4ZmFmNmEtNzFlYy00ODM4LWE1ZWItN2EyODllMGVhZDI4IiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MTY2MzMwNzcsInBob25lX251bWJlciI6Iis5MTk3NDE4NDYxOTciLCJleHAiOjE3MTY2MzY2NzcsImlhdCI6MTcxNjYzMzA3NywiZmFtaWx5X25hbWUiOiJLIEIiLCJqdGkiOiI3MzQwZWM4ZS03ZGE1LTQ2MjctYWYwOS04YTg4YTRkMTEyOTUiLCJlbWFpbCI6InJhamFuZWVzaEBnbWFpbC5jb20ifQ.mSB8EhEVJTVPXDVsozdXrpvWT5QY8xLXh2HBky8wvmZrmYC2arIPTQov4f8M1-ecTR7pf-G9kIYCvAEt89QRqe_Rg3yVYHNT8NEvwjmGx6_aADS7cNn8-NeKViDjCaS-uk-Jyn_VybelcNkPfIN03q_eBhMpIk8T_ZpsoDjzdHgoLkdnNvsiRhmYaH2DMhSGKjwFKgIkI_00ncvAKBkeLUTRtZFPNmdEZ6sTyutsy_VprlM0goaSQJnpEfu4oYRBTJcMbNkejyncKifx95oV9f4J1xNoJ8R58F6uOAFcIqBdqcz5Dz2hcRdsBKkR_Rtkm1MT7a2Z6jBePvlLp84xMQ----
-api.test.TC0005_api - ---- Creating new Property ----
-{
-    "succeeded": true,
-    "message": null,
-    "errors": null,
-    "data": {
-        "placeId": "ChIJVaU9EY4UrjsRIrtCkznuBEc",
-        "propertyTypeId": "8d178b31-8008-4e19-8eeb-5189f7578044",
-        "projectsList": null,
-        "id": "bbd4a127-87d7-4880-88e8-d725d691f434",
-        "attributes": [
-            {
-                "masterPropertyAttributeId": "29468e40-749e-4a10-999f-12d49529a05c",
-                "attributeName": "",
-                "value": "",
-                "attributeDisplayName": null,
-                "attributeType": null
-            },
-            {
-                "masterPropertyAttributeId": "4d19e231-22f4-44b8-9f47-b7eb7baddd9f",
-                "attributeName": "",
-                "value": "",
-                "attributeDisplayName": null,
-                "attributeType": null
-            },
-            {
-                "masterPropertyAttributeId": "56b69fe6-9f68-49af-a128-3de8c4ed8d49",
-                "attributeName": "",
-                "value": "",
-                "attributeDisplayName": null,
-                "attributeType": null
-            },
-            {
-                "masterPropertyAttributeId": "a2f39612-2cbd-4af3-9cb8-b5536b1e1ff8",
-                "attributeName": "",
-                "value": "",
-                "attributeDisplayName": null,
-                "attributeType": null
-            },
-            {
-                "masterPropertyAttributeId": "c146a273-e342-4d66-aeee-6b2e6106d225",
-                "attributeName": "",
-                "value": "",
-                "attributeDisplayName": null,
-                "attributeType": null
-            },
-            {
-                "masterPropertyAttributeId": "c420f226-4809-4bc8-8baf-1f208e1cea74",
-                "attributeName": "",
-                "value": "",
-                "attributeDisplayName": null,
-                "attributeType": null
-            },
-            {
-                "masterPropertyAttributeId": "f668376f-c5fe-484d-81f8-37a0b1067191",
-                "attributeName": "",
-                "value": "",
-                "attributeDisplayName": null,
-                "attributeType": null
-            },
-            {
-                "masterPropertyAttributeId": "018dc71f-b86a-4001-8fda-2f188b19a247",
-                "attributeName": "",
-                "value": "",
-                "attributeDisplayName": null,
-                "attributeType": null
-            }
-        ],
-        "title": "{{randomName}}",
-        "saleType": 1,
-        "enquiredFor": 2,
-        "notes": "Testing property",
-        "furnishStatus": 0,
-        "status": 0,
-        "rating": "5",
-        "shareCount": 0,
-        "possessionDate": "2024-04-28T00:00:00Z",
-        "isGOListingEnabled": false,
-        "facing": 0,
-        "goPropertyId": null,
-        "noOfBHK": 2,
-        "bhkType": 2,
-        "monetaryInfo": {
-            "id": "87a0c806-c31c-436a-92e7-66f47364b40d",
-            "expectedPrice": 90000,
-            "isNegotiable": true,
-            "brokerage": 9.98,
-            "brokerageUnit": 0,
-            "currency": "â‚¹",
-            "brokerageCurrency": "%",
-            "depositAmount": null,
-            "maintenanceCost": null
-        },
-        "ownerDetails": {
-            "id": "81a1e053-a087-4aa4-89c0-6f2bfa45ec43",
-            "name": "Rajaneesh",
-            "phone": "+919876543210",
-            "email": "rajtest@gmail.com"
-        },
-        "dimension": {
-            "id": "9ce36f8d-014a-458f-a395-0793187a55ce",
-            "area": 1000,
-            "areaUnitId": "fd8de64b-47c4-4083-84a5-571f746e6c87",
-            "conversionFactor": 0,
-            "unit": null,
-            "length": null,
-            "breadth": null,
-            "carpetArea": 1000,
-            "carpetAreaId": "fd8de64b-47c4-4083-84a5-571f746e6c87",
-            "carpetAreaConversionFactor": 0,
-            "buildUpArea": 1500,
-            "buildUpAreaId": "fd8de64b-47c4-4083-84a5-571f746e6c87",
-            "buildUpConversionFactor": 0,
-            "saleableArea": 1400,
-            "saleableAreaId": "fd8de64b-47c4-4083-84a5-571f746e6c87",
-            "saleableAreaConversionFactor": 0
-        },
-        "tagInfo": {
-            "id": "2cfc61d7-fa06-463f-8db4-61d288c33155",
-            "isFeatured": false,
-            "isGOListingEnabled": false,
-            "isValidated": false
-        },
-        "imageUrls": {
-            
-        },
-        "amenities": [
-            
-        ],
-        "isArchived": false,
-        "brochures": null,
-        "whatsAppShareCount": 0,
-        "callShareCount": 0,
-        "emailShareCount": 0,
-        "smsShareCount": 0,
-        "aboutProperty": "New property",
-        "address": {
-            "id": "7b390000-acba-7265-fbee-08dbc6715440",
-            "placeId": "ChIJVaU9EY4UrjsRIrtCkznuBEc",
-            "subLocality": "Hsr Bda Complex, Sector 6, HSR Layout",
-            "locality": "Bengaluru",
-            "district": "Bangalore Division",
-            "city": "Bengaluru",
-            "state": "Karnataka",
-            "country": "India",
-            "postalCode": "560102",
-            "longitude": "77.63727779999999",
-            "latitude": "12.9137634",
-            "isGoogleMapLocation": true,
-            "locationId": "c518f027-cef5-41b0-9628-1f4971af5ca7",
-            "location": null
-        },
-        "landmark": null,
-        "maintenanceCost": null,
-        "myProperty": 0,
-        "propertySource": 0,
-        "unitNo": 0,
-        "links": [
-            
-        ],
-        "projects": null,
-        "project": "Lrb.Domain.Entities.Project",
-        "serialNo": "DE0000003347",
-        "assignedTo": [
-            "83a6cc4e-3aed-4d88-950b-ca938a164b4a"
-        ]
-    }
-}
-api.test.TC0005_api - ---- New Property Created with ID Token: bbd4a127-87d7-4880-88e8-d725d691f434
-
-]]></system-out>
-  </testcase>
-  <testcase name="moreInfo" classname="api.test.TC0005_api" time="2.662">
-    <system-out><![CDATA[api.test.TC0005_api - ---- Adding more info to the property ----
-{
-    "succeeded": true,
-    "message": null,
-    "errors": null,
-    "data": {
-        "placeId": "ChIJVaU9EY4UrjsRIrtCkznuBEc",
-        "propertyTypeId": "8d178b31-8008-4e19-8eeb-5189f7578044",
-        "projectsList": null,
-        "id": "bbd4a127-87d7-4880-88e8-d725d691f434",
-        "attributes": [
-            {
-                "masterPropertyAttributeId": "29468e40-749e-4a10-999f-12d49529a05c",
-                "attributeName": "",
-                "value": "5",
-                "attributeDisplayName": null,
-                "attributeType": null
-            },
-            {
-                "masterPropertyAttributeId": "4d19e231-22f4-44b8-9f47-b7eb7baddd9f",
-                "attributeName": "",
-                "value": "8",
-                "attributeDisplayName": null,
-                "attributeType": null
-            },
-            {
-                "masterPropertyAttributeId": "56b69fe6-9f68-49af-a128-3de8c4ed8d49",
-                "attributeName": "",
-                "value": "8",
-                "attributeDisplayName": null,
-                "attributeType": null
-            },
-            {
-                "masterPropertyAttributeId": "a2f39612-2cbd-4af3-9cb8-b5536b1e1ff8",
-                "attributeName": "",
-                "value": "3",
-                "attributeDisplayName": null,
-                "attributeType": null
-            },
-            {
-                "masterPropertyAttributeId": "c146a273-e342-4d66-aeee-6b2e6106d225",
-                "attributeName": "",
-                "value": "5",
-                "attributeDisplayName": null,
-                "attributeType": null
-            },
-            {
-                "masterPropertyAttributeId": "c420f226-4809-4bc8-8baf-1f208e1cea74",
-                "attributeName": "",
-                "value": "8",
-                "attributeDisplayName": null,
-                "attributeType": null
-            },
-            {
-                "masterPropertyAttributeId": "f668376f-c5fe-484d-81f8-37a0b1067191",
-                "attributeName": "",
-                "value": "4",
-                "attributeDisplayName": null,
-                "attributeType": null
-            },
-            {
-                "masterPropertyAttributeId": "018dc71f-b86a-4001-8fda-2f188b19a247",
-                "attributeName": "",
-                "value": "4",
-                "attributeDisplayName": null,
-                "attributeType": null
-            },
-            {
-                "masterPropertyAttributeId": "2d59ec14-7596-48fb-8c2a-ef15dbd2f559",
-                "attributeName": "",
-                "value": null,
-                "attributeDisplayName": null,
-                "attributeType": null
-            },
-            {
-                "masterPropertyAttributeId": "310f51fe-fba3-40c6-9abd-81810ac0150b",
-                "attributeName": "",
-                "value": null,
-                "attributeDisplayName": null,
-                "attributeType": null
-            },
-            {
-                "masterPropertyAttributeId": "63b6e3eb-499d-4259-8aa3-ce274426fe96",
-                "attributeName": "",
-                "value": null,
-                "attributeDisplayName": null,
-                "attributeType": null
-            },
-            {
-                "masterPropertyAttributeId": "8b8ce45b-175b-4345-b735-877ffd86c4e3",
-                "attributeName": "",
-                "value": null,
-                "attributeDisplayName": null,
-                "attributeType": null
-            },
-            {
-                "masterPropertyAttributeId": "defd4855-56df-4d8c-9899-966d9413429a",
-                "attributeName": "",
-                "value": null,
-                "attributeDisplayName": null,
-                "attributeType": null
-            },
-            {
-                "masterPropertyAttributeId": "eca4e0dd-c935-4fc6-95e9-7ce0a88d7707",
-                "attributeName": "",
-                "value": null,
-                "attributeDisplayName": null,
-                "attributeType": null
-            }
-        ],
-        "title": "testProperty_04:01:18 _25/05/24",
-        "saleType": 1,
-        "enquiredFor": 2,
-        "notes": "Testing property",
-        "furnishStatus": 3,
-        "status": 0,
-        "rating": "5",
-        "shareCount": 0,
-        "possessionDate": "2024-04-28T00:00:00Z",
-        "isGOListingEnabled": false,
-        "facing": 4,
-        "goPropertyId": null,
-        "noOfBHK": 2,
-        "bhkType": 2,
-        "monetaryInfo": {
-            "id": "87a0c806-c31c-436a-92e7-66f47364b40d",
-            "expectedPrice": 90000,
-            "isNegotiable": true,
-            "brokerage": 9.98,
-            "brokerageUnit": 0,
-            "currency": "â‚¹",
-            "brokerageCurrency": "%",
-            "depositAmount": null,
-            "maintenanceCost": null
-        },
-        "ownerDetails": {
-            "id": "81a1e053-a087-4aa4-89c0-6f2bfa45ec43",
-            "name": "Rajaneesh",
-            "phone": "+919876543210",
-            "email": "rajtest@gmail.com"
-        },
-        "dimension": {
-            "id": "9ce36f8d-014a-458f-a395-0793187a55ce",
-            "area": 1000,
-            "areaUnitId": "fd8de64b-47c4-4083-84a5-571f746e6c87",
-            "conversionFactor": 0,
-            "unit": null,
-            "length": null,
-            "breadth": null,
-            "carpetArea": 1000,
-            "carpetAreaId": "fd8de64b-47c4-4083-84a5-571f746e6c87",
-            "carpetAreaConversionFactor": 0,
-            "buildUpArea": 1500,
-            "buildUpAreaId": "fd8de64b-47c4-4083-84a5-571f746e6c87",
-            "buildUpConversionFactor": 0,
-            "saleableArea": 1400,
-            "saleableAreaId": "fd8de64b-47c4-4083-84a5-571f746e6c87",
-            "saleableAreaConversionFactor": 0
-        },
-        "tagInfo": {
-            "id": "2cfc61d7-fa06-463f-8db4-61d288c33155",
-            "isFeatured": false,
-            "isGOListingEnabled": false,
-            "isValidated": false
-        },
-        "imageUrls": {
-            "Balcony": [
-                {
-                    "imageFilePath": "Images/propertyGallery/042720246696440042720246694806.png",
-                    "isCoverImage": true
-                },
-                {
-                    "imageFilePath": "Images/propertyGallery/042720249413233042720249412354.png",
-                    "isCoverImage": false
-                },
-                {
-                    "imageFilePath": "Images/propertyGallery/042720242374321042720242356373.jpeg",
-                    "isCoverImage": false
-                },
-                {
-                    "imageFilePath": "Images/propertyGallery/042720245128170042720245110821.jpeg",
-                    "isCoverImage": false
-                }
-            ]
-        },
-        "amenities": [
-            "95d90000-68c5-02f7-ff62-08dc7ca5d089",
-            "95d90000-68c5-02f7-30df-08dc7ca5d08b",
-            "95d90000-68c5-02f7-6ef0-08dc7ca5d08c",
-            "95d90000-68c5-02f7-3199-08dc7ca5d08e",
-            "95d90000-68c5-02f7-6397-08dc7ca5d08f",
-            "95d90000-68c5-02f7-ba9f-08dc7ca5d090",
-            "95d90000-68c5-02f7-e487-08dc7ca5d091",
-            "95d90000-68c5-02f7-212f-08dc7ca5d093",
-            "95d90000-68c5-02f7-4754-08dc7ca5d094",
-            "95d90000-68c5-02f7-c8c9-08dc7ca5d095",
-            "95d90000-68c5-02f7-46f4-08dc7ca5d097",
-            "95d90000-68c5-02f7-e2d3-08dc7ca5d098",
-            "95d90000-68c5-02f7-c1f3-08dc7ca5d09a",
-            "95d90000-68c5-02f7-8ea5-08dc7ca5d09c",
-            "95d90000-68c5-02f7-601a-08dc7ca5d09e",
-            "95d90000-68c5-02f7-3eac-08dc7ca5d0a0",
-            "95d90000-68c5-02f7-e333-08dc7ca5d0a1",
-            "95d90000-68c5-02f7-2c68-08dc7ca5d0a3",
-            "95d90000-68c5-02f7-1734-08dc7ca5d0a5",
-            "95d90000-68c5-02f7-e43a-08dc7ca5d0a6",
-            "95d90000-68c5-02f7-4372-08dc7ca5d0a8",
-            "95d90000-68c5-02f7-15de-08dc7ca5d0aa",
-            "95d90000-68c5-02f7-4d09-08dc7ca5d0ab",
-            "95d90000-68c5-02f7-8ad3-08dc7ca5d0ac",
-            "95d90000-68c5-02f7-c7c0-08dc7ca5d0ad",
-            "95d90000-68c5-02f7-9d1d-08dc7ca5d0af",
-            "95d90000-68c5-02f7-9648-08dc7ca5d0b1",
-            "95d90000-68c5-02f7-7ebe-08dc7ca5d0b3",
-            "95d90000-68c5-02f7-7b25-08dc7ca5d0b5",
-            "95d90000-68c5-02f7-7583-08dc7ca5d0b7",
-            "95d90000-68c5-02f7-738d-08dc7ca5d0b9",
-            "95d90000-68c5-02f7-70ca-08dc7ca5d0bb",
-            "95d90000-68c5-02f7-7c1b-08dc7ca5d0bd",
-            "95d90000-68c5-02f7-842f-08dc7ca5d0bf",
-            "95d90000-68c5-02f7-8ad5-08dc7ca5d0c1",
-            "95d90000-68c5-02f7-facd-08dc7ca5d0c2",
-            "95d90000-68c5-02f7-73ab-08dc7ca5d0c4",
-            "95d90000-68c5-02f7-96e3-08dc7ca5d0c6",
-            "95d90000-68c5-02f7-efeb-08dc7ca5d0c7",
-            "95d90000-68c5-02f7-bb6b-08dc7ca5d0c9",
-            "95d90000-68c5-02f7-cc0f-08dc7ca5d0cb",
-            "95d90000-68c5-02f7-e368-08dc7ca5d0cd",
-            "95d90000-68c5-02f7-e385-08dc7ca5d0cf",
-            "95d90000-68c5-02f7-4d27-08dc7ca5d0d1",
-            "95d90000-68c5-02f7-46fb-08dc7ca5d0d3",
-            "95d90000-68c5-02f7-dab5-08dc7ca5d0d4",
-            "95d90000-68c5-02f7-4ff0-08dc7ca5d0d6",
-            "95d90000-68c5-02f7-ab1c-08dc7ca5d0d7",
-            "95d90000-68c5-02f7-a694-08dc7ca5d0d9",
-            "95d90000-68c5-02f7-16bf-08dc7ca5d0db",
-            "95d90000-68c5-02f7-28d0-08dc7ca5d0dd",
-            "95d90000-68c5-02f7-273c-08dc7ca5d0df",
-            "95d90000-68c5-02f7-7613-08dc7ca5d0e0",
-            "95d90000-68c5-02f7-dbe1-08dc7ca5d0e1",
-            "95d90000-68c5-02f7-d914-08dc7ca5d0e3",
-            "95d90000-68c5-02f7-4d5b-08dc7ca5d0e5",
-            "95d90000-68c5-02f7-75dd-08dc7ca5d0e7",
-            "95d90000-68c5-02f7-98a4-08dc7ca5d0e9",
-            "95d90000-68c5-02f7-a2a9-08dc7ca5d0eb",
-            "95d90000-68c5-02f7-1d8b-08dc7ca5d0ed",
-            "95d90000-68c5-02f7-7375-08dc7ca5d0ee",
-            "95d90000-68c5-02f7-d16a-08dc7ca5d0ef",
-            "95d90000-68c5-02f7-412c-08dc7ca5d0f1",
-            "95d90000-68c5-02f7-49d5-08dc7ca5d0f3",
-            "95d90000-68c5-02f7-9c39-08dc7ca5d0f4",
-            "95d90000-68c5-02f7-ec2c-08dc7ca5d0f5",
-            "95d90000-68c5-02f7-74a2-08dc7ca5d0f7",
-            "95d90000-68c5-02f7-a370-08dc7ca5d0f9",
-            "95d90000-68c5-02f7-0f04-08dc7ca5d0fc",
-            "95d90000-68c5-02f7-b6ac-08dc7ca5d0fd",
-            "95d90000-68c5-02f7-e937-08dc7ca5d0ff",
-            "95d90000-68c5-02f7-261d-08dc7ca5d102",
-            "95d90000-68c5-02f7-668a-08dc7ca5d104",
-            "95d90000-68c5-02f7-8d0d-08dc7ca5d106",
-            "95d90000-68c5-02f7-171c-08dc7ca5d108",
-            "95d90000-68c5-02f7-a889-08dc7ca5d109",
-            "95d90000-68c5-02f7-27cf-08dc7ca5d10b",
-            "95d90000-68c5-02f7-cfd5-08dc7ca5d10c",
-            "95d90000-68c5-02f7-89ca-08dc7ca5d10e",
-            "95d90000-68c5-02f7-99fb-08dc7ca5d110",
-            "95d90000-68c5-02f7-e8b8-08dc7ca5d112",
-            "95d90000-68c5-02f7-e2dc-08dc7ca5d114",
-            "95d90000-68c5-02f7-8101-08dc7ca5d116",
-            "95d90000-68c5-02f7-1125-08dc7ca5d118",
-            "95d90000-68c5-02f7-9028-08dc7ca5d119",
-            "95d90000-68c5-02f7-1a4b-08dc7ca5d11b",
-            "95d90000-68c5-02f7-8f4c-08dc7ca5d11c",
-            "95d90000-68c5-02f7-4d52-08dc7ca5d11e",
-            "95d90000-68c5-02f7-c104-08dc7ca5d11f",
-            "95d90000-68c5-02f7-7102-08dc7ca5d121"
-        ],
-        "isArchived": false,
-        "brochures": [
-            {
-                "name": "dummy",
-                "url": "Images/propertyDocument/042720240707488042720240706500.pdf"
-            }
-        ],
-        "whatsAppShareCount": 0,
-        "callShareCount": 0,
-        "emailShareCount": 0,
-        "smsShareCount": 0,
-        "aboutProperty": "New property",
-        "address": {
-            "id": "7b390000-acba-7265-fbee-08dbc6715440",
-            "placeId": "ChIJVaU9EY4UrjsRIrtCkznuBEc",
-            "subLocality": "Hsr Bda Complex, Sector 6, HSR Layout",
-            "locality": "Bengaluru",
-            "district": "Bangalore Division",
-            "city": "Bengaluru",
-            "state": "Karnataka",
-            "country": "India",
-            "postalCode": "560102",
-            "longitude": "77.63727779999999",
-            "latitude": "12.9137634",
-            "isGoogleMapLocation": true,
-            "locationId": "c518f027-cef5-41b0-9628-1f4971af5ca7",
-            "location": null
-        },
-        "landmark": null,
-        "maintenanceCost": null,
-        "myProperty": 0,
-        "propertySource": 0,
-        "unitNo": 0,
-        "links": [
-            
-        ],
-        "projects": null,
-        "project": "Lrb.Domain.Entities.Project",
-        "serialNo": "DE0000003347",
-        "assignedTo": [
-            "83a6cc4e-3aed-4d88-950b-ca938a164b4a"
-        ]
-    }
-}
-api.test.TC0005_api - ----Property added with more info: bbd4a127-87d7-4880-88e8-d725d691f434
-
-]]></system-out>
-  </testcase>
-  <testcase name="addingLead" classname="web.test.Tc001_AddLead" time="30.163">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ng-select[@formcontrolname=&apos;agencyName&apos;]//input&quot;}&#10;  (Session info: chrome=125.0.6422.112)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [393e1f632931b2bfa7d88c89f62fcf25, findElement {using=xpath, value=//ng-select[@formcontrolname=&apos;agencyName&apos;]//input}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.112, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60723}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60723/devtoo..., se:cdpVersion: 125.0.6422.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 393e1f632931b2bfa7d88c89f62fcf25" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//ng-select[@formcontrolname='agencyName']//input"}
+  <testcase name="addingLead" classname="web.test.Tc001_AddLead" time="14.1">
+    <failure message="element click intercepted: Element &lt;div class=&quot;ng-option ng-star-inserted&quot; role=&quot;option&quot; id=&quot;a9825d3ba22d-0&quot;&gt;...&lt;/div&gt; is not clickable at point (239, 300). Other element would receive the click: &lt;label class=&quot;field-label ng-star-inserted&quot;&gt;...&lt;/label&gt;&#10;  (Session info: chrome=125.0.6422.112)&#10;Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [3b4301a420092048b0e0dc61b7164bd5, clickElement {id=f.A6B05FF1A33635AEE2A82D580BE89C9C.d.3FAE0F83BF0DEF83E39D5D79604C1DE3.e.127}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.112, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61862}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61862/devtoo..., se:cdpVersion: 125.0.6422.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on windows (3b4301a420092048b0e0dc61b7164bd5)] -&gt; xpath: //div[@role=&quot;option&quot;]]&#10;Session ID: 3b4301a420092048b0e0dc61b7164bd5" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <div class="ng-option ng-star-inserted" role="option" id="a9825d3ba22d-0">...</div> is not clickable at point (239, 300). Other element would receive the click: <label class="field-label ng-star-inserted">...</label>
   (Session info: chrome=125.0.6422.112)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [393e1f632931b2bfa7d88c89f62fcf25, findElement {using=xpath, value=//ng-select[@formcontrolname='agencyName']//input}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.112, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60723}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60723/devtoo..., se:cdpVersion: 125.0.6422.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 393e1f632931b2bfa7d88c89f62fcf25
+Command: [3b4301a420092048b0e0dc61b7164bd5, clickElement {id=f.A6B05FF1A33635AEE2A82D580BE89C9C.d.3FAE0F83BF0DEF83E39D5D79604C1DE3.e.127}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.112, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61862}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61862/devtoo..., se:cdpVersion: 125.0.6422.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3b4301a420092048b0e0dc61b7164bd5)] -> xpath: //div[@role="option"]]
+Session ID: 3b4301a420092048b0e0dc61b7164bd5
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -670,15 +79,16 @@ Session ID: 393e1f632931b2bfa7d88c89f62fcf25
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy35.sendKeys(Unknown Source)
-	at pomPages.AddLeadPage.moreData(AddLeadPage.java:229)
-	at web.test.Tc001_AddLead.addingLead(Tc001_AddLead.java:34)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
+	at pomPages.AddLeadPage.otherdata(AddLeadPage.java:202)
+	at web.test.Tc001_AddLead.addingLead(Tc001_AddLead.java:31)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -713,11 +123,11 @@ Session ID: 393e1f632931b2bfa7d88c89f62fcf25
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
     <system-out><![CDATA[web.test.Tc001_AddLead - Logged in Successfully
-web.test.Tc001_AddLead - Entered skalomumuh  6712694720 skalomumuh@vkali.com
+web.test.Tc001_AddLead - Entered sroketiqup  3323201971 sroketiqup@ysero.com
 ]]></system-out>
-    <system-err><![CDATA[May 25, 2024 4:01:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[May 26, 2024 9:30:41 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 125
-May 25, 2024 4:01:25 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+May 26, 2024 9:30:41 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 125.0.6422.112. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
