@@ -11,22 +11,18 @@
 	<parameter name="browser" value="chrome"/>
 	
 	 <classes>
-     
-   <!--  <class name="web.test.Tc001_AddLead"/>
-  <class name="web.test.TC_DDTTest_002"/>-->
+		
+		<class name="web.test.TC001_AddLead"/>
+        <class name="web.test.TC002_AddData"/> 
+  		<class name="web.test.TC003_dpTest"/>
     
-        <!--  <class name="api.test.TC0001_api"/>
-        
-       	<class name="api.test.TC0002_api"/>-->
+       	<class name="api.test.TC0001_api"/>
+       	<class name="api.test.TC0002_api"/>
         <class name="api.test.TC0003_api"/>
         <class name="api.test.TC0004_api"/>
       	<class name="api.test.TC0005_api"/>
 
-  		<!--<class name="web.test.dummy"/> 
-   	   <class name="testCases.Tc0002_AddData"/>
-   	   <class name="api.test.TC0002_api"/>
-       <class name="mob.test.TC0001_mob"/>
-	   <class name="web.test.Tc001_AddLead"/>-->
+      <!--<class name="mob.test.TC0001_mob"/>-->
 	   
     </classes>
     

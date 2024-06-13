@@ -10,7 +10,7 @@ import Utilities.XLUtils;
 import pomPages.LoginPage;
 import test.base.BaseTest;
 
-public class TC_DDTTest_002 extends BaseTest{
+public class TC003_dpTest extends BaseTest{
 	
 	@Test(dataProvider = "LoginData")
 	public void LoginDDt(String userName,String pwd) throws InterruptedException {

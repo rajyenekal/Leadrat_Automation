@@ -8,7 +8,6 @@ import org.openqa.selenium.interactions.Actions;
 public class ActionsUtil {
 
 	Actions actions ;
-	//public static WebDriver driver ;
 	
 	public ActionsUtil(WebDriver driver) {
 		actions = new Actions(driver);
@@ -54,7 +53,6 @@ public class ActionsUtil {
 	public Boolean isSelected(WebElement element) {
 		return element.isSelected();
 	}
-	
 	
 	
 }

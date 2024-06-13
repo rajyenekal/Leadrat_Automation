@@ -7,14 +7,14 @@
   <test thread-count="5" name="Leadrat Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="web.test.Tc001_AddLead">
+      <class name="web.test.TC001_AddLead">
         <methods>
           <include name="teardown"/>
           <include name="setup"/>
           <include name="setUp"/>
           <include name="addingLead"/>
         </methods>
-      </class> <!-- web.test.Tc001_AddLead -->
+      </class> <!-- web.test.TC001_AddLead -->
     </classes>
   </test> <!-- Leadrat Test(failed) -->
 </suite> <!-- Failed suite [LeadRatSuite] -->

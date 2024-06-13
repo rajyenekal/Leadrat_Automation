@@ -129,7 +129,7 @@ public class AddLeadPage extends BasePage{
 	@CacheLookup
 	WebElement propertiesList;
 	
-	@FindBy(xpath="//ng-select[@formcontrolname='agencyName']//input")
+	@FindBy(xpath="//ng-select[@formcontrolname='agencies']//input")
 	@CacheLookup
 	WebElement agencyName;
 	
@@ -244,7 +244,7 @@ public class AddLeadPage extends BasePage{
 		clickOption(property);
 		projectTxt.click();
 		agencyName.sendKeys(agency);
-		propertyTxt.click();
+		clickOption(agency);
 		selectProfession.sendKeys(profession);
 		clickOption(profession);
 		companyName.sendKeys(company);
@@ -259,7 +259,6 @@ public class AddLeadPage extends BasePage{
 		waits.waitTillClickable(saveLead);
 		jse.jsClick(saveLead);
 		waits.waitTillVisible(leadAddedMsg);
-        //ldriver.navigate().refresh();
 		WebElement leadName=ldriver.findElement(By.xpath("//div[@title='"+Name+"']"));
 		return leadName.isDisplayed();
 		

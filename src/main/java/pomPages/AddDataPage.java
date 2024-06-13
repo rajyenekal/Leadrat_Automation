@@ -51,7 +51,7 @@ public class AddDataPage extends BasePage {
 	@CacheLookup
 	WebElement emailId;
 	
-	public void navigatetoData(String name,String num,String mail) {
+	public void navigatetoData(String name,String phoneNo2,String mail) {
 		
 		datamodule.isDisplayed();
 		waits.waitTillClickable(datamodule);
@@ -60,12 +60,14 @@ public class AddDataPage extends BasePage {
 		//waits.waitTillVisible(addDataBtn);
 		waits.waitTillClickable(addDataBtn);
 		//addDataBtn.isDisplayed();
-		WebElement refreshedEle = stl.handleStaleElement(addDataBtn);
-		refreshedEle.click();
+		jse.jsClick(addDataBtn);
 		waits.waitTillVisible(addData);
 		addData.isDisplayed();
+		waits.waitTillClickable(dataName);
 		dataName.sendKeys(name);
-		phoneNo.sendKeys(num);
+		waits.waitTillClickable(phoneNo);
+		phoneNo.sendKeys(phoneNo2);
+		waits.waitTillClickable(emailId);
 		emailId.sendKeys(mail);
 		
 	}
@@ -154,7 +156,7 @@ public class AddDataPage extends BasePage {
 	@CacheLookup
 	WebElement propertiesList;
 	
-	@FindBy(xpath="//ng-select[@formcontrolname='agencyName']//input")
+	@FindBy(xpath="//ng-select[@formcontrolname='agencies']//input")
 	@CacheLookup
 	WebElement agencyName;
 	
@@ -231,7 +233,7 @@ public class AddDataPage extends BasePage {
 	@CacheLookup
 	WebElement executiveName;
 	
-	@FindBy(xpath="//input[@formcontrolname='channelPartnerContactNo']")
+	@FindBy(xpath="//label[.='Executive Phone No']/..//input")
 	@CacheLookup
 	WebElement executiveNO;
 	
@@ -243,8 +245,13 @@ public class AddDataPage extends BasePage {
 	@CacheLookup
 	WebElement notes;
 	
+	@FindBy(xpath="//button[.='Save']")
+	@CacheLookup
+	WebElement saveBtn;
 	
-	public void addData(String coName,String role,String src,String cls,String channel,String executive,String execNo,String custLoc,String note) throws InterruptedException {
+	
+	
+	public void addData(String coName,String role,String src,String cls,String channel,String executive,String execNo,String custLoc,String note,String DataName) throws InterruptedException {
 		companyName.sendKeys(coName);
 		designation.sendKeys(role);
 		possessionDate.click();
@@ -264,8 +271,13 @@ public class AddDataPage extends BasePage {
 		executiveNO.sendKeys(execNo);
 		custLocation.sendKeys(custLoc);
 		custLocation.sendKeys(Keys.ENTER);
-		selectOption(cls);
+		selectOption(custLoc);
 		notes.sendKeys(note);
+		jse.jsClick(saveBtn);
+		
+		WebElement dataName =ldriver.findElement(By.xpath("//div[@role=\"presentation\"]//span[contains(.,'"+DataName+"')]"));
+		waits.waitTillVisible(dataName);
+		dataName.isDisplayed();
 
 	}
 	

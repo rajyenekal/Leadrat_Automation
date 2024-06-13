@@ -71,7 +71,7 @@ public class ExtentReportManagerMailreport implements ITestListener {
         test.createNode(result.getName());
         test.log(Status.PASS, "Test Passed");
         // Add image
-        addImageToReport(test, "leadrat_logo.jpg");
+        addImageToReport(test, "Bug.png");
     }
 
     public void onTestFailure(ITestResult result) {
@@ -107,7 +107,7 @@ public class ExtentReportManagerMailreport implements ITestListener {
         }
 
         // Add image
-        addImageToReport(test, "leadrat_logo.jpg");
+        addImageToReport(test, "Bug.png");
     }
 
     public void onTestSkipped(ITestResult result) {
@@ -117,7 +117,7 @@ public class ExtentReportManagerMailreport implements ITestListener {
         test.log(Status.SKIP, "Test Skipped");
         test.log(Status.SKIP, result.getThrowable().getMessage());
         // Add image
-        addImageToReport(test, "leadrat_logo.jpg");
+        addImageToReport(test, "Bug.png");
     }
 
     public void onFinish(ITestContext testContext) {
@@ -184,7 +184,7 @@ public class ExtentReportManagerMailreport implements ITestListener {
                     + "If you have any questions or need further assistance, please don't hesitate to reach out.\r\n"
                     + "\r\n"
                     + "Best regards,\r\n"
-                    + "Qa Team\r\n"
+                    + "Rajaneesh K B\r\n"
                     + "");
 
             // Create the multipart message

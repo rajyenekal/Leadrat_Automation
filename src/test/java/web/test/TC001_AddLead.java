@@ -10,7 +10,7 @@ import pomPages.LoginPage;
 import test.base.BaseTest;
 
 
-public class Tc001_AddLead extends BaseTest{
+public class TC001_AddLead extends BaseTest{
 
     @Test
 	public void addingLead() throws InterruptedException, IOException {
