@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.text.SimpleDateFormat;
 import java.util.Base64;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.Properties;
 
@@ -35,7 +34,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-public class ExtentReportManagerMailreport implements ITestListener {
+public class ExtentReportManager implements ITestListener {
 
     public ExtentSparkReporter sparkReporter;
     public ExtentReports extent;
@@ -62,7 +61,6 @@ public class ExtentReportManagerMailreport implements ITestListener {
         extent.setSystemInfo("User Name", System.getProperty("user.name"));
         extent.setSystemInfo("Environment", "QA");
         extent.setSystemInfo("User", "Rajaneesh");
-
     }
 
     public void onTestSuccess(ITestResult result) {
@@ -122,7 +120,14 @@ public class ExtentReportManagerMailreport implements ITestListener {
 
     public void onFinish(ITestContext testContext) {
         extent.flush();
-        sendEmail();
+
+        boolean hasFailedTests = testContext.getFailedTests().size() > 0;
+
+        if (!hasFailedTests) {
+            sendEmail("Passed!");
+        } else {
+            sendEmail("Failed!");
+        }
     }
 
     private boolean isAPITest(ITestResult result) {
@@ -136,7 +141,7 @@ public class ExtentReportManagerMailreport implements ITestListener {
     }
 
 
-    private void sendEmail() {
+    private void sendEmail(String result) {
         final String username = "digilanterndigi@gmail.com";
         final String password = "fslr iwfg hhaz clnj";
 
@@ -171,21 +176,22 @@ public class ExtentReportManagerMailreport implements ITestListener {
             };
             message.setRecipients(Message.RecipientType.TO, recipients);
 
-            message.setSubject("Test Automation Report");
+            message.setSubject("Suite Execution Report");
 
             // Create the email body part
             BodyPart messageBodyPart = new MimeBodyPart();
             messageBodyPart.setText("Dear User,\r\n"
                     + "\r\n"
-                    + "I'm pleased to inform you that the test automation for our project has been completed successfully!\r\n"
+                    + "I'm pleased to inform you that the Suite Execution for our project has been "+result+"\r\n"
                     + "\r\n"
-                    + "Please find the automation report attached.\r\n"
+                    + "Please find the Execution report attached.\r\n"
                     + "\r\n"
                     + "If you have any questions or need further assistance, please don't hesitate to reach out.\r\n"
                     + "\r\n"
                     + "Best regards,\r\n"
                     + "Rajaneesh K B\r\n"
-                    + "");
+                    + "Quality Analyst-1\r\n"
+                    + "+919741846197");
 
             // Create the multipart message
             Multipart multipart = new MimeMultipart();

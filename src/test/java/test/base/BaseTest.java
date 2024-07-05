@@ -52,9 +52,12 @@ public class BaseTest {
 	
 	 @BeforeMethod
 	    public void setUp() {
-		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 			driver.get(URL);
 			driver.manage().window().maximize();
+			driver.manage().deleteAllCookies();
+			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+			
 	    }
 
 

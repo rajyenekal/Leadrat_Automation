@@ -1,21 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-13T21:15:04 IST" name="LeadRatSuite" finished-at="2024-06-13T21:15:15 IST" duration-ms="10367">
+  <suite started-at="2024-07-05T17:35:12 IST" name="LeadRatSuite" finished-at="2024-07-05T17:37:15 IST" duration-ms="123312">
     <groups>
     </groups>
-    <test started-at="2024-06-13T21:15:04 IST" name="Leadrat Test" finished-at="2024-06-13T21:15:15 IST" duration-ms="10367">
-      <class name="api.test.TC0005_api">
-        <test-method signature="testProperty()[pri:1, instance:api.test.TC0005_api@1a7288a3]" started-at="2024-06-13T21:15:05 IST" name="testProperty" finished-at="2024-06-13T21:15:12 IST" duration-ms="7440" status="PASS">
+    <test started-at="2024-07-05T17:35:12 IST" name="Leadrat Test" finished-at="2024-07-05T17:37:15 IST" duration-ms="123312">
+      <class name="web.test.TC003_dpTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:web.test.TC003_dpTest@4009e306]" started-at="2024-07-05T17:35:12 IST" name="setup" finished-at="2024-07-05T17:35:16 IST" duration-ms="3979" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testProperty -->
-        <test-method signature="moreInfo()[pri:2, instance:api.test.TC0005_api@1a7288a3]" started-at="2024-06-13T21:15:12 IST" name="moreInfo" finished-at="2024-06-13T21:15:15 IST" duration-ms="2456" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:web.test.TC003_dpTest@4009e306]" started-at="2024-07-05T17:35:18 IST" name="setUp" finished-at="2024-07-05T17:35:23 IST" duration-ms="5322" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- moreInfo -->
-      </class> <!-- api.test.TC0005_api -->
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginDDt(java.lang.String,java.lang.String)[pri:0, instance:web.test.TC003_dpTest@4009e306]" started-at="2024-07-05T17:35:23 IST" name="LoginDDt" data-provider="LoginData" finished-at="2024-07-05T17:35:49 IST" duration-ms="25668" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rajaneesh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[raj@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginDDt -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:web.test.TC003_dpTest@4009e306]" started-at="2024-07-05T17:35:49 IST" name="setUp" finished-at="2024-07-05T17:35:50 IST" duration-ms="1840" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginDDt(java.lang.String,java.lang.String)[pri:0, instance:web.test.TC003_dpTest@4009e306]" started-at="2024-07-05T17:35:50 IST" name="LoginDDt" data-provider="LoginData" finished-at="2024-07-05T17:36:15 IST" duration-ms="24629" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mounikapampana]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[P@ssw0rd!1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginDDt -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:web.test.TC003_dpTest@4009e306]" started-at="2024-07-05T17:36:15 IST" name="setUp" finished-at="2024-07-05T17:36:16 IST" duration-ms="1176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginDDt(java.lang.String,java.lang.String)[pri:0, instance:web.test.TC003_dpTest@4009e306]" started-at="2024-07-05T17:36:16 IST" name="LoginDDt" data-provider="LoginData" finished-at="2024-07-05T17:36:23 IST" duration-ms="6466" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BasicUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Basicuser@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginDDt -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:web.test.TC003_dpTest@4009e306]" started-at="2024-07-05T17:36:23 IST" name="setUp" finished-at="2024-07-05T17:36:24 IST" duration-ms="1121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginDDt(java.lang.String,java.lang.String)[pri:0, instance:web.test.TC003_dpTest@4009e306]" started-at="2024-07-05T17:36:24 IST" name="LoginDDt" data-provider="LoginData" finished-at="2024-07-05T17:36:48 IST" duration-ms="24660" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test@123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[P@ssw0rd!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginDDt -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:web.test.TC003_dpTest@4009e306]" started-at="2024-07-05T17:36:48 IST" name="setUp" finished-at="2024-07-05T17:36:50 IST" duration-ms="1136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginDDt(java.lang.String,java.lang.String)[pri:0, instance:web.test.TC003_dpTest@4009e306]" started-at="2024-07-05T17:36:50 IST" name="LoginDDt" data-provider="LoginData" finished-at="2024-07-05T17:37:15 IST" duration-ms="25274" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rajeev@123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Rajeev@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginDDt -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:web.test.TC003_dpTest@4009e306]" started-at="2024-07-05T17:37:15 IST" name="teardown" finished-at="2024-07-05T17:37:15 IST" duration-ms="445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- web.test.TC003_dpTest -->
     </test> <!-- Leadrat Test -->
   </suite> <!-- LeadRatSuite -->
 </testng-results>

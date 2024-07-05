@@ -4,6 +4,7 @@
 package pomPages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -107,8 +108,9 @@ public class AddLeadPage extends BasePage{
 	@CacheLookup 
 	WebElement propSubType;
 	
-	public void clickOption(String data) {
+	public void clickOption(String data) throws InterruptedException {
 		WebElement optionData = ldriver.findElement(By.xpath("//div[@role='option' and  contains(.,'"+data+"')]"));
+		Thread.sleep(500);
 		waits.waitTillVisible(optionData);
 		optionData.click();
 	}
@@ -182,7 +184,8 @@ public class AddLeadPage extends BasePage{
 	WebElement propOpt;
 	
 	
-	public void clickaddLeadBtn() {
+	public void clickaddLeadBtn() throws InterruptedException {
+		Thread.sleep(500);
 		waits.waitTillClickable(addLeadBtn);
 		jse.jsClick(addLeadBtn);
 		addLead.isDisplayed();
@@ -194,13 +197,15 @@ public class AddLeadPage extends BasePage{
 		emailId.sendKeys(email);
 	}
 	
-	public void otherdata(String assignee,String loc,String lowBdjt,String highBdjt) {
+	public void otherdata(String assignee,String loc,String lowBdjt,String highBdjt) throws InterruptedException {
+		Thread.sleep(500);
 		waits.waitTillClickable(assignedTo);
-		jse.jsClick(assignedTo);
-		assignedTo1.sendKeys(assignee);
-		waits.waitTillVisible(popOption);
-		popOption.click();
+		assignedTo.sendKeys(assignee);
+		Thread.sleep(500);
+		assignedTo.sendKeys(Keys.ENTER);
+		//clickOption(assignee);
 		location.sendKeys(loc);
+		Thread.sleep(500);
 		waits.waitTillVisible(popOption1);
 		popOption1.click();
 		waits.waitTillClickable(lowBudget);
@@ -228,7 +233,7 @@ public class AddLeadPage extends BasePage{
 	}
 	
 	public void moreData(String subType,String project,String property, String agency, String profession,
-			String company,String role,String note ) {
+			String company,String role,String note ) throws InterruptedException {
 		
 		propSubType.sendKeys(subType);
 		clickOption(subType);

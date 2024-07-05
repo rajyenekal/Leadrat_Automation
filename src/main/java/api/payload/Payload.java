@@ -3,6 +3,7 @@ package api.payload;
 import com.github.javafaker.Faker;
 
 public class Payload {
+	
 	static Faker faker = new Faker();
 
 	public static String getPayload(String leadName) {

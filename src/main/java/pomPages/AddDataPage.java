@@ -51,22 +51,30 @@ public class AddDataPage extends BasePage {
 	@CacheLookup
 	WebElement emailId;
 	
-	public void navigatetoData(String name,String phoneNo2,String mail) {
+	public void navigatetoData(String name,String phoneNo2,String mail) throws InterruptedException {
+//		Thread.sleep(500);
+//		datamodule.isDisplayed();
+//		waits.waitTillClickable(datamodule);
+//		jse.jsClick(datamodule);
+//		//datamodule.click();
+//		//waits.waitTillVisible(addDataBtn);
+//		Thread.sleep(500);
+//		waits.waitTillClickable(addDataBtn);
+//		//addDataBtn.isDisplayed();
+//		Thread.sleep(500);
+//		addDataBtn.click();
+//		//jse.jsClick(addDataBtn);
 		
-		datamodule.isDisplayed();
-		waits.waitTillClickable(datamodule);
-		jse.jsClick(datamodule);
-		//datamodule.click();
-		//waits.waitTillVisible(addDataBtn);
-		waits.waitTillClickable(addDataBtn);
-		//addDataBtn.isDisplayed();
-		jse.jsClick(addDataBtn);
+		ldriver.navigate().to("https://demo.leadrat.com/data/add-data");
 		waits.waitTillVisible(addData);
 		addData.isDisplayed();
+		Thread.sleep(500);
 		waits.waitTillClickable(dataName);
 		dataName.sendKeys(name);
+		Thread.sleep(500);
 		waits.waitTillClickable(phoneNo);
 		phoneNo.sendKeys(phoneNo2);
+		Thread.sleep(500);
 		waits.waitTillClickable(emailId);
 		emailId.sendKeys(mail);
 		
@@ -88,7 +96,7 @@ public class AddDataPage extends BasePage {
 	public void selectOption(String option) {
 		WebElement srcName = ldriver.findElement(By.xpath("//div[@role='option']//*[contains(.,'"+option+"')]"));
 		waits.waitTillVisible(srcName);
-		srcName.click();
+		jse.jsClick(srcName);
 	}
 	
 	public void selecttitle(String title) {

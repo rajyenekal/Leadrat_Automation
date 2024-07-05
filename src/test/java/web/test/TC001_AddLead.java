@@ -28,7 +28,7 @@ public class TC001_AddLead extends BaseTest{
 
 		alp.enterData(userName, phoneNo, email);
 		logger.info("Entered "+userName+"  "+phoneNo+" "+email+"");
-		alp.otherdata("amit", "hsr", "6000000", "8000000");
+		alp.otherdata("Ahex", "hsr", "6000000", "8000000");
 		alp.anotherData("1500");
 		alp.propType();
 		alp.moreData("House", "VILLA", "Aamor", "99", "Business", "Leadrat", "QA", "Automated Lead");

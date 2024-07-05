@@ -28,8 +28,8 @@ public class TC002_AddData extends BaseTest{
 		adp.fillData("Direct", "office", "Rajaneesh K B");
 		adp.moreData("350", "Sq. Feet", "2 BHK VILLA", "Rental villa", "Anarock properties", "Business");
 		adp.addData("Raj enterprises", "CEO", "Amit Pandey", "Amit Pandey", "Majama", "Rajaneesh", "8765432190", "HSR", "Automated Data",userName);
-		//Thread.sleep(2000);
-		
+		logger.info("Data added Successfully");
+
 	}
 
 }
