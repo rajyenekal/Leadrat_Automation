@@ -2,9 +2,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="LeadRatSuite">
 	
-	<!--<listeners> 
+	<listeners> 
 		<listener class-name="test.base.ExtentReportManager"></listener>
-	</listeners>-->
+	</listeners>
 	
 	<test name="Leadrat Test">
 	<parameter name="browser" value="chrome"/>
