@@ -214,9 +214,10 @@ public class AddLeadPage extends BasePage{
 		highBudget.sendKeys(highBdjt);
 	}
 	
-	public Boolean anotherData(String area) {
+	public Boolean anotherData(String area) throws InterruptedException {
 		waits.waitTillClickable(carpetArea);
 		carpetArea.sendKeys(area);
+		Thread.sleep(500);
 		waits.waitTillClickable(areaMeasure);
 		areaMeasure.click();
 		waits.waitTillClickable(squareFt);

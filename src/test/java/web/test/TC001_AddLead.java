@@ -6,7 +6,6 @@ import org.testng.annotations.Test;
 
 import Utilities.RandomDataUtil;
 import pomPages.AddLeadPage;
-import pomPages.LoginPage;
 import test.base.BaseTest;
 
 
@@ -14,12 +13,8 @@ public class TC001_AddLead extends BaseTest{
 
     @Test
 	public void addingLead() throws InterruptedException, IOException {
-		LoginPage lp = new LoginPage(driver);
 		AddLeadPage alp = new AddLeadPage(driver);
 		
-		lp.Login(UserName, pwd);
-		logger.info("Logged in Successfully");
-
 		alp.clickaddLeadBtn();
 		
 		String userName= RandomDataUtil.getName();

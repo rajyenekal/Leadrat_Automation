@@ -2,23 +2,25 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="LeadRatSuite">
 	
-	<listeners> 
+	<!--<listeners> 
 		<listener class-name="test.base.ExtentReportManager"></listener>
-	</listeners>
+	</listeners>-->
 	
 	<test name="Leadrat Test">
 	<parameter name="browser" value="chrome"/>
 	
 	 <classes>
-	    <class name="web.test.TC001_AddLead"/>
+		
+		<class name="web.test.TC001_AddLead"/>	
         <class name="web.test.TC002_AddData"/>
         <class name="web.test.TC003_dpTest"/>
-       	<class name="api.test.TC0001_api"/>
+ 		 <class name="api.test.TC0001_api"/>
        	<class name="api.test.TC0002_api"/>
         <class name="api.test.TC0003_api"/>
         <class name="api.test.TC0004_api"/>
       	<class name="api.test.TC0005_api"/>
-      <!--<class name="mob.test.TC0001_mob"/>-->
+       <!--<class name="mob.test.TC0001_mob"/>-->
+     	
     </classes>
     
   </test> <!-- Test -->

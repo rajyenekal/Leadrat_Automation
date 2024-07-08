@@ -8,12 +8,13 @@ import org.testng.annotations.Test;
 
 import Utilities.XLUtils;
 import pomPages.LoginPage;
-import test.base.BaseTest;
+import test.base.LaunchTest;
 
-public class TC003_dpTest extends BaseTest{
+public class TC003_dpTest extends LaunchTest{
 	
 	@Test(dataProvider = "LoginData")
 	public void LoginDDt(String userName,String pwd) throws InterruptedException {
+		
 		LoginPage lp=new LoginPage(driver);
 		
 		if(lp.Login(userName, pwd)) {

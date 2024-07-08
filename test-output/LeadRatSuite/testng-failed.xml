@@ -4,14 +4,14 @@
   <test thread-count="5" name="Leadrat Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="web.test.TC003_dpTest">
+      <class name="web.test.TC002_AddData">
         <methods>
-          <include name="LoginDDt" invocation-numbers="0"/>
           <include name="teardown"/>
-          <include name="setUp"/>
           <include name="setup"/>
+          <include name="setUp"/>
+          <include name="addingData"/>
         </methods>
-      </class> <!-- web.test.TC003_dpTest -->
+      </class> <!-- web.test.TC002_AddData -->
     </classes>
   </test> <!-- Leadrat Test(failed) -->
 </suite> <!-- Failed suite [LeadRatSuite] -->

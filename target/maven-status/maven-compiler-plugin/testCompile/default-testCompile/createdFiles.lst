@@ -1,16 +1,12 @@
-web\test\Tc001_AddLead.class
 test\base\MobBase.class
+web\test\TC001_AddLead.class
 web\test\dummy.class
-web\test\Tc0002_AddData.class
-test\base\ExtentReportManagerMailreport.class
-web\test\TC_DDTTest_002.class
 api\test\TC0003_api.class
 mob\test\TC002_mob.class
 api\test\TC0002_api.class
 api\test\TC0004_api.class
 test\base\BaseTest.class
 api\test\TC0005_api.class
-test\base\ExtentReportManagerMailreport$1.class
 api\test\TC0001_api.class
 test\base\DummyBase.class
 mob\test\TC0001_mob.class

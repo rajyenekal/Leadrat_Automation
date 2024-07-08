@@ -20,22 +20,20 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
 import Utilities.ReadConfigFile;
-import pomPages.LoginPage;
 
-public class BaseTest {
+public class LaunchTest {
 	
 	public static WebDriver driver;
 	protected static Logger logger;
 	ReadConfigFile rcf = new ReadConfigFile();
 	public String URL= rcf.getappurl();
-	public String UserName= rcf.getusernamel();
-	public String pwd= rcf.getPwd();
-
+	
+	
 	@Parameters("browser")
 	@BeforeClass
 	public void setup(String br) {
 		
-	    logger = LogManager.getLogger(BaseTest.class);
+	    logger = LogManager.getLogger(LaunchTest.class);
 
 		if(br.equals("chrome")) {
 			driver=new ChromeDriver();
@@ -58,11 +56,6 @@ public class BaseTest {
 			driver.manage().deleteAllCookies();
 			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-			
-			LoginPage lp = new LoginPage(driver);
-			lp.Login(UserName, pwd);
-			
-			logger.info("Logged in Successfully");
 			
 	    }
 
