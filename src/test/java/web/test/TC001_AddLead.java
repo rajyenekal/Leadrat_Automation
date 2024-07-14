@@ -5,36 +5,53 @@ import java.io.IOException;
 import org.testng.annotations.Test;
 
 import Utilities.RandomDataUtil;
+import Utilities.XLUtils;
 import pomPages.AddLeadPage;
 import test.base.BaseTest;
 
-
-public class TC001_AddLead extends BaseTest{
-
-    @Test
-	public void addingLead() throws InterruptedException, IOException {
-		AddLeadPage alp = new AddLeadPage(driver);
-		
-		alp.clickaddLeadBtn();
-		
-		String userName= RandomDataUtil.getName();
-		String email = RandomDataUtil.getEmail(userName);
-		long phoneNo = RandomDataUtil.getPhoneNo();
-
-		alp.enterData(userName, phoneNo, email);
-		logger.info("Entered "+userName+"  "+phoneNo+" "+email+"");
-		alp.otherdata("Ahex", "hsr", "6000000", "8000000");
-		alp.anotherData("1500");
-		alp.propType();
-		alp.moreData("House", "VILLA", "Aamor", "99", "Business", "Leadrat", "QA", "Automated Lead");
-		
-		if(alp.saveLead(userName)) {
-			logger.info("Lead Added Successfully");
-		}
-		else {
-			logger.info("Failed to Add Lead");
-
-		}
-	}
+public class TC001_AddLead extends BaseTest {
     
+    @Test
+    public void addingLead() throws InterruptedException, IOException {
+    	
+        AddLeadPage alp = new AddLeadPage(driver);
+        alp.clickaddLeadBtn();
+        
+        String specifiedHeader = "LeadData";
+        XLUtils excelUtil = new XLUtils();
+        excelUtil.ExcelUtil(specifiedHeader);
+
+        String userName = RandomDataUtil.getName();
+        String email = RandomDataUtil.getEmail(userName);
+        long phoneNo = RandomDataUtil.getPhoneNo();
+
+        alp.enterData(userName, phoneNo, email);
+        logger.info("Entered " + userName + "  " + phoneNo + " " + email);
+
+        alp.otherdata(
+            excelUtil.getData(1), 
+            excelUtil.getData(2),
+            excelUtil.getData(3),
+            excelUtil.getData(4)
+        );
+        alp.anotherData(excelUtil.getData(5));
+        alp.propType();
+        alp.moreData(
+            excelUtil.getData(6),
+            excelUtil.getData(7),
+            excelUtil.getData(8),
+            excelUtil.getData(9),
+            excelUtil.getData(10),
+            excelUtil.getData(11),
+            excelUtil.getData(12),
+            excelUtil.getData(13)
+
+        );
+
+        if (alp.saveLead(userName)) {
+            logger.info("Lead Added Successfully");
+        } else {
+            logger.info("Failed to Add Lead");
+        }
+    }
 }

@@ -10,44 +10,54 @@ import Utilities.XLUtils;
 import pomPages.LoginPage;
 import test.base.LaunchTest;
 
-public class TC003_dpTest extends LaunchTest{
-	
-	@Test(dataProvider = "LoginData")
-	public void LoginDDt(String userName,String pwd) throws InterruptedException {
-		
-		LoginPage lp=new LoginPage(driver);
-		
-		if(lp.Login(userName, pwd)) {
-			logger.info("Logged in Successfully");
-		}
+public class TC003_dpTest extends LaunchTest {
 
-		else {
-			Assert.assertTrue(false);
-			logger.info("Failed to Log in");
-		}
-		
-		lp.logOut();
-		logger.info("Logged out Successfully");
-		
-		
-	}
+    @Test(dataProvider = "LoginData")
+    public void LoginDDt(String userName, String pwd) throws InterruptedException {
+        LoginPage lp = new LoginPage(driver);
 
-	
-	@DataProvider(name="LoginData")
-	
-	String[][] getData() throws IOException {
-		String path=System.getProperty("user.dir")+"\\src\\test\\resources\\testData\\leadRat_Logindata.xlsx";
-		
-		int rownum=XLUtils.getrowCount(path, "Sheet1");
-		int colcount=XLUtils.getcellcount(path, "Sheet1", rownum);
-		
-		String loginData [][]=new String [rownum][colcount];
-		
-		for(int i=1;i<=rownum;i++) {
-			for(int j=0;j<colcount;j++) {
-				loginData[i-1][j]=XLUtils.getCellData(path, "Sheet1", i, j);
-			}
-		}
-		return loginData;
-	}
+        try {
+            if (lp.Login(userName, pwd)) {
+                logger.info("Logged in Successfully");
+            } else {
+                Assert.fail("Failed to Log in for user: " + userName);
+            }
+        } catch (Exception e) {
+            logger.error("Exception occurred during login: " + e.getMessage());
+            Assert.fail("Failed to Log in for user: " + userName);
+        } finally {
+            lp.logOut();
+            logger.info("Logged out Successfully");
+        }
+    }
+
+    @DataProvider(name = "LoginData")
+    public Object[][] getData() throws IOException {
+        String path = System.getProperty("user.dir") + "\\src\\test\\resources\\testData\\leadRat_testdata.xlsx";
+
+        int rowCount = XLUtils.getRowCount(path, "Sheet1");
+        int colCount = XLUtils.getCellCount(path, "Sheet1", 1); // Assuming column count is consistent
+
+        // Only fetch the first two columns for username and password
+        Object[][] loginData = new Object[rowCount][2];
+
+        int validDataCount = 0;
+        for (int i = 1; i <= rowCount; i++) {
+            String userName = XLUtils.getCellData(path, "Sheet1", i, 0); // Username column
+            String pwd = XLUtils.getCellData(path, "Sheet1", i, 1); // Password column
+
+            if (userName != null && !userName.trim().isEmpty() && pwd != null && !pwd.trim().isEmpty()) {
+                loginData[validDataCount][0] = userName;
+                loginData[validDataCount][1] = pwd;
+                validDataCount++;
+            } 
+        }
+
+        // Adjust the array size to the number of valid data rows
+        Object[][] validLoginData = new Object[validDataCount][2];
+        System.arraycopy(loginData, 0, validLoginData, 0, validDataCount);
+
+        logger.info("Total valid login data count: " + validDataCount);
+        return validLoginData;
+    }
 }

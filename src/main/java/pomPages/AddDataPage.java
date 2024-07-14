@@ -281,8 +281,8 @@ public class AddDataPage extends BasePage {
 		custLocation.sendKeys(Keys.ENTER);
 		selectOption(custLoc);
 		notes.sendKeys(note);
-		jse.jsClick(saveBtn);
 		
+		jse.jsClick(saveBtn);
 		WebElement dataName =ldriver.findElement(By.xpath("//div[@role=\"presentation\"]//span[contains(.,'"+DataName+"')]"));
 		waits.waitTillVisible(dataName);
 		dataName.isDisplayed();

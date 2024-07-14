@@ -69,7 +69,7 @@ public class LoginPage extends BasePage{
 	}
 	
 	public void logOut() {
-		waits.waitTillInvisible(ratLoader);
+		//waits.waitTillInvisible(ratLoader);
 		waits.waitTillClickable(profilePic);
 		//jse.jsClick(profilePic);
 		profilePic.click();
