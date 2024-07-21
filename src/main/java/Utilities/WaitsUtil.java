@@ -11,7 +11,7 @@ public class WaitsUtil {
 	WebDriverWait wait;
 
 	public WaitsUtil(WebDriver driver) {
-		 wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		 wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 		 
 	}
 	

@@ -51,7 +51,7 @@ public class TC002_AddData extends BaseTest{
 	            excelUtil.getData(18), 
 				userName);
 
-		logger.info("Data added Successfully");
+		logger.info("Data added Successfully\n");
 
 	}
 

@@ -26,7 +26,7 @@ public class TC001_AddLead extends BaseTest {
         long phoneNo = RandomDataUtil.getPhoneNo();
 
         alp.enterData(userName, phoneNo, email);
-        logger.info("Entered " + userName + "  " + phoneNo + " " + email);
+        logger.info("Entered " + userName + "  " + phoneNo + " " + email+"\n");
 
         alp.otherdata(
             excelUtil.getData(1), 
@@ -49,9 +49,9 @@ public class TC001_AddLead extends BaseTest {
         );
 
         if (alp.saveLead(userName)) {
-            logger.info("Lead Added Successfully");
+            logger.info("Lead Added Successfully\n");
         } else {
-            logger.info("Failed to Add Lead");
+            logger.info("Failed to Add Lead\n");
         }
     }
 }

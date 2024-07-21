@@ -8,7 +8,6 @@ public class Routes {
 	
 	public static String tokenUrl = "https://identity-api-prd.azurewebsites.net/api/tokens";
 	
-
 	public static String magicBricks_url=base_url+"/MagicBricks";
 
 	public static String housing_url=base_url+"/Housing";

@@ -18,7 +18,7 @@ public class TC003_dpTest extends LaunchTest {
 
         try {
             if (lp.Login(userName, pwd)) {
-                logger.info("Logged in Successfully");
+                logger.info("Logged in Successfully\n");
             } else {
                 Assert.fail("Failed to Log in for user: " + userName);
             }
@@ -27,7 +27,7 @@ public class TC003_dpTest extends LaunchTest {
             Assert.fail("Failed to Log in for user: " + userName);
         } finally {
             lp.logOut();
-            logger.info("Logged out Successfully");
+            logger.info("Logged out Successfully\n");
         }
     }
 

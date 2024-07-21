@@ -1,0 +1,429 @@
+web.test.TC003_dpTest2 - Exception occurred during login: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'hamburger')]"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1ce3f37b9d120557c43d549153ada90c, findElement {value=//div[contains(@class,'hamburger')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52623}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52623/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1ce3f37b9d120557c43d549153ada90c
+web.test.TC003_dpTest2 - Exception occurred during login: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'hamburger')]"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1ce3f37b9d120557c43d549153ada90c, findElement {value=//div[contains(@class,'hamburger')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52623}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52623/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1ce3f37b9d120557c43d549153ada90c
+web.test.TC003_dpTest3 - Logged in Successfully
+web.test.TC003_dpTest2 - Exception occurred during login: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'hamburger')]"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1ce3f37b9d120557c43d549153ada90c, findElement {value=//div[contains(@class,'hamburger')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52623}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52623/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1ce3f37b9d120557c43d549153ada90c
+web.test.TC003_dpTest3 - Logged out Successfully
+web.test.TC003_dpTest3 - Logged in Successfully
+web.test.TC003_dpTest3 - Logged out Successfully
+web.test.TC003_dpTest3 - Logged in Successfully
+web.test.TC003_dpTest3 - Logged out Successfully
+web.test.TC003_dpTest3 - Logged in Successfully
+web.test.TC003_dpTest2 - Exception occurred during login: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'hamburger')]"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1ce3f37b9d120557c43d549153ada90c, findElement {value=//div[contains(@class,'hamburger')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52623}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52623/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1ce3f37b9d120557c43d549153ada90c
+web.test.TC003_dpTest3 - Logged out Successfully
+web.test.TC003_dpTest3 - Exception occurred during login: Keys to send should be a not null CharSequence
+web.test.TC003_dpTest3 - Exception occurred during login: Keys to send should be a not null CharSequence
+web.test.TC003_dpTest2 - Exception occurred during login: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'hamburger')]"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1ce3f37b9d120557c43d549153ada90c, findElement {value=//div[contains(@class,'hamburger')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52623}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52623/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1ce3f37b9d120557c43d549153ada90c
+web.test.TC003_dpTest3 - Exception occurred during login: Keys to send should be a not null CharSequence
+web.test.TC003_dpTest2 - Exception occurred during login: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'hamburger')]"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1ce3f37b9d120557c43d549153ada90c, findElement {value=//div[contains(@class,'hamburger')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52623}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52623/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1ce3f37b9d120557c43d549153ada90c
+web.test.TC003_dpTest3 - Exception occurred during login: Keys to send should be a not null CharSequence
+web.test.TC003_dpTest2 - Exception occurred during login: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'hamburger')]"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1ce3f37b9d120557c43d549153ada90c, findElement {value=//div[contains(@class,'hamburger')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52623}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52623/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1ce3f37b9d120557c43d549153ada90c
+web.test.TC003_dpTest3 - Exception occurred during login: Keys to send should be a not null CharSequence
+web.test.TC003_dpTest3 - Exception occurred during login: Keys to send should be a not null CharSequence
+web.test.TC003_dpTest2 - Exception occurred during login: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'hamburger')]"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1ce3f37b9d120557c43d549153ada90c, findElement {value=//div[contains(@class,'hamburger')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52623}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52623/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1ce3f37b9d120557c43d549153ada90c
+web.test.TC003_dpTest3 - Exception occurred during login: Keys to send should be a not null CharSequence
+web.test.TC003_dpTest2 - Exception occurred during login: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'hamburger')]"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1ce3f37b9d120557c43d549153ada90c, findElement {value=//div[contains(@class,'hamburger')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52623}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52623/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1ce3f37b9d120557c43d549153ada90c
+web.test.TC003_dpTest3 - Exception occurred during login: Keys to send should be a not null CharSequence
+web.test.TC003_dpTest3 - Exception occurred during login: Keys to send should be a not null CharSequence
+web.test.TC003_dpTest2 - Exception occurred during login: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'hamburger')]"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1ce3f37b9d120557c43d549153ada90c, findElement {value=//div[contains(@class,'hamburger')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52623}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52623/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1ce3f37b9d120557c43d549153ada90c
+web.test.TC003_dpTest3 - Exception occurred during login: Keys to send should be a not null CharSequence
+web.test.TC003_dpTest2 - Exception occurred during login: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'hamburger')]"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1ce3f37b9d120557c43d549153ada90c, findElement {value=//div[contains(@class,'hamburger')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52623}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52623/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1ce3f37b9d120557c43d549153ada90c
+web.test.TC003_dpTest3 - Exception occurred during login: Keys to send should be a not null CharSequence
+web.test.TC003_dpTest3 - Logged in Successfully
+web.test.TC003_dpTest3 - Logged out Successfully
+web.test.TC003_dpTest3 - Logged in Successfully
+web.test.TC003_dpTest3 - Logged out Successfully
+web.test.TC003_dpTest3 - Logged in Successfully
+web.test.TC003_dpTest3 - Exception occurred during login: Keys to send should be a not null CharSequence
+web.test.TC003_dpTest3 - Logged out Successfully
+web.test.TC003_dpTest3 - Logged in Successfully
+web.test.TC003_dpTest3 - Logged out Successfully
+web.test.TC003_dpTest3 - Exception occurred during login: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'hamburger')]"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3f480bbda603041430ced9b86586f6db, findElement {value=//div[contains(@class,'hamburger')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53406}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53406/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3f480bbda603041430ced9b86586f6db
+web.test.TC003_dpTest3 - Exception occurred during login: Keys to send should be a not null CharSequence
+web.test.TC003_dpTest3 - Exception occurred during login: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'hamburger')]"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3f480bbda603041430ced9b86586f6db, findElement {value=//div[contains(@class,'hamburger')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53406}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53406/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3f480bbda603041430ced9b86586f6db
+web.test.TC003_dpTest3 - Exception occurred during login: Keys to send should be a not null CharSequence
+web.test.TC003_dpTest3 - Exception occurred during login: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'hamburger')]"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3f480bbda603041430ced9b86586f6db, findElement {value=//div[contains(@class,'hamburger')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53406}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53406/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3f480bbda603041430ced9b86586f6db
+web.test.TC003_dpTest3 - Exception occurred during login: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'hamburger')]"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3f480bbda603041430ced9b86586f6db, findElement {value=//div[contains(@class,'hamburger')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53406}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53406/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3f480bbda603041430ced9b86586f6db
+web.test.TC003_dpTest3 - Skipping empty row: 5
+web.test.TC003_dpTest3 - Skipping empty row: 6
+web.test.TC003_dpTest3 - Skipping empty row: 7
+web.test.TC003_dpTest3 - Skipping empty row: 8
+web.test.TC003_dpTest3 - Skipping empty row: 9
+web.test.TC003_dpTest3 - Skipping empty row: 10
+web.test.TC003_dpTest3 - Skipping empty row: 11
+web.test.TC003_dpTest3 - Skipping empty row: 12
+web.test.TC003_dpTest3 - Skipping empty row: 13
+web.test.TC003_dpTest3 - Skipping empty row: 14
+web.test.TC003_dpTest3 - Skipping empty row: 15
+web.test.TC003_dpTest3 - Skipping empty row: 16
+web.test.TC003_dpTest3 - Skipping empty row: 17
+web.test.TC003_dpTest3 - Skipping empty row: 18
+web.test.TC003_dpTest3 - Total valid login data count: 4
+web.test.TC003_dpTest3 - Logged in Successfully
+web.test.TC003_dpTest3 - Logged out Successfully
+web.test.TC003_dpTest3 - Logged in Successfully
+web.test.TC003_dpTest3 - Logged out Successfully
+web.test.TC003_dpTest3 - Logged in Successfully
+web.test.TC003_dpTest3 - Logged out Successfully
+web.test.TC003_dpTest3 - Exception occurred during login: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'hamburger')]"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3f480bbda603041430ced9b86586f6db, findElement {value=//div[contains(@class,'hamburger')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53406}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53406/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3f480bbda603041430ced9b86586f6db
+web.test.TC003_dpTest3 - Logged in Successfully
+web.test.TC003_dpTest3 - Logged out Successfully
+web.test.TC003_dpTest3 - Skipping empty row: 5
+web.test.TC003_dpTest3 - Skipping empty row: 6
+web.test.TC003_dpTest3 - Skipping empty row: 7
+web.test.TC003_dpTest3 - Skipping empty row: 8
+web.test.TC003_dpTest3 - Skipping empty row: 9
+web.test.TC003_dpTest3 - Skipping empty row: 10
+web.test.TC003_dpTest3 - Skipping empty row: 11
+web.test.TC003_dpTest3 - Skipping empty row: 12
+web.test.TC003_dpTest3 - Skipping empty row: 13
+web.test.TC003_dpTest3 - Skipping empty row: 14
+web.test.TC003_dpTest3 - Skipping empty row: 15
+web.test.TC003_dpTest3 - Skipping empty row: 16
+web.test.TC003_dpTest3 - Skipping empty row: 17
+web.test.TC003_dpTest3 - Skipping empty row: 18
+web.test.TC003_dpTest3 - Total valid login data count: 4
+web.test.TC003_dpTest3 - Logged in Successfully
+web.test.TC003_dpTest3 - Logged in Successfully
+web.test.TC003_dpTest3 - Exception occurred during login: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'hamburger')]"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3f480bbda603041430ced9b86586f6db, findElement {value=//div[contains(@class,'hamburger')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53406}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53406/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3f480bbda603041430ced9b86586f6db
+web.test.TC003_dpTest3 - Logged out Successfully
+web.test.TC003_dpTest3 - Logged in Successfully
+web.test.TC003_dpTest3 - Logged out Successfully
+web.test.TC003_dpTest3 - Logged in Successfully
+web.test.TC003_dpTest3 - Logged out Successfully
+web.test.TC003_dpTest3 - Skipping empty row: 5
+web.test.TC003_dpTest3 - Skipping empty row: 6
+web.test.TC003_dpTest3 - Skipping empty row: 7
+web.test.TC003_dpTest3 - Skipping empty row: 8
+web.test.TC003_dpTest3 - Skipping empty row: 9
+web.test.TC003_dpTest3 - Skipping empty row: 10
+web.test.TC003_dpTest3 - Skipping empty row: 11
+web.test.TC003_dpTest3 - Skipping empty row: 12
+web.test.TC003_dpTest3 - Skipping empty row: 13
+web.test.TC003_dpTest3 - Skipping empty row: 14
+web.test.TC003_dpTest3 - Skipping empty row: 15
+web.test.TC003_dpTest3 - Skipping empty row: 16
+web.test.TC003_dpTest3 - Skipping empty row: 17
+web.test.TC003_dpTest3 - Skipping empty row: 18
+web.test.TC003_dpTest3 - Total valid login data count: 4
+web.test.TC003_dpTest3 - Exception occurred during login: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'hamburger')]"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3f480bbda603041430ced9b86586f6db, findElement {value=//div[contains(@class,'hamburger')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53406}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53406/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3f480bbda603041430ced9b86586f6db
+web.test.TC003_dpTest3 - Logged in Successfully
+web.test.TC003_dpTest3 - Logged in Successfully
+web.test.TC003_dpTest3 - Logged out Successfully
+web.test.TC003_dpTest3 - Logged in Successfully
+web.test.TC003_dpTest3 - Logged out Successfully
+web.test.TC003_dpTest3 - Logged in Successfully
+web.test.TC003_dpTest3 - Logged out Successfully
+web.test.TC003_dpTest3 - Exception occurred during login: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'hamburger')]"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3f480bbda603041430ced9b86586f6db, findElement {value=//div[contains(@class,'hamburger')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53406}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53406/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3f480bbda603041430ced9b86586f6db
+web.test.TC003_dpTest3 - Exception occurred during login: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'hamburger')]"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3f480bbda603041430ced9b86586f6db, findElement {value=//div[contains(@class,'hamburger')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53406}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53406/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3f480bbda603041430ced9b86586f6db
+web.test.TC003_dpTest3 - Exception occurred during login: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'hamburger')]"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3f480bbda603041430ced9b86586f6db, findElement {value=//div[contains(@class,'hamburger')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53406}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53406/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3f480bbda603041430ced9b86586f6db
+web.test.TC003_dpTest3 - Skipping empty row: 5
+web.test.TC003_dpTest3 - Skipping empty row: 6
+web.test.TC003_dpTest3 - Skipping empty row: 7
+web.test.TC003_dpTest3 - Skipping empty row: 8
+web.test.TC003_dpTest3 - Skipping empty row: 9
+web.test.TC003_dpTest3 - Skipping empty row: 10
+web.test.TC003_dpTest3 - Skipping empty row: 11
+web.test.TC003_dpTest3 - Skipping empty row: 12
+web.test.TC003_dpTest3 - Skipping empty row: 13
+web.test.TC003_dpTest3 - Skipping empty row: 14
+web.test.TC003_dpTest3 - Skipping empty row: 15
+web.test.TC003_dpTest3 - Skipping empty row: 16
+web.test.TC003_dpTest3 - Skipping empty row: 17
+web.test.TC003_dpTest3 - Skipping empty row: 18
+web.test.TC003_dpTest3 - Total valid login data count: 4
+web.test.TC003_dpTest3 - Logged in Successfully
+web.test.TC003_dpTest3 - Logged out Successfully
+web.test.TC003_dpTest3 - Logged in Successfully
+web.test.TC003_dpTest3 - Logged out Successfully
+web.test.TC003_dpTest3 - Exception occurred during login: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'hamburger')]"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3f480bbda603041430ced9b86586f6db, findElement {value=//div[contains(@class,'hamburger')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53406}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53406/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3f480bbda603041430ced9b86586f6db
+web.test.TC003_dpTest3 - Logged in Successfully
+web.test.TC003_dpTest3 - Logged out Successfully
+web.test.TC003_dpTest3 - Logged in Successfully
+web.test.TC003_dpTest3 - Logged out Successfully
+web.test.TC003_dpTest3 - Exception occurred during login: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'hamburger')]"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3f480bbda603041430ced9b86586f6db, findElement {value=//div[contains(@class,'hamburger')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53406}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53406/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3f480bbda603041430ced9b86586f6db
+web.test.TC003_dpTest3 - Total valid login data count: 4
+web.test.TC003_dpTest3 - Logged in Successfully
+web.test.TC003_dpTest3 - Logged out Successfully
+web.test.TC003_dpTest3 - Logged in Successfully
+web.test.TC003_dpTest3 - Logged out Successfully
+web.test.TC003_dpTest3 - Logged in Successfully
+web.test.TC003_dpTest3 - Logged out Successfully
+web.test.TC003_dpTest3 - Logged in Successfully
+web.test.TC003_dpTest3 - Logged out Successfully
+web.test.TC003_dpTest3 - Exception occurred during login: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'hamburger')]"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3f480bbda603041430ced9b86586f6db, findElement {value=//div[contains(@class,'hamburger')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53406}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53406/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3f480bbda603041430ced9b86586f6db
+web.test.TC003_dpTest3 - Exception occurred during login: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'hamburger')]"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3f480bbda603041430ced9b86586f6db, findElement {value=//div[contains(@class,'hamburger')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53406}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53406/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3f480bbda603041430ced9b86586f6db
+web.test.TC003_dpTest - Total valid login data count: 4
+web.test.TC003_dpTest - Logged in Successfully
+web.test.TC003_dpTest - Logged out Successfully
+web.test.TC003_dpTest - Logged in Successfully
+web.test.TC003_dpTest - Logged out Successfully
+web.test.TC003_dpTest - Logged in Successfully
+web.test.TC003_dpTest - Logged out Successfully
+web.test.TC003_dpTest - Logged in Successfully
+web.test.TC003_dpTest - Logged out Successfully
+test.base.BaseTest - Logged in Successfully
+web.test.TC001_AddLead - Entered phutejimoj  4285396037 phutejimoj@shewo.com
+web.test.TC001_AddLead - Lead Added Successfully
+test.base.BaseTest - Logged in Successfully
+web.test.TC002_AddData - Data added Successfully
+web.test.TC003_dpTest - Total valid login data count: 4
+web.test.TC003_dpTest - Logged in Successfully
+web.test.TC003_dpTest - Logged out Successfully
+web.test.TC003_dpTest - Logged in Successfully
+web.test.TC003_dpTest - Logged out Successfully
+web.test.TC003_dpTest - Logged in Successfully
+web.test.TC003_dpTest - Logged out Successfully
+web.test.TC003_dpTest - Logged in Successfully
+web.test.TC003_dpTest - Logged out Successfully
+test.base.BaseTest - Logged in Successfully
+web.test.TC001_AddLead - Entered bzetovevir  3360524679 bzetovevir@swako.com
+web.test.TC001_AddLead - Lead Added Successfully
+test.base.BaseTest - Logged in Successfully
+web.test.TC002_AddData - Data added Successfully
+web.test.TC003_dpTest - Total valid login data count: 4
+web.test.TC003_dpTest - Logged in Successfully
+web.test.TC003_dpTest - Logged out Successfully
+web.test.TC003_dpTest - Logged in Successfully
+web.test.TC003_dpTest - Logged out Successfully
+web.test.TC003_dpTest - Logged in Successfully
+web.test.TC003_dpTest - Logged out Successfully
+web.test.TC003_dpTest - Logged in Successfully
+web.test.TC003_dpTest - Logged out Successfully
+test.base.Api_Token - ---- Generating Bearer Token ----
+test.base.Api_Token - ---- Bearer Token Generated : Bearer eyJraWQiOiJhaUp4ZitQMXhVbmsxcHZrTTZzNVhLZWZlVTloVmVvdVFkN1g5K3ZRZ1lvPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyODQ0YzJkZC0yM2VlLTRmNDktODIyMS02ZjI3YTk1NTE2ZjQiLCJjdXN0b206bWZhX2VuYWJsZWQiOiJGYWxzZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiY3VzdG9tOnBhc3Nfc3RhbXAiOiJJakl3TWpRdE1ESXRNRFZVTURVNk1URTZNRFl1TWpZM05UazRXaUk9IiwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoLTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGgtMV9oV0doQzNPUzkiLCJjdXN0b206dXNlcl9pZCI6ImRlbW9fUmFqYW5lZXNoIiwicGhvbmVfbnVtYmVyX3ZlcmlmaWVkIjpmYWxzZSwiY29nbml0bzp1c2VybmFtZSI6InJhamFuZWVzaCIsImN1c3RvbTp0ZW5hbnRfaWQiOiJkZW1vIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiUmFqYW5lZXNoIiwiZ2l2ZW5fbmFtZSI6IlJhamFuZWVzaCIsIm9yaWdpbl9qdGkiOiIzNjljNGFmNi04MmRkLTQyNDEtODVkOC03Y2NkZDZhYmY3NzUiLCJhdWQiOiI1Y205OTFuNXN1Ym5rb2VkOGlwY2xwNDg2byIsImV2ZW50X2lkIjoiMTNiYjEwMTUtYWE5Mi00NmI0LWFjZTQtMTBjZDViMjE0YzYwIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MjExNDY1MTIsInBob25lX251bWJlciI6Iis5MTk3NDE4NDYxOTciLCJleHAiOjE3MjExNTAxMTIsImlhdCI6MTcyMTE0NjUxMiwiZmFtaWx5X25hbWUiOiJLIEIiLCJqdGkiOiIxN2UxZGQ2Zi03YWJlLTQ0YTItYTYzMy01ODc4NmU0M2M1MmQiLCJlbWFpbCI6InJhamFuZWVzaEBnbWFpbC5jb20ifQ.beeaKsgXPWDAkYJndYPwBco3mNZX-cf-Iq75Rk49yXhKU8VY5kvYLhK-D3KHAM2118Nh7kUsMfeMaLviHCkVCt8QN3ru-rky02viPdyCrLjnpDCBSS_LGnV8eTdzBoXQWjHPezWRROH672ptF3Guv5rQxarJeIcdjk_EGvpbSa7qppd5fSbkHDLhEjpGfkoZQk_4tjt1fjL1AWJAZQrC7G7A3Kl1LDmBr3mi8UXPw_jiNY8vbeZh5_FyjvhNNqtB3goYVRP695Fz12ZSR4ZOQPKLrkqmTvOHzcdHQUmOX0SZ1wCTGR1XhQ6Uch3Fi5HgCLom7gP21V-2U-OMszW13w----
+api.test.TC0002_api - ---- Creating new Lead ----
+api.test.TC0002_api - ---- New Lead Created with ID Token: b3c0b5b9-0650-42d2-bfc1-e5190b9b3b09
+
+test.base.BaseTest - Logged in Successfully
+test.base.BaseTest - Logged in Successfully
+test.base.BaseTest - Logged in Successfully
+test.base.BaseTest - Logged in Successfully
+test.base.BaseTest - Logged in Successfully
+test.base.BaseTest - Logged in Successfully
+test.base.BaseTest - Logged in Successfully
+test.base.BaseTest - Logged in Successfully
+web.test.TC004_StatusUpdate - Status Updated Successfully
+test.base.BaseTest - Logged in Successfully
+web.test.TC004_StatusUpdate - Status Updated Successfully
+test.base.BaseTest - Logged in Successfully
+test.base.BaseTest - Logged in Successfully
+web.test.TC004_StatusUpdate - Status Updated Successfully
+test.base.BaseTest - Logged in Successfully
+web.test.TC004_StatusUpdate - Status Updated Successfully
+test.base.BaseTest - Logged in Successfully
+web.test.TC004_StatusUpdate - Status Updated Successfully
+test.base.BaseTest - Logged in Successfully
+test.base.BaseTest - Logged in Successfully
+web.test.TC004_StatusUpdate - Status Updated Successfully
+test.base.BaseTest - Logged in Successfully
+test.base.BaseTest - Logged in Successfully
+web.test.TC004_StatusUpdate - Status Updated Successfully
+test.base.BaseTest - Logged in Successfully
+web.test.TC004_StatusUpdate - Status Updated Successfully
+test.base.BaseTest - Logged in Successfully
+web.test.TC004_StatusUpdate - Status Updated Successfully
+test.base.BaseTest - Logged in Successfully
+test.base.BaseTest - Logged in Successfully
+test.base.BaseTest - Logged in Successfully
+test.base.BaseTest - Logged in Successfully
+web.test.TC004_StatusUpdate - Status Updated Successfully

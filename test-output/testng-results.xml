@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="32" passed="30" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-14T20:24:12 IST" name="LeadRatSuite" finished-at="2024-07-14T20:25:34 IST" duration-ms="82503">
+  <suite started-at="2024-07-21T19:14:07 IST" name="LeadRatSuite" finished-at="2024-07-21T19:19:20 IST" duration-ms="312946">
     <groups>
     </groups>
-    <test started-at="2024-07-14T20:24:12 IST" name="Leadrat Test" finished-at="2024-07-14T20:25:34 IST" duration-ms="82503">
-      <class name="web.test.TC002_AddData">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:web.test.TC002_AddData@6913c1fb]" started-at="2024-07-14T20:24:38 IST" name="setup" finished-at="2024-07-14T20:24:40 IST" duration-ms="1494" status="PASS">
+    <test started-at="2024-07-21T19:14:07 IST" name="Leadrat Test" finished-at="2024-07-21T19:19:20 IST" duration-ms="312946">
+      <class name="web.test.TC006_SiteVisit">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:web.test.TC006_SiteVisit@7b02881e]" started-at="2024-07-21T19:17:15 IST" name="setup" finished-at="2024-07-21T19:17:17 IST" duration-ms="2077" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,21 +18,166 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:web.test.TC002_AddData@6913c1fb]" started-at="2024-07-14T20:24:40 IST" name="setUp" finished-at="2024-07-14T20:24:45 IST" duration-ms="5073" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:web.test.TC006_SiteVisit@7b02881e]" started-at="2024-07-21T19:17:17 IST" name="setUp" finished-at="2024-07-21T19:17:23 IST" duration-ms="6233" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addingData()[pri:0, instance:web.test.TC002_AddData@6913c1fb]" started-at="2024-07-14T20:24:45 IST" name="addingData" finished-at="2024-07-14T20:25:03 IST" duration-ms="17916" status="PASS">
+        <test-method signature="callbackStatus()[pri:0, instance:web.test.TC006_SiteVisit@7b02881e]" started-at="2024-07-21T19:17:23 IST" name="callbackStatus" finished-at="2024-07-21T19:17:41 IST" duration-ms="18475" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=126.0.6478.182)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a08aa622db7264f9d48bea62c9c31ea1, sendKeysToElement {value=[Ljava.lang.CharSequence;@7ae0a26, id=f.ABA68C1086A3873B19FEF7FAD3B09867.d.5AFCFCC82E43663B0F461F898262FD9C.e.347}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.182, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54563}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54563/devtoo..., se:cdpVersion: 126.0.6478.182, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a08aa622db7264f9d48bea62c9c31ea1)] -> id: inpExecutiveName]
+Session ID: a08aa622db7264f9d48bea62c9c31ea1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=126.0.6478.182)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a08aa622db7264f9d48bea62c9c31ea1, sendKeysToElement {value=[Ljava.lang.CharSequence;@7ae0a26, id=f.ABA68C1086A3873B19FEF7FAD3B09867.d.5AFCFCC82E43663B0F461F898262FD9C.e.347}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.182, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54563}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54563/devtoo..., se:cdpVersion: 126.0.6478.182, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a08aa622db7264f9d48bea62c9c31ea1)] -> id: inpExecutiveName]
+Session ID: a08aa622db7264f9d48bea62c9c31ea1
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy33.sendKeys(Unknown Source)
+at pomPages.UpdatesStatusPage.updatemeeting(UpdatesStatusPage.java:175)
+at web.test.TC006_SiteVisit.callbackStatus(TC006_SiteVisit.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- callbackStatus -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:web.test.TC006_SiteVisit@7b02881e]" started-at="2024-07-21T19:17:42 IST" name="teardown" finished-at="2024-07-21T19:17:43 IST" duration-ms="682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- web.test.TC006_SiteVisit -->
+      <class name="web.test.TC002_AddData">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:web.test.TC002_AddData@10d68fcd]" started-at="2024-07-21T19:14:38 IST" name="setup" finished-at="2024-07-21T19:14:40 IST" duration-ms="2281" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:web.test.TC002_AddData@10d68fcd]" started-at="2024-07-21T19:14:40 IST" name="setUp" finished-at="2024-07-21T19:14:48 IST" duration-ms="7929" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addingData()[pri:0, instance:web.test.TC002_AddData@10d68fcd]" started-at="2024-07-21T19:14:48 IST" name="addingData" finished-at="2024-07-21T19:15:12 IST" duration-ms="24003" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addingData -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:web.test.TC002_AddData@6913c1fb]" started-at="2024-07-14T20:25:03 IST" name="teardown" finished-at="2024-07-14T20:25:03 IST" duration-ms="303" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:web.test.TC002_AddData@10d68fcd]" started-at="2024-07-21T19:15:12 IST" name="teardown" finished-at="2024-07-21T19:15:12 IST" duration-ms="378" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- web.test.TC002_AddData -->
-      <class name="web.test.TC001_AddLead">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:web.test.TC001_AddLead@22fcf7ab]" started-at="2024-07-14T20:24:12 IST" name="setup" finished-at="2024-07-14T20:24:14 IST" duration-ms="2843" status="PASS">
+      <class name="api.test.TC0001_api">
+        <test-method signature="Housing()[pri:0, instance:api.test.TC0001_api@41813449]" started-at="2024-07-21T19:18:47 IST" name="Housing" finished-at="2024-07-21T19:18:54 IST" duration-ms="7181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Housing -->
+        <test-method signature="NinetyNineAcres()[pri:0, instance:api.test.TC0001_api@41813449]" started-at="2024-07-21T19:18:54 IST" name="NinetyNineAcres" finished-at="2024-07-21T19:18:56 IST" duration-ms="1396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NinetyNineAcres -->
+        <test-method signature="commonFloor()[pri:0, instance:api.test.TC0001_api@41813449]" started-at="2024-07-21T19:18:56 IST" name="commonFloor" finished-at="2024-07-21T19:18:57 IST" duration-ms="906" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- commonFloor -->
+        <test-method signature="estateDekho()[pri:0, instance:api.test.TC0001_api@41813449]" started-at="2024-07-21T19:18:57 IST" name="estateDekho" finished-at="2024-07-21T19:18:58 IST" duration-ms="1658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- estateDekho -->
+        <test-method signature="googleAds()[pri:0, instance:api.test.TC0001_api@41813449]" started-at="2024-07-21T19:18:58 IST" name="googleAds" finished-at="2024-07-21T19:18:59 IST" duration-ms="921" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleAds -->
+        <test-method signature="magicBricks()[pri:0, instance:api.test.TC0001_api@41813449]" started-at="2024-07-21T19:18:59 IST" name="magicBricks" finished-at="2024-07-21T19:19:00 IST" duration-ms="900" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- magicBricks -->
+        <test-method signature="microsoftAds()[pri:0, instance:api.test.TC0001_api@41813449]" started-at="2024-07-21T19:19:00 IST" name="microsoftAds" finished-at="2024-07-21T19:19:02 IST" duration-ms="1520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- microsoftAds -->
+        <test-method signature="quikrHomes()[pri:0, instance:api.test.TC0001_api@41813449]" started-at="2024-07-21T19:19:02 IST" name="quikrHomes" finished-at="2024-07-21T19:19:03 IST" duration-ms="1620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quikrHomes -->
+        <test-method signature="realestaeIndia()[pri:0, instance:api.test.TC0001_api@41813449]" started-at="2024-07-21T19:19:03 IST" name="realestaeIndia" finished-at="2024-07-21T19:19:05 IST" duration-ms="1852" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- realestaeIndia -->
+        <test-method signature="roofFloor()[pri:0, instance:api.test.TC0001_api@41813449]" started-at="2024-07-21T19:19:05 IST" name="roofFloor" finished-at="2024-07-21T19:19:07 IST" duration-ms="1638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- roofFloor -->
+        <test-method signature="website()[pri:0, instance:api.test.TC0001_api@41813449]" started-at="2024-07-21T19:19:07 IST" name="website" finished-at="2024-07-21T19:19:08 IST" duration-ms="1624" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- website -->
+      </class> <!-- api.test.TC0001_api -->
+      <class name="web.test.TC008_Drop">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:web.test.TC008_Drop@3c0be339]" started-at="2024-07-21T19:18:07 IST" name="setup" finished-at="2024-07-21T19:18:09 IST" duration-ms="1842" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -43,21 +188,99 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:web.test.TC001_AddLead@22fcf7ab]" started-at="2024-07-14T20:24:14 IST" name="setUp" finished-at="2024-07-14T20:24:22 IST" duration-ms="7269" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:web.test.TC008_Drop@3c0be339]" started-at="2024-07-21T19:18:09 IST" name="setUp" finished-at="2024-07-21T19:18:20 IST" duration-ms="10981" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addingLead()[pri:0, instance:web.test.TC001_AddLead@22fcf7ab]" started-at="2024-07-14T20:24:22 IST" name="addingLead" finished-at="2024-07-14T20:24:38 IST" duration-ms="16003" status="PASS">
+        <test-method signature="statusdrop()[pri:0, instance:web.test.TC008_Drop@3c0be339]" started-at="2024-07-21T19:18:20 IST" name="statusdrop" finished-at="2024-07-21T19:18:28 IST" duration-ms="7734" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- statusdrop -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:web.test.TC008_Drop@3c0be339]" started-at="2024-07-21T19:18:28 IST" name="teardown" finished-at="2024-07-21T19:18:28 IST" duration-ms="329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- web.test.TC008_Drop -->
+      <class name="api.test.TC0002_api">
+        <test-method signature="addLead()[pri:0, instance:api.test.TC0002_api@4678a2eb]" started-at="2024-07-21T19:19:08 IST" name="addLead" finished-at="2024-07-21T19:19:10 IST" duration-ms="1758" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addLead -->
+      </class> <!-- api.test.TC0002_api -->
+      <class name="api.test.TC0004_api">
+        <test-method signature="testProject()[pri:1, instance:api.test.TC0004_api@1080b026]" started-at="2024-07-21T19:19:12 IST" name="testProject" finished-at="2024-07-21T19:19:13 IST" duration-ms="1288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProject -->
+        <test-method signature="testUnit()[pri:2, instance:api.test.TC0004_api@1080b026]" started-at="2024-07-21T19:19:13 IST" name="testUnit" finished-at="2024-07-21T19:19:13 IST" duration-ms="522" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUnit -->
+        <test-method signature="testBlock()[pri:3, instance:api.test.TC0004_api@1080b026]" started-at="2024-07-21T19:19:13 IST" name="testBlock" finished-at="2024-07-21T19:19:14 IST" duration-ms="297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBlock -->
+        <test-method signature="testAmenity()[pri:4, instance:api.test.TC0004_api@1080b026]" started-at="2024-07-21T19:19:14 IST" name="testAmenity" finished-at="2024-07-21T19:19:15 IST" duration-ms="1362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAmenity -->
+        <test-method signature="testGallery()[pri:5, instance:api.test.TC0004_api@1080b026]" started-at="2024-07-21T19:19:15 IST" name="testGallery" finished-at="2024-07-21T19:19:16 IST" duration-ms="395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGallery -->
+      </class> <!-- api.test.TC0004_api -->
+      <class name="web.test.TC004_Callback">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:web.test.TC004_Callback@6db9f5a4]" started-at="2024-07-21T19:16:01 IST" name="setup" finished-at="2024-07-21T19:16:03 IST" duration-ms="2202" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:web.test.TC004_Callback@6db9f5a4]" started-at="2024-07-21T19:16:03 IST" name="setUp" finished-at="2024-07-21T19:16:14 IST" duration-ms="11426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="callbackStatus()[pri:0, instance:web.test.TC004_Callback@6db9f5a4]" started-at="2024-07-21T19:16:14 IST" name="callbackStatus" finished-at="2024-07-21T19:16:27 IST" duration-ms="12873" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- callbackStatus -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:web.test.TC004_Callback@6db9f5a4]" started-at="2024-07-21T19:16:27 IST" name="teardown" finished-at="2024-07-21T19:16:28 IST" duration-ms="396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- web.test.TC004_Callback -->
+      <class name="web.test.TC001_AddLead">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:web.test.TC001_AddLead@68e5eea7]" started-at="2024-07-21T19:14:07 IST" name="setup" finished-at="2024-07-21T19:14:10 IST" duration-ms="2874" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:web.test.TC001_AddLead@68e5eea7]" started-at="2024-07-21T19:14:10 IST" name="setUp" finished-at="2024-07-21T19:14:18 IST" duration-ms="8148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addingLead()[pri:0, instance:web.test.TC001_AddLead@68e5eea7]" started-at="2024-07-21T19:14:18 IST" name="addingLead" finished-at="2024-07-21T19:14:37 IST" duration-ms="18807" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addingLead -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:web.test.TC001_AddLead@22fcf7ab]" started-at="2024-07-14T20:24:38 IST" name="teardown" finished-at="2024-07-14T20:24:38 IST" duration-ms="439" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:web.test.TC001_AddLead@68e5eea7]" started-at="2024-07-21T19:14:37 IST" name="teardown" finished-at="2024-07-21T19:14:38 IST" duration-ms="438" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- web.test.TC001_AddLead -->
-      <class name="web.test.TC003_dpTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:web.test.TC003_dpTest@66d18979]" started-at="2024-07-14T20:25:03 IST" name="setup" finished-at="2024-07-14T20:25:04 IST" duration-ms="1358" status="PASS">
+      <class name="web.test.TC007_NotInterested">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:web.test.TC007_NotInterested@1ebd319f]" started-at="2024-07-21T19:17:43 IST" name="setup" finished-at="2024-07-21T19:17:45 IST" duration-ms="2261" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -68,11 +291,77 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:web.test.TC003_dpTest@66d18979]" started-at="2024-07-14T20:25:06 IST" name="setUp" finished-at="2024-07-14T20:25:08 IST" duration-ms="1948" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:web.test.TC007_NotInterested@1ebd319f]" started-at="2024-07-21T19:17:45 IST" name="setUp" finished-at="2024-07-21T19:17:59 IST" duration-ms="14100" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="LoginDDt(java.lang.String,java.lang.String)[pri:0, instance:web.test.TC003_dpTest@66d18979]" started-at="2024-07-14T20:25:08 IST" name="LoginDDt" data-provider="LoginData" finished-at="2024-07-14T20:25:18 IST" duration-ms="10448" status="PASS">
+        <test-method signature="statusNi()[pri:0, instance:web.test.TC007_NotInterested@1ebd319f]" started-at="2024-07-21T19:17:59 IST" name="statusNi" finished-at="2024-07-21T19:18:07 IST" duration-ms="7986" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- statusNi -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:web.test.TC007_NotInterested@1ebd319f]" started-at="2024-07-21T19:18:07 IST" name="teardown" finished-at="2024-07-21T19:18:07 IST" duration-ms="399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- web.test.TC007_NotInterested -->
+      <class name="api.test.TC0003_api">
+        <test-method signature="adddata()[pri:0, instance:api.test.TC0003_api@5b43fbf6]" started-at="2024-07-21T19:19:10 IST" name="adddata" finished-at="2024-07-21T19:19:12 IST" duration-ms="1510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adddata -->
+      </class> <!-- api.test.TC0003_api -->
+      <class name="web.test.TC005_Meeting">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:web.test.TC005_Meeting@5f8edcc5]" started-at="2024-07-21T19:16:28 IST" name="setup" finished-at="2024-07-21T19:16:30 IST" duration-ms="1821" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:web.test.TC005_Meeting@5f8edcc5]" started-at="2024-07-21T19:16:30 IST" name="setUp" finished-at="2024-07-21T19:16:42 IST" duration-ms="12987" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="callbackStatus()[pri:0, instance:web.test.TC005_Meeting@5f8edcc5]" started-at="2024-07-21T19:16:42 IST" name="callbackStatus" finished-at="2024-07-21T19:17:14 IST" duration-ms="31788" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- callbackStatus -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:web.test.TC005_Meeting@5f8edcc5]" started-at="2024-07-21T19:17:14 IST" name="teardown" finished-at="2024-07-21T19:17:15 IST" duration-ms="417" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- web.test.TC005_Meeting -->
+      <class name="api.test.TC0005_api">
+        <test-method signature="testProperty()[pri:1, instance:api.test.TC0005_api@58ebfd03]" started-at="2024-07-21T19:19:16 IST" name="testProperty" finished-at="2024-07-21T19:19:17 IST" duration-ms="1366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProperty -->
+        <test-method signature="moreInfo()[pri:2, instance:api.test.TC0005_api@58ebfd03]" started-at="2024-07-21T19:19:17 IST" name="moreInfo" finished-at="2024-07-21T19:19:20 IST" duration-ms="2626" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- moreInfo -->
+      </class> <!-- api.test.TC0005_api -->
+      <class name="web.test.TC003_dpTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:web.test.TC003_dpTest@117e949d]" started-at="2024-07-21T19:15:12 IST" name="setup" finished-at="2024-07-21T19:15:14 IST" duration-ms="1878" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:web.test.TC003_dpTest@117e949d]" started-at="2024-07-21T19:15:16 IST" name="setUp" finished-at="2024-07-21T19:15:19 IST" duration-ms="2883" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginDDt(java.lang.String,java.lang.String)[pri:0, instance:web.test.TC003_dpTest@117e949d]" started-at="2024-07-21T19:15:19 IST" name="LoginDDt" data-provider="LoginData" finished-at="2024-07-21T19:15:40 IST" duration-ms="21134" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -85,14 +374,88 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 10.000
+  (Session info: chrome=126.0.6478.182)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0feed587d7dd9e6a3064de98ed2fe0d3, clickElement {id=f.F435BAB9CD05D21C368EBDAD4B92B106.d.703C2EA0565CD0E454B9F7033CAE8379.e.53}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.182, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54336}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54336/devtoo..., se:cdpVersion: 126.0.6478.182, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0feed587d7dd9e6a3064de98ed2fe0d3)] -> xpath: //span[contains(@class,'logout')]]
+Session ID: 0feed587d7dd9e6a3064de98ed2fe0d3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
+  (Session info: chrome=126.0.6478.182)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0feed587d7dd9e6a3064de98ed2fe0d3, clickElement {id=f.F435BAB9CD05D21C368EBDAD4B92B106.d.703C2EA0565CD0E454B9F7033CAE8379.e.53}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.182, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54336}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54336/devtoo..., se:cdpVersion: 126.0.6478.182, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0feed587d7dd9e6a3064de98ed2fe0d3)] -> xpath: //span[contains(@class,'logout')]]
+Session ID: 0feed587d7dd9e6a3064de98ed2fe0d3
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy33.click(Unknown Source)
+at pomPages.LoginPage.logOut(LoginPage.java:78)
+at web.test.TC003_dpTest.LoginDDt(TC003_dpTest.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginDDt -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:web.test.TC003_dpTest@66d18979]" started-at="2024-07-14T20:25:18 IST" name="setUp" finished-at="2024-07-14T20:25:20 IST" duration-ms="2156" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:web.test.TC003_dpTest@117e949d]" started-at="2024-07-21T19:15:40 IST" name="setUp" finished-at="2024-07-21T19:15:43 IST" duration-ms="2799" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="LoginDDt(java.lang.String,java.lang.String)[pri:0, instance:web.test.TC003_dpTest@66d18979]" started-at="2024-07-14T20:25:20 IST" name="LoginDDt" data-provider="LoginData" finished-at="2024-07-14T20:25:24 IST" duration-ms="4386" status="PASS">
+        <test-method signature="LoginDDt(java.lang.String,java.lang.String)[pri:0, instance:web.test.TC003_dpTest@117e949d]" started-at="2024-07-21T19:15:43 IST" name="LoginDDt" data-provider="LoginData" finished-at="2024-07-21T19:15:48 IST" duration-ms="5032" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -108,11 +471,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginDDt -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:web.test.TC003_dpTest@66d18979]" started-at="2024-07-14T20:25:25 IST" name="setUp" finished-at="2024-07-14T20:25:26 IST" duration-ms="1037" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:web.test.TC003_dpTest@117e949d]" started-at="2024-07-21T19:15:48 IST" name="setUp" finished-at="2024-07-21T19:15:49 IST" duration-ms="1638" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="LoginDDt(java.lang.String,java.lang.String)[pri:0, instance:web.test.TC003_dpTest@66d18979]" started-at="2024-07-14T20:25:26 IST" name="LoginDDt" data-provider="LoginData" finished-at="2024-07-14T20:25:29 IST" duration-ms="3682" status="PASS">
+        <test-method signature="LoginDDt(java.lang.String,java.lang.String)[pri:0, instance:web.test.TC003_dpTest@117e949d]" started-at="2024-07-21T19:15:49 IST" name="LoginDDt" data-provider="LoginData" finished-at="2024-07-21T19:15:54 IST" duration-ms="4672" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -128,11 +491,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginDDt -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:web.test.TC003_dpTest@66d18979]" started-at="2024-07-14T20:25:29 IST" name="setUp" finished-at="2024-07-14T20:25:30 IST" duration-ms="1065" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:web.test.TC003_dpTest@117e949d]" started-at="2024-07-21T19:15:54 IST" name="setUp" finished-at="2024-07-21T19:15:55 IST" duration-ms="1208" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="LoginDDt(java.lang.String,java.lang.String)[pri:0, instance:web.test.TC003_dpTest@66d18979]" started-at="2024-07-14T20:25:30 IST" name="LoginDDt" data-provider="LoginData" finished-at="2024-07-14T20:25:34 IST" duration-ms="3393" status="PASS">
+        <test-method signature="LoginDDt(java.lang.String,java.lang.String)[pri:0, instance:web.test.TC003_dpTest@117e949d]" started-at="2024-07-21T19:15:55 IST" name="LoginDDt" data-provider="LoginData" finished-at="2024-07-21T19:16:00 IST" duration-ms="5102" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -148,11 +511,36 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginDDt -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:web.test.TC003_dpTest@66d18979]" started-at="2024-07-14T20:25:34 IST" name="teardown" finished-at="2024-07-14T20:25:34 IST" duration-ms="397" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:web.test.TC003_dpTest@117e949d]" started-at="2024-07-21T19:16:00 IST" name="teardown" finished-at="2024-07-21T19:16:01 IST" duration-ms="543" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- web.test.TC003_dpTest -->
+      <class name="web.test.TC009_EOP">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:web.test.TC009_EOP@15ca7889]" started-at="2024-07-21T19:18:28 IST" name="setup" finished-at="2024-07-21T19:18:30 IST" duration-ms="1932" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:web.test.TC009_EOP@15ca7889]" started-at="2024-07-21T19:18:30 IST" name="setUp" finished-at="2024-07-21T19:18:41 IST" duration-ms="10454" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="statusEop()[pri:0, instance:web.test.TC009_EOP@15ca7889]" started-at="2024-07-21T19:18:41 IST" name="statusEop" finished-at="2024-07-21T19:18:47 IST" duration-ms="6204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- statusEop -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:web.test.TC009_EOP@15ca7889]" started-at="2024-07-21T19:18:47 IST" name="teardown" finished-at="2024-07-21T19:18:47 IST" duration-ms="352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- web.test.TC009_EOP -->
     </test> <!-- Leadrat Test -->
   </suite> <!-- LeadRatSuite -->
 </testng-results>
