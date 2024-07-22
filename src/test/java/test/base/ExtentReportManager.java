@@ -1,5 +1,5 @@
-
 package test.base;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -44,9 +44,8 @@ public class ExtentReportManager implements ITestListener {
     public WebDriver driver;
 
     public void onStart(ITestContext testContext) {
-
-    	timeStamp = new SimpleDateFormat("hh.mm.ss a.dd.MM.yyyy").format(new Date());
-    	repName = "Test-Report-" + timeStamp + ".html";
+        timeStamp = new SimpleDateFormat("hh.mm.ss a.dd.MM.yyyy").format(new Date());
+        repName = "Test-Report-" + timeStamp + ".html";
 
         sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName);
         sparkReporter.config().setDocumentTitle("LeadRat Automation Project");
@@ -68,7 +67,8 @@ public class ExtentReportManager implements ITestListener {
         test.assignCategory(result.getMethod().getGroups());
         test.createNode(result.getName());
         test.log(Status.PASS, "Test Passed");
-        // Add image
+
+        // Add image if any
         addImageToReport(test, "Bug.png");
     }
 
@@ -79,32 +79,38 @@ public class ExtentReportManager implements ITestListener {
         test.log(Status.FAIL, "Test Failed");
         test.log(Status.FAIL, result.getThrowable().getMessage());
 
-        try {
-            if (!isAPITest(result)) {
+        // Log if the test is being retried
+        if (result.getAttribute("retryAnalyzer") != null) {
+            RetryAnalyzer retryAnalyzer = (RetryAnalyzer) result.getAttribute("retryAnalyzer");
+            if (retryAnalyzer.retry(result)) {
+                test.log(Status.WARNING, "Retrying the failed test...");
+            }
+        }
+
+        // Check if the test is an API test
+        if (!isAPITest(result)) {
+            // Capture and embed screenshot if not an API test
+            try {
                 String screenshotPath;
                 if (isMobTest(result)) {
                     screenshotPath = MobBase.captureScreenshot(result.getName());
-
                 } else {
                     screenshotPath = BaseTest.captureScreenshot(result.getName());
                 }
+
                 File screenshotFile = new File(screenshotPath);
-
                 if (screenshotFile.exists()) {
-                    // Encode the screenshot file directly to Base64
                     String base64Screenshot = Base64.getEncoder().encodeToString(Files.readAllBytes(screenshotFile.toPath()));
-
-                    // Embed the Base64 encoded screenshot into the Extent report
                     test.addScreenCaptureFromBase64String(base64Screenshot);
                 } else {
                     System.out.println("Screenshot file not found: " + screenshotPath);
                 }
+            } catch (Exception e) {
+                e.printStackTrace();
             }
-        } catch (Exception e) {
-            e.printStackTrace();
         }
 
-        // Add image
+        // Add image if any
         addImageToReport(test, "Bug.png");
     }
 
@@ -114,7 +120,8 @@ public class ExtentReportManager implements ITestListener {
         test.assignCategory(result.getMethod().getGroups());
         test.log(Status.SKIP, "Test Skipped");
         test.log(Status.SKIP, result.getThrowable().getMessage());
-        // Add image
+
+        // Add image if any
         addImageToReport(test, "Bug.png");
     }
 
@@ -122,7 +129,6 @@ public class ExtentReportManager implements ITestListener {
         extent.flush();
 
         boolean hasFailedTests = testContext.getFailedTests().size() > 0;
-
         if (!hasFailedTests) {
             sendEmail("Passed!");
         } else {
@@ -140,19 +146,18 @@ public class ExtentReportManager implements ITestListener {
         return (" " + className.toLowerCase() + " ").contains("mob");
     }
 
-
     private void sendEmail(String result) {
+    	
         final String username = "digilanterndigi@gmail.com";
         final String password = "fslr iwfg hhaz clnj";
 
         Properties props = new Properties();
-
         props.put("mail.smtp.auth", "true");
         props.put("mail.smtp.starttls.enable", "true");
-        props.put("mail.smtp.ssl.trust", "smtp.gmail.com"); // Trust the Gmail SMTP server
-        props.put("mail.smtp.ssl.protocols", "TLSv1.2"); // Use TLS v1.2 for secure connection
+        props.put("mail.smtp.ssl.trust", "smtp.gmail.com");
+        props.put("mail.smtp.ssl.protocols", "TLSv1.2");
         props.put("mail.smtp.host", "smtp.gmail.com");
-        props.put("mail.smtp.port", "587"); // SMTP port for STARTTLS
+        props.put("mail.smtp.port", "587");
 
         Session session = Session.getInstance(props,
                 new javax.mail.Authenticator() {
@@ -167,22 +172,20 @@ public class ExtentReportManager implements ITestListener {
 
             // Add multiple recipients
             InternetAddress[] recipients = {
-                    // new InternetAddress("rajneesh.k@leadrat.com"),
                     new InternetAddress("rajyenekal@gmail.com"),
-                    // new InternetAddress("sudesh@leadrat.com"),
-                    // new InternetAddress("jayakumar.k@leadrat.com"),
-                    //new InternetAddress("keerthanaraosj@gmail.com"),
+                    new InternetAddress("rajneesh.k@leadrat.com"),
+                    new InternetAddress("jayakumar.k@leadrat.com")
+
 
             };
             message.setRecipients(Message.RecipientType.TO, recipients);
-
             message.setSubject("Suite Execution Report");
 
             // Create the email body part
             BodyPart messageBodyPart = new MimeBodyPart();
             messageBodyPart.setText("Dear User,\r\n"
                     + "\r\n"
-                    + "I'm pleased to inform you that the Suite Execution for our project has been "+result+"\r\n"
+                    + "I'm pleased to inform you that the Suite Execution for our project has been " + result + "\r\n"
                     + "\r\n"
                     + "Please find the Execution report attached.\r\n"
                     + "\r\n"
@@ -199,7 +202,7 @@ public class ExtentReportManager implements ITestListener {
 
             // Attach the report file
             messageBodyPart = new MimeBodyPart();
-            DataSource source = new FileDataSource(".\\reports\\" + repName); // Adjust the path as per your file location
+            DataSource source = new FileDataSource(".\\reports\\" + repName);
             messageBodyPart.setDataHandler(new DataHandler(source));
             messageBodyPart.setFileName(repName);
             multipart.addBodyPart(messageBodyPart);
@@ -223,13 +226,8 @@ public class ExtentReportManager implements ITestListener {
 
         if (imageFile.exists()) {
             try {
-                // Read the image file into a byte array
                 byte[] imageData = Files.readAllBytes(imageFile.toPath());
-
-                // Convert the byte array to Base64 encoding
                 String base64Image = Base64.getEncoder().encodeToString(imageData);
-
-                // Embed the Base64 encoded image into HTML content of the Extent report
                 test.log(Status.INFO, "<div align='center'><img src='data:image/jpeg;base64," + base64Image + "' width='25%' height='25%'/></div>");
             } catch (IOException e) {
                 e.printStackTrace();

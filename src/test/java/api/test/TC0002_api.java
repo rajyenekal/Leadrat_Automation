@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 import api.endpoints.addLeadAPI;
 import io.restassured.response.Response;
 import test.base.Api_Token;
+import test.base.RetryAnalyzer;
 
 public class TC0002_api {
     
@@ -20,7 +21,7 @@ public class TC0002_api {
     public String uuidRegex;
     public String uniqueId;
 
-    @Test
+    @Test( retryAnalyzer = RetryAnalyzer.class)
     public void addLead() {
     
         token = Api_Token.getToken();

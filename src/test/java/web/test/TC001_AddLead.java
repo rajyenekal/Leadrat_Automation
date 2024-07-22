@@ -3,6 +3,7 @@ package web.test;
 import java.io.IOException;
 
 import org.testng.annotations.Test;
+import test.base.RetryAnalyzer; // Import RetryAnalyzer
 
 import Utilities.RandomDataUtil;
 import Utilities.XLUtils;
@@ -11,9 +12,8 @@ import test.base.BaseTest;
 
 public class TC001_AddLead extends BaseTest {
     
-    @Test
+    @Test(retryAnalyzer = RetryAnalyzer.class)
     public void addingLead() throws InterruptedException, IOException {
-    	
         AddLeadPage alp = new AddLeadPage(driver);
         alp.clickaddLeadBtn();
         
@@ -45,7 +45,6 @@ public class TC001_AddLead extends BaseTest {
             excelUtil.getData(11),
             excelUtil.getData(12),
             excelUtil.getData(13)
-
         );
 
         if (alp.saveLead(userName)) {

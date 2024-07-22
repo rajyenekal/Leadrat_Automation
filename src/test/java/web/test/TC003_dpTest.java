@@ -9,10 +9,11 @@ import org.testng.annotations.Test;
 import Utilities.XLUtils;
 import pomPages.LoginPage;
 import test.base.LaunchTest;
+import test.base.RetryAnalyzer;
 
 public class TC003_dpTest extends LaunchTest {
 
-    @Test(dataProvider = "LoginData")
+    @Test(dataProvider = "LoginData", retryAnalyzer = RetryAnalyzer.class)
     public void LoginDDt(String userName, String pwd) throws InterruptedException {
         LoginPage lp = new LoginPage(driver);
 

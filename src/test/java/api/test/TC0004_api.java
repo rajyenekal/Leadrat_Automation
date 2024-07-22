@@ -10,10 +10,11 @@ import org.testng.annotations.Test;
 import api.endpoints.AddProjProp;
 import io.restassured.response.Response;
 import test.base.Api_Token;
+import test.base.RetryAnalyzer;
 
 public class TC0004_api extends Api_Token{
 	
-	@Test(priority = 1)
+	@Test(priority = 1,retryAnalyzer = RetryAnalyzer.class)
     public void testProject() {
 
         token=Api_Token.getToken();
@@ -36,7 +37,7 @@ public class TC0004_api extends Api_Token{
         logger.info("---- New Project Created with ID Token: " + projectUniqueId +"\n");
     }
 
-	@Test(priority = 2)
+	@Test(priority = 2,retryAnalyzer = RetryAnalyzer.class)
     public void testUnit() {
 
         logger.info("---- Creating new Unit ----");

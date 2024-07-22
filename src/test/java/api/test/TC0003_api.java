@@ -10,10 +10,11 @@ import org.testng.annotations.Test;
 import api.endpoints.addLeadAPI;
 import io.restassured.response.Response;
 import test.base.Api_Token;
+import test.base.RetryAnalyzer;
 
 public class TC0003_api extends Api_Token {
 	
-    @Test
+    @Test(retryAnalyzer = RetryAnalyzer.class)
     public void adddata() {
 
         token=Api_Token.getToken();

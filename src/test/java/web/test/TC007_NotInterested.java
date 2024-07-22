@@ -5,10 +5,11 @@ import org.testng.annotations.Test;
 
 import pomPages.UpdatesStatusPage;
 import test.base.BaseTest;
+import test.base.RetryAnalyzer;
 
 public class TC007_NotInterested extends BaseTest{
 
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void statusNi() {
 		
         UpdatesStatusPage usp = new UpdatesStatusPage(driver);

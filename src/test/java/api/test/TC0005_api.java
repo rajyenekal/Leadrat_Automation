@@ -10,10 +10,11 @@ import org.testng.annotations.Test;
 import api.endpoints.AddProjProp;
 import io.restassured.response.Response;
 import test.base.Api_Token;
+import test.base.RetryAnalyzer;
 
 public class TC0005_api extends Api_Token{
 	
-	@Test(priority = 1)
+	@Test(priority = 1,retryAnalyzer = RetryAnalyzer.class)
     public void testProperty() {
 
         token=Api_Token.getToken();
@@ -36,7 +37,7 @@ public class TC0005_api extends Api_Token{
         logger.info("---- New Property Created with ID Token: " + propertyUniqueId +"\n");
     }
 	
-	@Test(priority = 2)
+	@Test(priority = 2,retryAnalyzer = RetryAnalyzer.class)
     public void moreInfo() {
 
         logger.info("---- Adding more info to the property ----");

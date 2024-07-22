@@ -9,10 +9,11 @@ import Utilities.XLUtils;
 import pomPages.AddDataPage;
 import pomPages.LoginPage;
 import test.base.BaseTest;
+import test.base.RetryAnalyzer;
 
 public class TC002_AddData extends BaseTest{
 	
-	@Test()
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void addingData() throws InterruptedException, IOException {
 		
 		AddDataPage adp = new AddDataPage(driver);

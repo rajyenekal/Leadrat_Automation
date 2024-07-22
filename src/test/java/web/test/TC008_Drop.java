@@ -5,10 +5,11 @@ import org.testng.annotations.Test;
 
 import pomPages.UpdatesStatusPage;
 import test.base.BaseTest;
+import test.base.RetryAnalyzer;
 
 public class TC008_Drop extends BaseTest{
 
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void statusdrop() {
 		
         UpdatesStatusPage usp = new UpdatesStatusPage(driver);

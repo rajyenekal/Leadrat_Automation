@@ -7,22 +7,11 @@
   <test thread-count="5" name="Leadrat Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="web.test.TC003_dpTest">
+      <class name="api.test.TC0001_api">
         <methods>
-          <include name="LoginDDt" invocation-numbers="0"/>
-          <include name="teardown"/>
-          <include name="setup"/>
-          <include name="setUp"/>
+          <include name="realestaeIndia"/>
         </methods>
-      </class> <!-- web.test.TC003_dpTest -->
-      <class name="web.test.TC006_SiteVisit">
-        <methods>
-          <include name="teardown"/>
-          <include name="callbackStatus"/>
-          <include name="setup"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- web.test.TC006_SiteVisit -->
+      </class> <!-- api.test.TC0001_api -->
     </classes>
   </test> <!-- Leadrat Test(failed) -->
 </suite> <!-- Failed suite [LeadRatSuite] -->
