@@ -172,9 +172,12 @@ public class ExtentReportManager implements ITestListener {
 
             // Add multiple recipients
             InternetAddress[] recipients = {
+            		
                     new InternetAddress("rajyenekal@gmail.com"),
-//                    new InternetAddress("rajneesh.k@leadrat.com"),
-//                    new InternetAddress("jayakumar.k@leadrat.com")
+                    new InternetAddress("rajneesh.k@leadrat.com"),
+                    new InternetAddress("jayakumar.k@leadrat.com"),
+                    new InternetAddress("Nitish.s@leadrat.com"),
+                    new InternetAddress("sudesh@leadrat.com"),
 
 
             };
