@@ -15,7 +15,7 @@ import test.base.RetryAnalyzer;
 public class TC0004_api extends Api_Token{
 	
 	@Test(priority = 1,retryAnalyzer = RetryAnalyzer.class)
-    public void testProject() {
+    public void Creating_Project_through_API() {
 
         token=Api_Token.getToken();
         
@@ -38,7 +38,7 @@ public class TC0004_api extends Api_Token{
     }
 
 	@Test(priority = 2,retryAnalyzer = RetryAnalyzer.class)
-    public void testUnit() {
+    public void Creating_a_Unit_to_Project_through_API() {
 
         logger.info("---- Creating new Unit ----");
 
@@ -59,7 +59,7 @@ public class TC0004_api extends Api_Token{
     }
 
 	@Test(priority = 3)
-    public void testBlock() {
+    public void Creating_a_Block_to_Project_through_API() {
 
         logger.info("---- Creating new Block ----");
 
@@ -81,7 +81,7 @@ public class TC0004_api extends Api_Token{
 
 
 	@Test(priority = 4)
-    public void testAmenity() {
+    public void Adding_Amenities_to_Project_through_API() {
 
         logger.info("---- Adding Amenities ----");
 
@@ -103,7 +103,7 @@ public class TC0004_api extends Api_Token{
 
 
 	@Test(priority = 5)
-    public void testGallery() {
+    public void Adding_images_to_Project() {
 
         logger.info("---- Adding images to project Gallery ----");
 

@@ -14,12 +14,12 @@ import test.base.RetryAnalyzer;
 public class TC003_dpTest extends LaunchTest {
 
     @Test(dataProvider = "LoginData", retryAnalyzer = RetryAnalyzer.class)
-    public void LoginDDt(String userName, String pwd) throws InterruptedException {
+    public void Logging_in_with_multiple_credentials(String userName, String pwd) throws InterruptedException {
         LoginPage lp = new LoginPage(driver);
 
         try {
             if (lp.Login(userName, pwd)) {
-                logger.info("Logged in Successfully\n");
+                logger.info("Logged as "+userName+"in Successfully\n");
             } else {
                 Assert.fail("Failed to Log in for user: " + userName);
             }

@@ -7,11 +7,13 @@
   <test thread-count="5" name="Leadrat Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="api.test.TC0001_api">
+      <class name="web.test.TC010_BookingForm">
         <methods>
-          <include name="realestaeIndia"/>
+          <include name="tearDown"/>
+          <include name="testBookingForm"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- api.test.TC0001_api -->
+      </class> <!-- web.test.TC010_BookingForm -->
     </classes>
   </test> <!-- Leadrat Test(failed) -->
 </suite> <!-- Failed suite [LeadRatSuite] -->

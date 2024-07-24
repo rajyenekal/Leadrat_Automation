@@ -10,7 +10,7 @@ import test.base.RetryAnalyzer;
 public class TC009_EOP extends BaseTest{
 
 	@Test(retryAnalyzer = RetryAnalyzer.class)
-	public void statusEop() {
+	public void Updating_LeadStatus_to_ExpressionofInterest() {
 		
         UpdatesStatusPage usp = new UpdatesStatusPage(driver);
 

@@ -10,7 +10,7 @@ import test.base.RetryAnalyzer;
 public class TC006_SiteVisit extends BaseTest {
 
 	@Test(retryAnalyzer = RetryAnalyzer.class)
-	public void callbackStatus() throws InterruptedException {
+	public void Scheduling_a_SiteVisit_and_Marking_it_as_Done() throws InterruptedException {
 		UpdatesStatusPage usp = new UpdatesStatusPage(driver);
 		
 		usp.ScheduleStatus("Schedule Site Visit", "Status updated");

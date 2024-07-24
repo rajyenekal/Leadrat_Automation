@@ -52,7 +52,7 @@ public class BaseTest {
         LoginPage lp = new LoginPage(driver);
         lp.Login(UserName, pwd);
 
-        logger.info("Logged in Successfully\n");
+        logger.info("Logged as "+UserName+" Successfully\n");
     }
 
     @AfterMethod

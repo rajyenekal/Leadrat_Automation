@@ -14,7 +14,7 @@ import test.base.RetryAnalyzer;
 public class TC002_AddData extends BaseTest{
 	
 	@Test(retryAnalyzer = RetryAnalyzer.class)
-	public void addingData() throws InterruptedException, IOException {
+	public void Creating_a_Data_through_Web() throws InterruptedException, IOException {
 		
 		AddDataPage adp = new AddDataPage(driver);
 		String specifiedHeader = "Prospectdata";

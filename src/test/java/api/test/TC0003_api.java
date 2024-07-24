@@ -15,7 +15,7 @@ import test.base.RetryAnalyzer;
 public class TC0003_api extends Api_Token {
 	
     @Test(retryAnalyzer = RetryAnalyzer.class)
-    public void adddata() {
+    public void Creating_Data_through_API() {
 
         token=Api_Token.getToken();
         

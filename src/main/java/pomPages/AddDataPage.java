@@ -9,7 +9,6 @@ import org.openqa.selenium.support.FindBy;
 
 import Utilities.ActionsUtil;
 import Utilities.JavaScriptUtil;
-import Utilities.StaleElementHandler;
 import Utilities.WaitsUtil;
 
 public class AddDataPage extends BasePage {
@@ -21,7 +20,6 @@ public class AddDataPage extends BasePage {
 	ActionsUtil aut = new ActionsUtil(ldriver);
 	WaitsUtil waits = new WaitsUtil(ldriver);
 	JavaScriptUtil jse = new JavaScriptUtil(ldriver);
-	StaleElementHandler stl = new StaleElementHandler(ldriver);
 	
 	@FindBy(xpath="//a[@class='leftnav-item' and text()='Data']")
 	@CacheLookup

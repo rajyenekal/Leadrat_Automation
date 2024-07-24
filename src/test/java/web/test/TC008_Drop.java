@@ -10,7 +10,7 @@ import test.base.RetryAnalyzer;
 public class TC008_Drop extends BaseTest{
 
 	@Test(retryAnalyzer = RetryAnalyzer.class)
-	public void statusdrop() {
+	public void Updating_LeadStatus_to_Drop() {
 		
         UpdatesStatusPage usp = new UpdatesStatusPage(driver);
 

@@ -15,7 +15,7 @@ import test.base.RetryAnalyzer;
 public class TC0005_api extends Api_Token{
 	
 	@Test(priority = 1,retryAnalyzer = RetryAnalyzer.class)
-    public void testProperty() {
+    public void Creating_a_Property_through_API() {
 
         token=Api_Token.getToken();
         
@@ -38,7 +38,7 @@ public class TC0005_api extends Api_Token{
     }
 	
 	@Test(priority = 2,retryAnalyzer = RetryAnalyzer.class)
-    public void moreInfo() {
+    public void Adding_more_info_to_the_property() {
 
         logger.info("---- Adding more info to the property ----");
 

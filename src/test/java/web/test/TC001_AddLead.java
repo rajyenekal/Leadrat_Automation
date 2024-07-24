@@ -13,7 +13,7 @@ import test.base.BaseTest;
 public class TC001_AddLead extends BaseTest {
     
     @Test(retryAnalyzer = RetryAnalyzer.class)
-    public void addingLead() throws InterruptedException, IOException {
+    public void Creating_a_Lead_through_Web() throws InterruptedException, IOException {
         AddLeadPage alp = new AddLeadPage(driver);
         alp.clickaddLeadBtn();
         

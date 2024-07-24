@@ -12,7 +12,7 @@ import test.base.RetryAnalyzer;
 public class TC0001_api extends Api_Token {
 
     @Test(enabled = true, retryAnalyzer = RetryAnalyzer.class)
-    public void magicBricks() {
+    public void Creating_MagicBricks_Lead() {
         try {
             logger.info("---- Creating MagicBricks Lead ----");
 
@@ -36,7 +36,7 @@ public class TC0001_api extends Api_Token {
     }
 
     @Test(enabled = true, retryAnalyzer = RetryAnalyzer.class)
-    public void Housing() {
+    public void Creating_Housing_Lead() {
         try {
             logger.info("---- Creating Housing Lead ----");
 
@@ -60,7 +60,7 @@ public class TC0001_api extends Api_Token {
     }
 
     @Test(enabled = true, retryAnalyzer = RetryAnalyzer.class)
-    public void NinetyNineAcres() {
+    public void Creating_NinetyNineAcres_Lead() {
         try {
             logger.info("---- Creating NinetyNineAcres Lead ----");
 
@@ -84,7 +84,7 @@ public class TC0001_api extends Api_Token {
     }
 
     @Test(enabled = true, retryAnalyzer = RetryAnalyzer.class)
-    public void quikrHomes() {
+    public void Creating_quikrHomes_Lead() {
         try {
             logger.info("---- Creating QuikrHomes Lead ----");
 
@@ -108,7 +108,7 @@ public class TC0001_api extends Api_Token {
     }
 
     @Test(enabled = true, retryAnalyzer = RetryAnalyzer.class)
-    public void website() {
+    public void Creating_Website_Lead() {
         try {
             logger.info("---- Creating Website Lead ----");
 
@@ -135,7 +135,7 @@ public class TC0001_api extends Api_Token {
     }
 
     @Test(enabled = true, retryAnalyzer = RetryAnalyzer.class)
-    public void microsoftAds() {
+    public void Creating_MicrosoftAds_Lead() {
         try {
             logger.info("---- Creating MicrosoftAds Lead ----");
 
@@ -159,7 +159,7 @@ public class TC0001_api extends Api_Token {
     }
 
     @Test(enabled = true, retryAnalyzer = RetryAnalyzer.class)
-    public void estateDekho() {
+    public void Creating_EstateDekho_Lead() {
         try {
             logger.info("---- Creating EstateDekho Lead ----");
 
@@ -183,7 +183,7 @@ public class TC0001_api extends Api_Token {
     }
 
     @Test(enabled = false, retryAnalyzer = RetryAnalyzer.class)
-    public void realestaeIndia() {
+    public void Creating_RealestaeIndia_Lead() {
         try {
             logger.info("---- Creating RealEstaeIndia Lead ----");
 
@@ -208,7 +208,7 @@ public class TC0001_api extends Api_Token {
 
 
     @Test(enabled = true, retryAnalyzer = RetryAnalyzer.class)
-    public void roofFloor() {
+    public void Creating_RoofFloor_Lead() {
         try {
             logger.info("---- Creating RoofandFloor Lead ----");
 
@@ -232,7 +232,7 @@ public class TC0001_api extends Api_Token {
     }
 
     @Test(enabled = true, retryAnalyzer = RetryAnalyzer.class)
-    public void googleAds() {
+    public void Creating_GoogleAds_Lead() {
         try {
             logger.info("---- Creating GoogleAds Lead ----");
 
@@ -256,7 +256,7 @@ public class TC0001_api extends Api_Token {
     }
 
     @Test(enabled = true, retryAnalyzer = RetryAnalyzer.class)
-    public void commonFloor() {
+    public void Creating_CommonFloor_Lead() {
         try {
             logger.info("---- Creating commonFloor Lead ----");
 

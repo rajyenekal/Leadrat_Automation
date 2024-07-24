@@ -69,7 +69,7 @@ public class ExtentReportManager implements ITestListener {
         test.log(Status.PASS, "Test Passed");
 
         // Add image if any
-        addImageToReport(test, "Bug.png");
+        addImageToReport(test, "leadrat_logo.jpg");
     }
 
     public void onTestFailure(ITestResult result) {
@@ -111,7 +111,7 @@ public class ExtentReportManager implements ITestListener {
         }
 
         // Add image if any
-        addImageToReport(test, "Bug.png");
+        addImageToReport(test, "leadrat_logo.jpg");
     }
 
     public void onTestSkipped(ITestResult result) {
@@ -122,7 +122,7 @@ public class ExtentReportManager implements ITestListener {
         test.log(Status.SKIP, result.getThrowable().getMessage());
 
         // Add image if any
-        addImageToReport(test, "Bug.png");
+        addImageToReport(test, "leadrat_logo.jpg");
     }
 
     public void onFinish(ITestContext testContext) {
@@ -173,8 +173,8 @@ public class ExtentReportManager implements ITestListener {
             // Add multiple recipients
             InternetAddress[] recipients = {
                     new InternetAddress("rajyenekal@gmail.com"),
-                    new InternetAddress("rajneesh.k@leadrat.com"),
-                    new InternetAddress("jayakumar.k@leadrat.com")
+//                    new InternetAddress("rajneesh.k@leadrat.com"),
+//                    new InternetAddress("jayakumar.k@leadrat.com")
 
 
             };

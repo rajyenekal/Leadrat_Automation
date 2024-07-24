@@ -10,7 +10,7 @@ import test.base.RetryAnalyzer;
 public class TC007_NotInterested extends BaseTest{
 
 	@Test(retryAnalyzer = RetryAnalyzer.class)
-	public void statusNi() {
+	public void Updating_LeadStatus_to_NotInterested() {
 		
         UpdatesStatusPage usp = new UpdatesStatusPage(driver);
 

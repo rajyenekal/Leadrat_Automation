@@ -10,8 +10,9 @@ import test.base.RetryAnalyzer;
 public class TC005_Meeting extends BaseTest {
 
     @Test(retryAnalyzer = RetryAnalyzer.class)
-    public void callbackStatus() throws InterruptedException {
-        UpdatesStatusPage usp = new UpdatesStatusPage(driver);
+    public void Scheduling_a_Meeting_and_Marking_it_as_Done() throws InterruptedException {
+        
+    	UpdatesStatusPage usp = new UpdatesStatusPage(driver);
 
         usp.ScheduleStatus("Schedule Meeting", "Status updated");
         logger.info("Status updated successfully\n");

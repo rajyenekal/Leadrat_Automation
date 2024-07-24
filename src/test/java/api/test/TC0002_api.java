@@ -22,7 +22,7 @@ public class TC0002_api {
     public String uniqueId;
 
     @Test( retryAnalyzer = RetryAnalyzer.class)
-    public void addLead() {
+    public void Creating_Lead_through_API() {
     
         token = Api_Token.getToken();
         
