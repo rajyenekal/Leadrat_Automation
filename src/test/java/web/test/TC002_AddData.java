@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 import Utilities.RandomDataUtil;
 import Utilities.XLUtils;
 import pomPages.AddDataPage;
-import pomPages.LoginPage;
 import test.base.BaseTest;
 import test.base.RetryAnalyzer;
 

@@ -37,7 +37,7 @@ public class TC003_dpTest extends LaunchTest {
         String path = System.getProperty("user.dir") + "\\src\\test\\resources\\testData\\leadRat_testdata.xlsx";
 
         int rowCount = XLUtils.getRowCount(path, "Sheet1");
-        int colCount = XLUtils.getCellCount(path, "Sheet1", 1); // Assuming column count is consistent
+       // int colCount = XLUtils.getCellCount(path, "Sheet1", 1); // Assuming column count is consistent
 
         // Only fetch the first two columns for username and password
         Object[][] loginData = new Object[rowCount][2];

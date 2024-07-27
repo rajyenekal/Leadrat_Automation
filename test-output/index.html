@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-LeadRatSuite" class="navigator-link">
-              <span class="suite-name border-failed">LeadRatSuite</span>
+              <span class="suite-name border-passed">LeadRatSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-LeadRatSuite" class="hide-methods failed suite-LeadRatSuite"> (hide)</a> <!-- hide-methods failed suite-LeadRatSuite -->
-                      <a href="#" panel-name="suite-LeadRatSuite" class="show-methods failed suite-LeadRatSuite"> (show)</a> <!-- show-methods failed suite-LeadRatSuite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-LeadRatSuite" class="hide-methods passed suite-LeadRatSuite"> (hide)</a> <!-- hide-methods passed suite-LeadRatSuite -->
+                      <a href="#" panel-name="suite-LeadRatSuite" class="show-methods passed suite-LeadRatSuite"> (show)</a> <!-- show-methods passed suite-LeadRatSuite -->
                     </span>
-                    <div class="method-list-content failed suite-LeadRatSuite">
+                    <div class="method-list-content passed suite-LeadRatSuite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-LeadRatSuite" title="web.test.TC010_BookingForm" class="method navigator-link" hash-for-method="testBookingForm">testBookingForm</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-LeadRatSuite" title="web.test.TC010_BookingForm" class="method navigator-link" hash-for-method="Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking">Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-LeadRatSuite -->
+                    </div> <!-- method-list-content passed suite-LeadRatSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,49 +118,21 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-LeadRatSuite" class="panel LeadRatSuite">
-          <div class="suite-LeadRatSuite-class-failed">
+          <div class="suite-LeadRatSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">web.test.TC010_BookingForm</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testBookingForm">
-                  </a> <!-- testBookingForm -->
-                  <span class="method-name">testBookingForm</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@class,&apos;ng-option&apos;) and contains(.,&apos;projectName&apos;)]&quot;}
-  (Session info: chrome=126.0.6478.182)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1379f1afdb47ade48a9fbd7dd53fcf61, findElement {using=xpath, value=//div[contains(@class,&apos;ng-option&apos;) and contains(.,&apos;projectName&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.182, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54189/devtoo..., se:cdpVersion: 126.0.6478.182, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1379f1afdb47ade48a9fbd7dd53fcf61
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
-	at pomPages.BookingFormPage.fillBookingForm(BookingFormPage.java:131)
-	at web.test.TC010_BookingForm.testBookingForm(TC010_BookingForm.java:35)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
+                  <a name="Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking">
+                  </a> <!-- Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking -->
+                  <span class="method-name">Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-LeadRatSuite-class-failed -->
+          </div> <!-- suite-LeadRatSuite-class-passed -->
         </div> <!-- panel LeadRatSuite -->
         <div panel-name="test-xml-LeadRatSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -219,14 +191,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testBookingForm')
+data.setCell(0, 1, 'Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking')
 data.setCell(0, 2, 'web.test.TC010_BookingForm')
-data.setCell(0, 3, 55334);
+data.setCell(0, 3, 48577);
 window.suiteTableData['LeadRatSuite']= { tableData: data, tableDiv: 'times-div-LeadRatSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 55 seconds</span>
+              <span class="suite-total-time">Total running time: 48 seconds</span>
               <div id="times-div-LeadRatSuite">
               </div> <!-- times-div-LeadRatSuite -->
             </div> <!-- times-div -->
@@ -258,14 +230,12 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testBookingForm</span>
-                <span class="method-start">10162 ms</span>
+                <span class="method-name">Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking</span>
+                <span class="method-start">9352 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">65789 ms</span>
+                <span class="method-start">58041 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -20,7 +20,7 @@ public class RetryAnalyzer implements IRetryAnalyzer {
         if (retryCount < maxRetryCount) {
             retryCount++;
             logger.info("Retrying test: " + result.getMethod().getMethodName() +
-                    " for the " + retryCount + " time.");
+                    " for the " + retryCount + " time.\n");
             return true;
         }
         return false;

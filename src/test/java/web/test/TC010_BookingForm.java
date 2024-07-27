@@ -1,6 +1,7 @@
 package web.test;
 
 import java.awt.AWTException;
+import java.io.File;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -8,10 +9,10 @@ import org.testng.annotations.Test;
 import pomPages.BookingFormPage;
 import test.base.BaseTest;
 
-public class TC010_BookingForm extends BaseTest{
+public class TC010_BookingForm extends BaseTest {
 
-	@Test
-    public void testBookingForm() throws AWTException, InterruptedException {
+    @Test
+    public void Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking() throws AWTException, InterruptedException {
         // Test data
         String bookedUnderName = "Rajaneesh";
         String agreementValue = "5400000";
@@ -28,13 +29,26 @@ public class TC010_BookingForm extends BaseTest{
         String referralName = "Madesh";
         String referralNo = "8765432138";
         String referralCommission = "5";
-        String filePath = "C:\\Users\\New User\\Downloads\\Bulding Images\\png-transparent-architectural-engineering-building-crane-building-building-monochrome-architect-thumbnail.png";
         
+        String photo = new File("./src/test/resources/image/photo.jpg").getAbsolutePath();
+        String adhar = new File("./src/test/resources/image/adhar.png").getAbsolutePath();
+        String pan = new File("./src/test/resources/image/PAN.jpg").getAbsolutePath();
+        String passport = new File("./src/test/resources/image/passport.jpeg").getAbsolutePath();
+
+
+        // Initialize the BookingFormPage
         BookingFormPage bfp = new BookingFormPage(driver);
         
-        bfp.fillBookingForm("Book",bookedUnderName, agreementValue, projectName, unitName, notes, carParkingCharges, addOnCharges, tokenAmountPaid, payMode, discount, discountType, gst, referralName, referralNo, referralCommission, filePath);
-
-        // Add assertions or checks as needed
-        Assert.assertTrue(true);
-    }
+        // Fill the booking form
+        boolean isStatusUpdated =  bfp.fillBookingForm("Book", bookedUnderName, agreementValue, projectName, unitName, notes, photo,adhar,pan,passport,carParkingCharges, addOnCharges, tokenAmountPaid, payMode, discount, discountType, "Cash", gst, referralName, referralNo, referralCommission);
+	        
+	        Assert.assertTrue(isStatusUpdated, "Status should be updated successfully");
+	        
+	        if (isStatusUpdated) {
+	            logger.info("Status updated successfully\n");
+	        } else {
+	            logger.info("Unable to update Status\n");
+	        }
+	    }
+    
 }

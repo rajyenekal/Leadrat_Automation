@@ -6,20 +6,18 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
 import Utilities.FileUpload;
 import Utilities.JavaScriptUtil;
 import Utilities.WaitsUtil;
 
 public class BookingFormPage extends BasePage {
-	
+
     public BookingFormPage(WebDriver driver) {
-		super(driver);
-	}
+        super(driver);
+    }
 
-	WaitsUtil waits = new WaitsUtil(ldriver);
-	JavaScriptUtil jse = new JavaScriptUtil(ldriver);
-
+    WaitsUtil waits = new WaitsUtil(ldriver);
+    JavaScriptUtil jse = new JavaScriptUtil(ldriver);
 
     @FindBy(id = "clkLeadsCurrentPending")
     private WebElement pendingLead;
@@ -27,11 +25,17 @@ public class BookingFormPage extends BasePage {
     @FindBy(xpath = "//h4[contains(.,'Leads')]")
     private WebElement leadsHeader;
 
-    @FindBy(xpath="//label[@class=\"status-badge\" ]")
-	WebElement subStatus;
-    
+    @FindBy(xpath = "(//div[@col-id=\"CustomLeadStatus\"])[2]//span")
+    WebElement currentStatus;
+
+    @FindBy(xpath = "//label[@class=\"status-badge\" ]")
+    WebElement subStatus;
+
     @FindBy(id = "bookedUnderName")
     private WebElement bookedUnderNameField;
+
+    @FindBy(id = "projectProperty1")
+    private WebElement project;
 
     @FindBy(id = "agreementValue")
     private WebElement agreementValueField;
@@ -42,8 +46,8 @@ public class BookingFormPage extends BasePage {
     @FindBy(xpath = "//label[.='Choose Project']/..//input")
     private WebElement chooseProjectField;
 
-    @FindBy(xpath = "//div[contains(@class,'ng-option') and contains(.,'projectName')]")
-    private WebElement projectOption;
+    @FindBy(xpath = "//h4[.='Booking details']")
+    private WebElement projectbookingDetailsOption;
 
     @FindBy(xpath = "//label[.='Choose Unit']/..//input")
     private WebElement unitField;
@@ -90,12 +94,21 @@ public class BookingFormPage extends BasePage {
     @FindBy(xpath = "//div[contains(@class,'ng-option') and contains(.,'discountType')]")
     private WebElement discountTypeOption;
 
+    @FindBy(xpath = "//label[.='Type of Payment Selected']/..//input")
+    private WebElement typeofPay;
+
     @FindBy(id = "txtUpdateStatusNotes")
     private WebElement notesField;
 
     @FindBy(xpath = "//button[contains(.,'Save & Go to Next')]")
     private WebElement saveGoToNextButton;
 
+    @FindBy(xpath = "//div[.='Invoice added successfully.']")
+    private WebElement invoiceAdded;
+    
+    @FindBy(xpath = "//h4[.='Brokerage info']")
+    private WebElement brokerageInfo;
+    
     @FindBy(xpath = "//label[.='GST']/..//input")
     private WebElement gstField;
 
@@ -110,52 +123,93 @@ public class BookingFormPage extends BasePage {
 
     @FindBy(xpath = "//button[.='Save & move to invoice']")
     private WebElement saveMoveToInvoiceButton;
+    
+    @FindBy(xpath = "//h4[contains(.,'Invoice')]")
+    private WebElement invoice;
+    
+    @FindBy(xpath = "//button[.='Save and Close']")
+    private WebElement saveClose;
 
-    public void selectStatus(String status) {
-    	WebElement sts = ldriver.findElement(By.xpath("//label[contains(@class,'status-badge') and contains(.,'"+status+"')]"));
-    	waits.waitTillClickable(sts);
-    	jse.jsClick(sts);
-    	waits.waitTillClickable(subStatus);
-    	jse.jsClick(subStatus);
+	@FindBy(xpath="//div[contains(.,'Updated Successfully')]")
+	private WebElement toastMsg;
+
+    public boolean clickOption(String name) {
+        WebElement popOption = ldriver.findElement(By.xpath("//div[contains(@class,'ng-option') and contains(.,'" + name + "')]"));
+        waits.waitTillClickable(popOption);
+        popOption.click();
+        return true;
     }
 
-    public void fillBookingForm(String status,String bookedUnderName, String agreementValue, String projectName, String unitName, String notes,String filePath, String carParkingCharges, String addOnCharges, String tokenAmountPaid, String payMode, String discount, String discountType, String gst, String referralName, String referralNo, String referralCommission) throws AWTException, InterruptedException {
-    	waits.waitTillVisible(leadsHeader);
+    public void selectStatus(String status) {
+        waits.waitTillClickable(currentStatus);
+        currentStatus.click();
+        WebElement sts = ldriver.findElement(By.xpath("//label[contains(@class,'status-badge') and contains(.,'" + status + "')]"));
+        waits.waitTillClickable(sts);
+        jse.jsClick(sts);
+        waits.waitTillClickable(subStatus);
+        jse.jsClick(subStatus);
+    }
+
+    public boolean fillBookingForm(String status, String bookedUnderName, String agreementValue, String projectName, String unitName, String notes, String photo,String adhar,String pan,String passport, String carParkingCharges, String addOnCharges, String tokenAmountPaid, String payMode, String discount, String discountType, String payType, String gst, String referralName, String referralNo, String referralCommission) throws AWTException, InterruptedException {
+        waits.waitTillVisible(leadsHeader);
         pendingLead.click();
         selectStatus(status);
-        // Fill in the booking form
         bookedUnderNameField.sendKeys(bookedUnderName);
         agreementValueField.sendKeys(agreementValue);
+        waits.waitTillClickable(project);
+        project.click();
         projectField.sendKeys(projectName);
         chooseProjectField.sendKeys(projectName);
-        projectOption.click();
+        clickOption(projectName);
         unitField.sendKeys(unitName);
-        unitOption.click();
+        clickOption(unitName);
         statusNotesField.sendKeys(notes);
         saveFillFormButton.click();
-        // Continue with the other fields and steps similar to the above
         
-        // Example: Upload files
-        FileUpload.uploadFile(ldriver, filePath, "photo");
-        FileUpload.uploadFile(ldriver, filePath, "Aadhar");
-        FileUpload.uploadFile(ldriver, filePath, "PAN");
-        FileUpload.uploadFile(ldriver, filePath, "Passport");
+        FileUpload.uploadFile(ldriver, photo, "photo");
+        FileUpload.uploadFile(ldriver, adhar, "Aadhar");
+        FileUpload.uploadFile(ldriver, pan, "PAN");
+        FileUpload.uploadFile(ldriver, passport, "Passport");
 
-        // Example: Additional fields
         carParkingChargesField.sendKeys(carParkingCharges);
         addOnChargesField.sendKeys(addOnCharges);
         tokenAmountPaidField.sendKeys(tokenAmountPaid);
         paymentModeField.sendKeys(payMode);
-        paymentModeOption.click();
-        balanceAmountField.sendKeys(/* Calculate as needed */);
+        clickOption(payMode);
+        
         checkmarkCheckbox.click();
         discountField.sendKeys(discount);
         discountTypeField.sendKeys(discountType);
-        discountTypeOption.click();
+        clickOption(discountType);
+        typeofPay.sendKeys(payType);
+        clickOption(payType);
+        waits.waitTillClickable(saveGoToNextButton);
+        saveGoToNextButton.click();
+        
+        waits.waitTillVisible(invoiceAdded);
+        waits.waitTillVisible(brokerageInfo);
+        brokerageInfo.isDisplayed();
         gstField.sendKeys(gst);
         referralNameField.sendKeys(referralName);
         referralNoField.sendKeys(referralNo);
         referralCommissionField.sendKeys(referralCommission);
         saveMoveToInvoiceButton.click();
+        waits.waitTillVisible(invoiceAdded);
+        invoiceAdded.isDisplayed();
+        waits.waitTillVisible(invoice);
+        invoice.isDisplayed();
+        waits.waitTillClickable(currentStatus);
+        currentStatus.click();
+        WebElement sts = ldriver.findElement(By.xpath("//label[contains(@class,'status-badge') and contains(.,'Booking Cancel')]"));
+        waits.waitTillClickable(sts);
+        jse.jsClick(sts);
+        WebElement substs = ldriver.findElement(By.xpath("//input[@formcontrolname=\"reason\"]/..//label[contains(@class,'status-badge' )]"));
+        waits.waitTillClickable(substs);
+        substs.click();
+        waits.waitTillVisible(saveClose);
+        saveClose.click();
+        waits.waitTillVisible(toastMsg);
+        return toastMsg.isDisplayed();
+        
     }
 }
