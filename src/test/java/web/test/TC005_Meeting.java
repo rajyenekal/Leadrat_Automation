@@ -15,13 +15,13 @@ public class TC005_Meeting extends BaseTest {
     	UpdatesStatusPage usp = new UpdatesStatusPage(driver);
 
         usp.ScheduleStatus("Schedule Meeting", "Status updated");
-        logger.info("Status updated successfully\n");
+        logger.info("Meeting Scheduled successfully\n");
 
         boolean isMeetingUpdated = usp.updatemeeting("Meeting", "Rajaneesh", "9876517897", "Meeting Done");
         
         Assert.assertTrue("Meeting should be updated successfully", isMeetingUpdated);
         if (isMeetingUpdated) {
-            logger.info("Meeting updated successfully\n");
+            logger.info("Scheduled Meeting updated successfully\n");
         } else {
             logger.info("Unable to update meeting\n");
         }

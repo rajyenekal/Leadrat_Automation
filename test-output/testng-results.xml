@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="1" ignored="1" total="3" passed="1" failed="0" skipped="0">
+<testng-results retried="2" ignored="2" total="6" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-27T19:57:20 IST" name="LeadRatSuite" finished-at="2024-07-27T19:59:11 IST" duration-ms="111145">
+  <suite started-at="2024-07-27T21:18:09 IST" name="LeadRatSuite" finished-at="2024-07-27T21:20:45 IST" duration-ms="155969">
     <groups>
     </groups>
-    <test started-at="2024-07-27T19:57:20 IST" name="Leadrat Test" finished-at="2024-07-27T19:59:11 IST" duration-ms="111145">
-      <class name="web.test.TC010_BookingForm">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:web.test.TC010_BookingForm@7eac9008]" started-at="2024-07-27T19:57:21 IST" name="setUp" finished-at="2024-07-27T19:57:32 IST" duration-ms="10806" status="PASS">
+    <test started-at="2024-07-27T21:18:09 IST" name="Leadrat Test" finished-at="2024-07-27T21:20:45 IST" duration-ms="155969">
+      <class name="web.test.TC006_SiteVisit">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:web.test.TC006_SiteVisit@6c40365c]" started-at="2024-07-27T21:19:17 IST" name="setUp" finished-at="2024-07-27T21:19:31 IST" duration-ms="13697" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,29 +18,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method retried="true" signature="Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking()[pri:0, instance:web.test.TC010_BookingForm@7eac9008]" started-at="2024-07-27T19:57:32 IST" name="Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking" finished-at="2024-07-27T19:58:09 IST" duration-ms="37296" status="SKIP">
+        <test-method retried="true" signature="Scheduling_a_SiteVisit_and_Marking_it_as_Done()[pri:0, instance:web.test.TC006_SiteVisit@6c40365c]" started-at="2024-07-27T21:19:31 IST" name="Scheduling_a_SiteVisit_and_Marking_it_as_Done" finished-at="2024-07-27T21:20:02 IST" duration-ms="31281" status="SKIP">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(.,'click to Upload photo')]/../../../../../../../..//a[contains(@class,'green')]/..//span[contains(@class,'delete')]"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@name='scheduled']//span[contains(.,'Mite')]"}
   (Session info: chrome=127.0.6533.72)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.22.0', revision: 'c5f3146703*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7557e954c8cac9eeea88e5890cf8e616, findElement {using=xpath, value=//span[contains(.,'click to Upload photo')]/../../../../../../../..//a[contains(@class,'green')]/..//span[contains(@class,'delete')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.72, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60041}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60041/devtoo..., se:cdpVersion: 127.0.6533.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7557e954c8cac9eeea88e5890cf8e616]]>
+Command: [e8710feaf473f5d3fd30d9e0bedc6c88, findElement {value=//a[@name='scheduled']//span[contains(.,'Mite')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.72, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62368}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62368/devtoo..., se:cdpVersion: 127.0.6533.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e8710feaf473f5d3fd30d9e0bedc6c88]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(.,'click to Upload photo')]/../../../../../../../..//a[contains(@class,'green')]/..//span[contains(@class,'delete')]"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@name='scheduled']//span[contains(.,'Mite')]"}
   (Session info: chrome=127.0.6533.72)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.22.0', revision: 'c5f3146703*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7557e954c8cac9eeea88e5890cf8e616, findElement {using=xpath, value=//span[contains(.,'click to Upload photo')]/../../../../../../../..//a[contains(@class,'green')]/..//span[contains(@class,'delete')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.72, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60041}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60041/devtoo..., se:cdpVersion: 127.0.6533.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7557e954c8cac9eeea88e5890cf8e616
+Command: [e8710feaf473f5d3fd30d9e0bedc6c88, findElement {value=//a[@name='scheduled']//span[contains(.,'Mite')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.72, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62368}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62368/devtoo..., se:cdpVersion: 127.0.6533.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e8710feaf473f5d3fd30d9e0bedc6c88
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -57,9 +57,8 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at Utilities.ActionsUtil.uploadFile(ActionsUtil.java:101)
-at pomPages.BookingFormPage.fillBookingForm(BookingFormPage.java:170)
-at web.test.TC010_BookingForm.Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking(TC010_BookingForm.java:44)
+at pomPages.UpdatesStatusPage.updatemeeting(UpdatesStatusPage.java:152)
+at web.test.TC006_SiteVisit.Scheduling_a_SiteVisit_and_Marking_it_as_Done(TC006_SiteVisit.java:19)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -93,12 +92,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:web.test.TC010_BookingForm@7eac9008]" started-at="2024-07-27T19:58:09 IST" name="tearDown" finished-at="2024-07-27T19:58:09 IST" duration-ms="350" status="PASS">
+        </test-method> <!-- Scheduling_a_SiteVisit_and_Marking_it_as_Done -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:web.test.TC006_SiteVisit@6c40365c]" started-at="2024-07-27T21:20:02 IST" name="tearDown" finished-at="2024-07-27T21:20:02 IST" duration-ms="363" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:web.test.TC010_BookingForm@7eac9008]" started-at="2024-07-27T19:58:09 IST" name="setUp" finished-at="2024-07-27T19:58:21 IST" duration-ms="11668" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:web.test.TC006_SiteVisit@6c40365c]" started-at="2024-07-27T21:20:02 IST" name="setUp" finished-at="2024-07-27T21:20:13 IST" duration-ms="10159" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -109,15 +108,201 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking()[pri:0, instance:web.test.TC010_BookingForm@7eac9008]" started-at="2024-07-27T19:58:21 IST" name="Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking" finished-at="2024-07-27T19:59:11 IST" duration-ms="49923" status="PASS">
+        <test-method signature="Scheduling_a_SiteVisit_and_Marking_it_as_Done()[pri:0, instance:web.test.TC006_SiteVisit@6c40365c]" started-at="2024-07-27T21:20:13 IST" name="Scheduling_a_SiteVisit_and_Marking_it_as_Done" finished-at="2024-07-27T21:20:44 IST" duration-ms="31730" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@name='scheduled']//span[contains(.,'Mite')]"}
+  (Session info: chrome=127.0.6533.72)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f769448f8eac23483d7e4d443a617ff9, findElement {value=//a[@name='scheduled']//span[contains(.,'Mite')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.72, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62438}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62438/devtoo..., se:cdpVersion: 127.0.6533.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f769448f8eac23483d7e4d443a617ff9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@name='scheduled']//span[contains(.,'Mite')]"}
+  (Session info: chrome=127.0.6533.72)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f769448f8eac23483d7e4d443a617ff9, findElement {value=//a[@name='scheduled']//span[contains(.,'Mite')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.72, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62438}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62438/devtoo..., se:cdpVersion: 127.0.6533.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f769448f8eac23483d7e4d443a617ff9
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at pomPages.UpdatesStatusPage.updatemeeting(UpdatesStatusPage.java:152)
+at web.test.TC006_SiteVisit.Scheduling_a_SiteVisit_and_Marking_it_as_Done(TC006_SiteVisit.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:web.test.TC010_BookingForm@7eac9008]" started-at="2024-07-27T19:59:11 IST" name="tearDown" finished-at="2024-07-27T19:59:11 IST" duration-ms="386" status="PASS">
+        </test-method> <!-- Scheduling_a_SiteVisit_and_Marking_it_as_Done -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:web.test.TC006_SiteVisit@6c40365c]" started-at="2024-07-27T21:20:45 IST" name="tearDown" finished-at="2024-07-27T21:20:45 IST" duration-ms="385" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- web.test.TC010_BookingForm -->
+      </class> <!-- web.test.TC006_SiteVisit -->
+      <class name="web.test.TC005_Meeting">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:web.test.TC005_Meeting@62ddbd7e]" started-at="2024-07-27T21:18:10 IST" name="setUp" finished-at="2024-07-27T21:18:21 IST" duration-ms="11629" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="Scheduling_a_Meeting_and_Marking_it_as_Done()[pri:0, instance:web.test.TC005_Meeting@62ddbd7e]" started-at="2024-07-27T21:18:21 IST" name="Scheduling_a_Meeting_and_Marking_it_as_Done" finished-at="2024-07-27T21:18:43 IST" duration-ms="21549" status="SKIP">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button id="btnUpdateLeadStatus" data-automate-id="btnUpdateLeadStatus" class="btn-coal px-10 min-w-fit-content ng-star-inserted">...</button> is not clickable at point (1194, 485). Other element would receive the click: <img _ngcontent-dql-c124="" height="120px" width="120px" src="assets/images/loader-rat.svg" class="cssload-zenith">
+  (Session info: chrome=127.0.6533.72)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [064203c4ae00703ed311b69f41298694, clickElement {id=f.798B2FD5176D2B294D650CF2456263EB.d.441016F5804048C3E4409ED91CB2A8FA.e.342}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.72, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62223}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62223/devtoo..., se:cdpVersion: 127.0.6533.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (064203c4ae00703ed311b69f41298694)] -> id: btnUpdateLeadStatus]
+Session ID: 064203c4ae00703ed311b69f41298694]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button id="btnUpdateLeadStatus" data-automate-id="btnUpdateLeadStatus" class="btn-coal px-10 min-w-fit-content ng-star-inserted">...</button> is not clickable at point (1194, 485). Other element would receive the click: <img _ngcontent-dql-c124="" height="120px" width="120px" src="assets/images/loader-rat.svg" class="cssload-zenith">
+  (Session info: chrome=127.0.6533.72)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [064203c4ae00703ed311b69f41298694, clickElement {id=f.798B2FD5176D2B294D650CF2456263EB.d.441016F5804048C3E4409ED91CB2A8FA.e.342}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.72, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62223}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62223/devtoo..., se:cdpVersion: 127.0.6533.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (064203c4ae00703ed311b69f41298694)] -> id: btnUpdateLeadStatus]
+Session ID: 064203c4ae00703ed311b69f41298694
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+at pomPages.UpdatesStatusPage.updatemeeting(UpdatesStatusPage.java:164)
+at web.test.TC005_Meeting.Scheduling_a_Meeting_and_Marking_it_as_Done(TC005_Meeting.java:20)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scheduling_a_Meeting_and_Marking_it_as_Done -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:web.test.TC005_Meeting@62ddbd7e]" started-at="2024-07-27T21:18:43 IST" name="tearDown" finished-at="2024-07-27T21:18:46 IST" duration-ms="2604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:web.test.TC005_Meeting@62ddbd7e]" started-at="2024-07-27T21:18:46 IST" name="setUp" finished-at="2024-07-27T21:18:59 IST" duration-ms="12846" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Scheduling_a_Meeting_and_Marking_it_as_Done()[pri:0, instance:web.test.TC005_Meeting@62ddbd7e]" started-at="2024-07-27T21:18:59 IST" name="Scheduling_a_Meeting_and_Marking_it_as_Done" finished-at="2024-07-27T21:19:17 IST" duration-ms="17900" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scheduling_a_Meeting_and_Marking_it_as_Done -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:web.test.TC005_Meeting@62ddbd7e]" started-at="2024-07-27T21:19:17 IST" name="tearDown" finished-at="2024-07-27T21:19:17 IST" duration-ms="521" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- web.test.TC005_Meeting -->
     </test> <!-- Leadrat Test -->
   </suite> <!-- LeadRatSuite -->
 </testng-results>

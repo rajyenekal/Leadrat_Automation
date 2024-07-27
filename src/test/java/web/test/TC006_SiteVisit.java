@@ -14,15 +14,15 @@ public class TC006_SiteVisit extends BaseTest {
 		UpdatesStatusPage usp = new UpdatesStatusPage(driver);
 		
 		usp.ScheduleStatus("Schedule Site Visit", "Status updated");
-		logger.info("Status Updated Successfully\n");
+		logger.info("Site-Visit Scheduled Successfully\n");
 		
         boolean isMeetingUpdated = usp.updatemeeting("Site", "Rajaneesh", "9876517897", "Meeting Done");
 	        
-	        Assert.assertTrue("Meeting should be updated successfully", isMeetingUpdated);
+	        Assert.assertTrue("Site-Visit should be updated successfully", isMeetingUpdated);
 	        if (isMeetingUpdated) {
-	            logger.info("Meeting updated successfully\n");
+	            logger.info("Scheduled Site-Visit updated successfully\n");
 	        } else {
-	            logger.info("Unable to update meeting\n");
+	            logger.info("Unable to update Site-Visit\n");
 	        }
 
 	}

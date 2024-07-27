@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-LeadRatSuite" class="navigator-link">
-              <span class="suite-name border-skipped">LeadRatSuite</span>
+              <span class="suite-name border-failed">LeadRatSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,  1 skipped,  1 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,  2 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-LeadRatSuite" class="hide-methods failed suite-LeadRatSuite"> (hide)</a> <!-- hide-methods failed suite-LeadRatSuite -->
+                      <a href="#" panel-name="suite-LeadRatSuite" class="show-methods failed suite-LeadRatSuite"> (show)</a> <!-- show-methods failed suite-LeadRatSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-LeadRatSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-LeadRatSuite" title="web.test.TC006_SiteVisit" class="method navigator-link" hash-for-method="Scheduling_a_SiteVisit_and_Marking_it_as_Done">Scheduling_a_SiteVisit_and_Marking_it_as_Done</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-LeadRatSuite -->
                   </li>
                   <li>
                     <span class="method-list-title skipped">Retried methods</span>
@@ -103,7 +117,12 @@
                     <div class="method-list-content skipped suite-LeadRatSuite">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-LeadRatSuite" title="web.test.TC010_BookingForm" class="method navigator-link" hash-for-method="Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking">Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-LeadRatSuite" title="web.test.TC005_Meeting" class="method navigator-link" hash-for-method="Scheduling_a_Meeting_and_Marking_it_as_Done">Scheduling_a_Meeting_and_Marking_it_as_Done</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-LeadRatSuite" title="web.test.TC006_SiteVisit" class="method navigator-link" hash-for-method="Scheduling_a_SiteVisit_and_Marking_it_as_Done">Scheduling_a_SiteVisit_and_Marking_it_as_Done</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-LeadRatSuite -->
@@ -117,7 +136,7 @@
                     <div class="method-list-content passed suite-LeadRatSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-LeadRatSuite" title="web.test.TC010_BookingForm" class="method navigator-link" hash-for-method="Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking">Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-LeadRatSuite" title="web.test.TC005_Meeting" class="method navigator-link" hash-for-method="Scheduling_a_Meeting_and_Marking_it_as_Done">Scheduling_a_Meeting_and_Marking_it_as_Done</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-LeadRatSuite -->
@@ -132,26 +151,26 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-LeadRatSuite" class="panel LeadRatSuite">
-          <div class="suite-LeadRatSuite-class-skipped">
+          <div class="suite-LeadRatSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">web.test.TC010_BookingForm</span>
+              <img src="failed.png"/>
+              <span class="class-name">web.test.TC006_SiteVisit</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking">
-                  </a> <!-- Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking -->
-                  <span class="method-name">Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(.,&apos;click to Upload photo&apos;)]/../../../../../../../..//a[contains(@class,&apos;green&apos;)]/..//span[contains(@class,&apos;delete&apos;)]&quot;}
+                  <a name="Scheduling_a_SiteVisit_and_Marking_it_as_Done">
+                  </a> <!-- Scheduling_a_SiteVisit_and_Marking_it_as_Done -->
+                  <span class="method-name">Scheduling_a_SiteVisit_and_Marking_it_as_Done</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@name=&apos;scheduled&apos;]//span[contains(.,&apos;Mite&apos;)]&quot;}
   (Session info: chrome=127.0.6533.72)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7557e954c8cac9eeea88e5890cf8e616, findElement {using=xpath, value=//span[contains(.,&apos;click to Upload photo&apos;)]/../../../../../../../..//a[contains(@class,&apos;green&apos;)]/..//span[contains(@class,&apos;delete&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.72, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60041}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60041/devtoo..., se:cdpVersion: 127.0.6533.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7557e954c8cac9eeea88e5890cf8e616
+Command: [f769448f8eac23483d7e4d443a617ff9, findElement {value=//a[@name=&apos;scheduled&apos;]//span[contains(.,&apos;Mite&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.72, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62438}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62438/devtoo..., se:cdpVersion: 127.0.6533.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f769448f8eac23483d7e4d443a617ff9
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -163,11 +182,90 @@ Session ID: 7557e954c8cac9eeea88e5890cf8e616
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at Utilities.ActionsUtil.uploadFile(ActionsUtil.java:101)
-	at pomPages.BookingFormPage.fillBookingForm(BookingFormPage.java:170)
-	at web.test.TC010_BookingForm.Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking(TC010_BookingForm.java:44)
+	at pomPages.UpdatesStatusPage.updatemeeting(UpdatesStatusPage.java:152)
+	at web.test.TC006_SiteVisit.Scheduling_a_SiteVisit_and_Marking_it_as_Done(TC006_SiteVisit.java:19)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LeadRatSuite-class-failed -->
+          <div class="suite-LeadRatSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">web.test.TC006_SiteVisit</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Scheduling_a_SiteVisit_and_Marking_it_as_Done">
+                  </a> <!-- Scheduling_a_SiteVisit_and_Marking_it_as_Done -->
+                  <span class="method-name">Scheduling_a_SiteVisit_and_Marking_it_as_Done</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@name=&apos;scheduled&apos;]//span[contains(.,&apos;Mite&apos;)]&quot;}
+  (Session info: chrome=127.0.6533.72)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e8710feaf473f5d3fd30d9e0bedc6c88, findElement {value=//a[@name=&apos;scheduled&apos;]//span[contains(.,&apos;Mite&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.72, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62368}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62368/devtoo..., se:cdpVersion: 127.0.6533.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e8710feaf473f5d3fd30d9e0bedc6c88
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at pomPages.UpdatesStatusPage.updatemeeting(UpdatesStatusPage.java:152)
+	at web.test.TC006_SiteVisit.Scheduling_a_SiteVisit_and_Marking_it_as_Done(TC006_SiteVisit.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LeadRatSuite-class-skipped -->
+          <div class="suite-LeadRatSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">web.test.TC005_Meeting</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Scheduling_a_Meeting_and_Marking_it_as_Done">
+                  </a> <!-- Scheduling_a_Meeting_and_Marking_it_as_Done -->
+                  <span class="method-name">Scheduling_a_Meeting_and_Marking_it_as_Done</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button id=&quot;btnUpdateLeadStatus&quot; data-automate-id=&quot;btnUpdateLeadStatus&quot; class=&quot;btn-coal px-10 min-w-fit-content ng-star-inserted&quot;&gt;...&lt;/button&gt; is not clickable at point (1194, 485). Other element would receive the click: &lt;img _ngcontent-dql-c124=&quot;&quot; height=&quot;120px&quot; width=&quot;120px&quot; src=&quot;assets/images/loader-rat.svg&quot; class=&quot;cssload-zenith&quot;&gt;
+  (Session info: chrome=127.0.6533.72)
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [064203c4ae00703ed311b69f41298694, clickElement {id=f.798B2FD5176D2B294D650CF2456263EB.d.441016F5804048C3E4409ED91CB2A8FA.e.342}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.72, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62223}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62223/devtoo..., se:cdpVersion: 127.0.6533.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (064203c4ae00703ed311b69f41298694)] -&gt; id: btnUpdateLeadStatus]
+Session ID: 064203c4ae00703ed311b69f41298694
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+	at pomPages.UpdatesStatusPage.updatemeeting(UpdatesStatusPage.java:164)
+	at web.test.TC005_Meeting.Scheduling_a_Meeting_and_Marking_it_as_Done(TC005_Meeting.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -176,14 +274,14 @@ Session ID: 7557e954c8cac9eeea88e5890cf8e616
           <div class="suite-LeadRatSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">web.test.TC010_BookingForm</span>
+              <span class="class-name">web.test.TC005_Meeting</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking">
-                  </a> <!-- Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking -->
-                  <span class="method-name">Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking</span>
+                  <a name="Scheduling_a_Meeting_and_Marking_it_as_Done">
+                  </a> <!-- Scheduling_a_Meeting_and_Marking_it_as_Done -->
+                  <span class="method-name">Scheduling_a_Meeting_and_Marking_it_as_Done</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -204,7 +302,8 @@ Session ID: 7557e954c8cac9eeea88e5890cf8e616
   &lt;test thread-count=&quot;5&quot; name=&quot;Leadrat Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;web.test.TC010_BookingForm&quot;/&gt;
+      &lt;class name=&quot;web.test.TC005_Meeting&quot;/&gt;
+      &lt;class name=&quot;web.test.TC006_SiteVisit&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Leadrat Test --&gt;
 &lt;/suite&gt; &lt;!-- LeadRatSuite --&gt;
@@ -218,7 +317,7 @@ Session ID: 7557e954c8cac9eeea88e5890cf8e616
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Leadrat Test (1 class)</span>
+                <span class="test-name">Leadrat Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -244,15 +343,23 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking')
-data.setCell(0, 2, 'web.test.TC010_BookingForm')
-data.setCell(0, 3, 49923);
+data.setCell(0, 1, 'Scheduling_a_SiteVisit_and_Marking_it_as_Done')
+data.setCell(0, 2, 'web.test.TC006_SiteVisit')
+data.setCell(0, 3, 31730);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking')
-data.setCell(1, 2, 'web.test.TC010_BookingForm')
-data.setCell(1, 3, 37296);
+data.setCell(1, 1, 'Scheduling_a_SiteVisit_and_Marking_it_as_Done')
+data.setCell(1, 2, 'web.test.TC006_SiteVisit')
+data.setCell(1, 3, 31281);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Scheduling_a_Meeting_and_Marking_it_as_Done')
+data.setCell(2, 2, 'web.test.TC005_Meeting')
+data.setCell(2, 3, 21549);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Scheduling_a_Meeting_and_Marking_it_as_Done')
+data.setCell(3, 2, 'web.test.TC005_Meeting')
+data.setCell(3, 3, 17900);
 window.suiteTableData['LeadRatSuite']= { tableData: data, tableDiv: 'times-div-LeadRatSuite'}
 return data;
 }
@@ -283,30 +390,59 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">web.test.TC010_BookingForm</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">web.test.TC005_Meeting</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking</span>
-                <span class="method-start">10808 ms</span>
+                <span class="method-name">Scheduling_a_Meeting_and_Marking_it_as_Done</span>
+                <span class="method-start">11629 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">48174 ms</span>
+                <span class="method-start">33331 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">48527 ms</span>
+                <span class="method-start">35939 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking</span>
-                <span class="method-start">60195 ms</span>
+                <span class="method-name">Scheduling_a_Meeting_and_Marking_it_as_Done</span>
+                <span class="method-start">48786 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">110126 ms</span>
+                <span class="method-start">66698 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">web.test.TC006_SiteVisit</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">67219 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Scheduling_a_SiteVisit_and_Marking_it_as_Done</span>
+                <span class="method-start">80916 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">112211 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">112574 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Scheduling_a_SiteVisit_and_Marking_it_as_Done</span>
+                <span class="method-start">122733 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">154733 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

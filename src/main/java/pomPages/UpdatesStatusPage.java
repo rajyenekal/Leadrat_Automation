@@ -89,7 +89,7 @@ public class UpdatesStatusPage extends BasePage {
     @FindBy(xpath = "//span[contains(@class,'red') and text()='No Projects']")
     WebElement addProject;
     
-    @FindBy(xpath = "//label[.='add project name']/..//input")
+    @FindBy(xpath = "//ng-select[@formcontrolname=\"project\"]//input")
     WebElement projectField;
     
     @FindBy(xpath = "//div[contains(@class,'option')]")
@@ -98,16 +98,11 @@ public class UpdatesStatusPage extends BasePage {
     @FindBy(xpath = "//button[.='Add']")
     WebElement add;
     
-    public void addProject() {
-        waits.waitTillClickable(addProject);
-        addProject.click();
+    public boolean addProject() {
         waits.waitTillClickable(projectField);
         projectField.click();
-        waits.waitTillClickable(option);
-        option.click();
-        jse.jsClick(add);
-        waits.waitTillVisible(walkingMuso);
-        walkingMuso.isDisplayed();
+        jse.jsClick(option);
+        return true;
     }
     
     public WebElement getTomorrowDateElement() {
@@ -174,6 +169,7 @@ public class UpdatesStatusPage extends BasePage {
         waits.waitTillClickable(done);
         jse.jsClick(done);
 
+        addProject();
         waits.waitTillClickable(executiveName);
         executiveName.sendKeys(execName);
         executiveNo.sendKeys(exeNo);

@@ -236,3 +236,59 @@ test.base.BaseTest - Logged as Rajaneesh Successfully
 
 web.test.TC010_BookingForm - Status updated successfully
 
+test.base.BaseTest - Logged as Rajaneesh Successfully
+
+web.test.TC005_Meeting - Status updated successfully
+
+test.base.RetryAnalyzer - Retrying test: Scheduling_a_Meeting_and_Marking_it_as_Done for the 1 time.
+
+test.base.BaseTest - Logged as Rajaneesh Successfully
+
+web.test.TC005_Meeting - Status updated successfully
+
+test.base.BaseTest - Logged as Rajaneesh Successfully
+
+web.test.TC005_Meeting - Status updated successfully
+
+web.test.TC005_Meeting - Meeting updated successfully
+
+test.base.BaseTest - Logged as Rajaneesh Successfully
+
+web.test.TC006_SiteVisit - Status Updated Successfully
+
+web.test.TC006_SiteVisit - Meeting updated successfully
+
+test.base.BaseTest - Logged as Rajaneesh Successfully
+
+web.test.TC005_Meeting - Meeting Scheduled successfully
+
+web.test.TC005_Meeting - Scheduled Meeting updated successfully
+
+test.base.BaseTest - Logged as Rajaneesh Successfully
+
+web.test.TC006_SiteVisit - Site-Visit Scheduled Successfully
+
+web.test.TC006_SiteVisit - Scheduled Site-Visit updated successfully
+
+test.base.BaseTest - Logged as Rajaneesh Successfully
+
+web.test.TC005_Meeting - Meeting Scheduled successfully
+
+test.base.RetryAnalyzer - Retrying test: Scheduling_a_Meeting_and_Marking_it_as_Done for the 1 time.
+
+test.base.BaseTest - Logged as Rajaneesh Successfully
+
+web.test.TC005_Meeting - Meeting Scheduled successfully
+
+web.test.TC005_Meeting - Scheduled Meeting updated successfully
+
+test.base.BaseTest - Logged as Rajaneesh Successfully
+
+web.test.TC006_SiteVisit - Site-Visit Scheduled Successfully
+
+test.base.RetryAnalyzer - Retrying test: Scheduling_a_SiteVisit_and_Marking_it_as_Done for the 1 time.
+
+test.base.BaseTest - Logged as Rajaneesh Successfully
+
+web.test.TC006_SiteVisit - Site-Visit Scheduled Successfully
+

@@ -30,9 +30,6 @@ public class ExtentReportManager implements ITestListener {
     public WebDriver driver;
 
     public void onStart(ITestContext testContext) {
-    	
-//        timeStamp = new SimpleDateFormat("hh.mm.ss a.dd.MM.yyyy").format(new Date());
-//        repName = "Test-Report-" + timeStamp + ".html";
 
     	SimpleDateFormat sdf = new SimpleDateFormat("hh.mm.ss a.dd.MM.yyyy");
         sdf.setTimeZone(TimeZone.getTimeZone("Asia/Kolkata"));
@@ -122,9 +119,9 @@ public class ExtentReportManager implements ITestListener {
 
         boolean hasFailedTests = testContext.getFailedTests().size() > 0;
         if (!hasFailedTests) {
-        	ExtentUtils.sendEmail("Passed!", repName);
+        	ExtentUtils.sendEmail("Passed 🏆", repName);
         } else {
-        	ExtentUtils.sendEmail("Failed!", repName);
+        	ExtentUtils.sendEmail("Failed ⚠️", repName);
         }
     }
 }

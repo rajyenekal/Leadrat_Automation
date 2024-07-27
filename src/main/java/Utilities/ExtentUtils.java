@@ -92,18 +92,13 @@ public class ExtentUtils {
 
             // Create the email body part
             BodyPart messageBodyPart = new MimeBodyPart();
-            messageBodyPart.setText("Dear User,\r\n"
-                    + "\r\n"
-                    + "I'm pleased to inform you that the Smoke Test for our project has been " + result + "\r\n"
-                    + "\r\n"
-                    + "Please find the Execution report attached.\r\n"
-                    + "\r\n"
-                    + "If you have any questions or need further assistance, please don't hesitate to reach out.\r\n"
-                    + "\r\n"
-                    + "Best regards,\r\n"
-                    + "Rajaneesh K B\r\n"
-                    + "Quality Analyst-1\r\n"
-                    + "+919741846197");
+            
+            if(result.equalsIgnoreCase("Passed 🏆")) {
+            	messageBodyPart.setText(successMsg);
+            }
+            else {
+            	messageBodyPart.setText(failmsg);
+            }
 
             // Create the multipart message
             Multipart multipart = new MimeMultipart();
@@ -128,4 +123,36 @@ public class ExtentUtils {
             throw new RuntimeException(e);
         }
     }
+    
+    static String successMsg = "Dear Team,\r\n"
+    		+ "\r\n"
+    		+ "I’m excited to share that the Smoke Test for our project has been successfully completed, and all scripts have passed! 🏆✨\r\n"
+    		+ "\r\n"
+    		+ "Please find the execution report attached for your review. It includes detailed information on the tests performed, including metrics and screenshots where applicable.\r\n"
+    		+ "\r\n"
+    		+ "If you have any questions or need further details, feel free to reach out.\r\n"
+    		+ "\r\n"
+    		+ "Thank you for your support and collaboration! 👍\r\n"
+    		+ "\r\n"
+    		+ "Best regards,\r\n"
+    		+ "Rajaneesh K B\r\n"
+    		+ "Quality Analyst\r\n"
+    		+ "📞 +919741846197\r\n"
+    		+ "\r\n"
+    		+ "";
+    
+    static String failmsg = "Dear Team,\r\n"
+    		+ "\r\n"
+    		+ "Unfortunately, our recent Smoke Test for the project encountered some issues, and not all scripts passed. 🚨🔍\r\n"
+    		+ "\r\n"
+    		+ "Please find the execution report attached. It provides details on the tests performed and the specific errors encountered with screenshot.\r\n"
+    		+ "\r\n"
+    		+ "If you have any questions or need more information, please don’t hesitate to contact me.\r\n"
+    		+ "\r\n"
+    		+ "We appreciate your attention to this matter and will keep you updated on our progress. 🛠️\r\n"
+    		+ "\r\n"
+    		+ "Best regards,\r\n"
+    		+ "Rajaneesh K B\r\n"
+    		+ "Quality Analyst\r\n"
+    		+ "📞 +919741846197";
 }
