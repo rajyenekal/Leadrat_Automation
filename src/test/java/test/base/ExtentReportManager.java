@@ -31,9 +31,13 @@ public class ExtentReportManager implements ITestListener {
 
     public void onStart(ITestContext testContext) {
     	
-        timeStamp = new SimpleDateFormat("hh.mm.ss a.dd.MM.yyyy").format(new Date());
-        repName = "Test-Report-" + timeStamp + ".html";
+//        timeStamp = new SimpleDateFormat("hh.mm.ss a.dd.MM.yyyy").format(new Date());
+//        repName = "Test-Report-" + timeStamp + ".html";
 
+    	SimpleDateFormat sdf = new SimpleDateFormat("hh.mm.ss a.dd.MM.yyyy");
+        sdf.setTimeZone(TimeZone.getTimeZone("Asia/Kolkata"));
+        timeStamp = sdf.format(new Date());
+        repName = "Test-Report-" + timeStamp + ".html";
     	
         sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName);
         sparkReporter.config().setDocumentTitle("LeadRat Automation Project");
