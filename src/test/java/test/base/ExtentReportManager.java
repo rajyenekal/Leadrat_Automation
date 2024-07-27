@@ -1,16 +1,16 @@
 package test.base;
 
 import java.io.File;
+import java.nio.file.Files;
 import java.text.SimpleDateFormat;
+import java.util.Base64;
 import java.util.Date;
+import java.util.TimeZone;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-import java.util.Base64;
-import java.nio.file.Files;
-
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -18,7 +18,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-import Utilities.FileUpload;
+import Utilities.ExtentUtils;
 
 public class ExtentReportManager implements ITestListener {
 
@@ -30,9 +30,14 @@ public class ExtentReportManager implements ITestListener {
     public WebDriver driver;
 
     public void onStart(ITestContext testContext) {
-        timeStamp = new SimpleDateFormat("hh.mm.ss a.dd.MM.yyyy").format(new Date());
-        repName = "Test-Report-" + timeStamp + ".html";
+    	
+//        timeStamp = new SimpleDateFormat("hh.mm.ss a.dd.MM.yyyy").format(new Date());
+//        repName = "Test-Report-" + timeStamp + ".html";
 
+    	  SimpleDateFormat sdf = new SimpleDateFormat("hh.mm.ss a.dd.MM.yyyy");
+          sdf.setTimeZone(TimeZone.getTimeZone("Asia/Kolkata"));
+          timeStamp = sdf.format(new Date());
+    	
         sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName);
         sparkReporter.config().setDocumentTitle("LeadRat Automation Project");
         sparkReporter.config().setReportName("LeadRat Automation Test Report");
@@ -55,7 +60,7 @@ public class ExtentReportManager implements ITestListener {
         test.log(Status.PASS, "Test Passed");
 
         // Add image if any
-        FileUpload.addImageToReport(test, "leadrat_logo.jpg");
+        ExtentUtils.addImageToReport(test, "leadrat_logo.jpg");
     }
 
     public void onTestFailure(ITestResult result) {
@@ -74,11 +79,11 @@ public class ExtentReportManager implements ITestListener {
         }
 
         // Check if the test is an API test
-        if (!FileUpload.isAPITest(result)) {
+        if (!ExtentUtils.isAPITest(result)) {
             // Capture and embed screenshot if not an API test
             try {
                 String screenshotPath;
-                if (FileUpload.isMobTest(result)) {
+                if (ExtentUtils.isMobTest(result)) {
                     screenshotPath = MobBase.captureScreenshot(result.getName());
                 } else {
                     screenshotPath = BaseTest.captureScreenshot(result.getName());
@@ -97,7 +102,7 @@ public class ExtentReportManager implements ITestListener {
         }
 
         // Add image if any
-        FileUpload.addImageToReport(test, "leadrat_logo.jpg");
+        ExtentUtils.addImageToReport(test, "leadrat_logo.jpg");
     }
 
     public void onTestSkipped(ITestResult result) {
@@ -108,7 +113,7 @@ public class ExtentReportManager implements ITestListener {
         test.log(Status.SKIP, result.getThrowable().getMessage());
 
         // Add image if any
-        FileUpload.addImageToReport(test, "leadrat_logo.jpg");
+        ExtentUtils.addImageToReport(test, "leadrat_logo.jpg");
     }
 
     public void onFinish(ITestContext testContext) {
@@ -116,9 +121,9 @@ public class ExtentReportManager implements ITestListener {
 
         boolean hasFailedTests = testContext.getFailedTests().size() > 0;
         if (!hasFailedTests) {
-            FileUpload.sendEmail("Passed!", repName);
+        	ExtentUtils.sendEmail("Passed!", repName);
         } else {
-            FileUpload.sendEmail("Failed!", repName);
+        	ExtentUtils.sendEmail("Failed!", repName);
         }
     }
 }

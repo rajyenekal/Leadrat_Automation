@@ -224,3 +224,11 @@ test.base.BaseTest - Logged as Rajaneesh Successfully
 
 web.test.TC010_BookingForm - Status updated successfully
 
+test.base.BaseTest - Logged as Rajaneesh Successfully
+
+test.base.RetryAnalyzer - Retrying test: Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking for the 1 time.
+
+test.base.BaseTest - Logged as Rajaneesh Successfully
+
+web.test.TC010_BookingForm - Status updated successfully
+

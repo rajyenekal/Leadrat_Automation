@@ -8,10 +8,11 @@ import org.testng.annotations.Test;
 
 import pomPages.BookingFormPage;
 import test.base.BaseTest;
+import test.base.RetryAnalyzer;
 
 public class TC010_BookingForm extends BaseTest {
 
-    @Test
+    @Test(retryAnalyzer = RetryAnalyzer.class)
     public void Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking() throws AWTException, InterruptedException {
         // Test data
         String bookedUnderName = "Rajaneesh";

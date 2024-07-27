@@ -6,7 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import Utilities.FileUpload;
+
+import Utilities.ActionsUtil;
 import Utilities.JavaScriptUtil;
 import Utilities.WaitsUtil;
 
@@ -166,10 +167,10 @@ public class BookingFormPage extends BasePage {
         statusNotesField.sendKeys(notes);
         saveFillFormButton.click();
         
-        FileUpload.uploadFile(ldriver, photo, "photo");
-        FileUpload.uploadFile(ldriver, adhar, "Aadhar");
-        FileUpload.uploadFile(ldriver, pan, "PAN");
-        FileUpload.uploadFile(ldriver, passport, "Passport");
+        ActionsUtil.uploadFile(ldriver, photo, "photo");
+        ActionsUtil.uploadFile(ldriver, adhar, "Aadhar");
+        ActionsUtil.uploadFile(ldriver, pan, "PAN");
+        ActionsUtil.uploadFile(ldriver, passport, "Passport");
 
         carParkingChargesField.sendKeys(carParkingCharges);
         addOnChargesField.sendKeys(addOnCharges);

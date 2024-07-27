@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-LeadRatSuite" class="navigator-link">
-              <span class="suite-name border-passed">LeadRatSuite</span>
+              <span class="suite-name border-skipped">LeadRatSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,  1 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-LeadRatSuite" class="hide-methods skipped suite-LeadRatSuite"> (hide)</a> <!-- hide-methods skipped suite-LeadRatSuite -->
+                      <a href="#" panel-name="suite-LeadRatSuite" class="show-methods skipped suite-LeadRatSuite"> (show)</a> <!-- show-methods skipped suite-LeadRatSuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-LeadRatSuite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-LeadRatSuite" title="web.test.TC010_BookingForm" class="method navigator-link" hash-for-method="Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking">Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-LeadRatSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,6 +132,47 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-LeadRatSuite" class="panel LeadRatSuite">
+          <div class="suite-LeadRatSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">web.test.TC010_BookingForm</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking">
+                  </a> <!-- Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking -->
+                  <span class="method-name">Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(.,&apos;click to Upload photo&apos;)]/../../../../../../../..//a[contains(@class,&apos;green&apos;)]/..//span[contains(@class,&apos;delete&apos;)]&quot;}
+  (Session info: chrome=127.0.6533.72)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7557e954c8cac9eeea88e5890cf8e616, findElement {using=xpath, value=//span[contains(.,&apos;click to Upload photo&apos;)]/../../../../../../../..//a[contains(@class,&apos;green&apos;)]/..//span[contains(@class,&apos;delete&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.72, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60041}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60041/devtoo..., se:cdpVersion: 127.0.6533.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7557e954c8cac9eeea88e5890cf8e616
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at Utilities.ActionsUtil.uploadFile(ActionsUtil.java:101)
+	at pomPages.BookingFormPage.fillBookingForm(BookingFormPage.java:170)
+	at web.test.TC010_BookingForm.Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking(TC010_BookingForm.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LeadRatSuite-class-skipped -->
           <div class="suite-LeadRatSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -143,6 +198,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;LeadRatSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;test.base.ExtentReportManager&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Leadrat Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
@@ -186,16 +244,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking')
 data.setCell(0, 2, 'web.test.TC010_BookingForm')
-data.setCell(0, 3, 51456);
+data.setCell(0, 3, 49923);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking')
+data.setCell(1, 2, 'web.test.TC010_BookingForm')
+data.setCell(1, 3, 37296);
 window.suiteTableData['LeadRatSuite']= { tableData: data, tableDiv: 'times-div-LeadRatSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 51 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-LeadRatSuite">
               </div> <!-- times-div-LeadRatSuite -->
             </div> <!-- times-div -->
@@ -228,11 +290,23 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking</span>
-                <span class="method-start">12770 ms</span>
+                <span class="method-start">10808 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">64238 ms</span>
+                <span class="method-start">48174 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">48527 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking</span>
+                <span class="method-start">60195 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">110126 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
