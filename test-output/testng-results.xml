@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-27T09:35:39 IST" name="LeadRatSuite" finished-at="2024-07-27T09:36:39 IST" duration-ms="59254">
+  <suite started-at="2024-07-27T12:41:06 IST" name="LeadRatSuite" finished-at="2024-07-27T12:42:10 IST" duration-ms="64730">
     <groups>
     </groups>
-    <test started-at="2024-07-27T09:35:39 IST" name="Leadrat Test" finished-at="2024-07-27T09:36:39 IST" duration-ms="59254">
+    <test started-at="2024-07-27T12:41:06 IST" name="Leadrat Test" finished-at="2024-07-27T12:42:10 IST" duration-ms="64730">
       <class name="web.test.TC010_BookingForm">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:web.test.TC010_BookingForm@7eac9008]" started-at="2024-07-27T09:35:40 IST" name="setUp" finished-at="2024-07-27T09:35:49 IST" duration-ms="9352" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:web.test.TC010_BookingForm@1fa121e2]" started-at="2024-07-27T12:41:06 IST" name="setUp" finished-at="2024-07-27T12:41:19 IST" duration-ms="12770" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking()[pri:0, instance:web.test.TC010_BookingForm@7eac9008]" started-at="2024-07-27T09:35:49 IST" name="Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking" finished-at="2024-07-27T09:36:38 IST" duration-ms="48577" status="PASS">
+        <test-method signature="Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking()[pri:0, instance:web.test.TC010_BookingForm@1fa121e2]" started-at="2024-07-27T12:41:19 IST" name="Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking" finished-at="2024-07-27T12:42:10 IST" duration-ms="51456" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:web.test.TC010_BookingForm@7eac9008]" started-at="2024-07-27T09:36:38 IST" name="tearDown" finished-at="2024-07-27T09:36:39 IST" duration-ms="504" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:web.test.TC010_BookingForm@1fa121e2]" started-at="2024-07-27T12:42:10 IST" name="tearDown" finished-at="2024-07-27T12:42:10 IST" duration-ms="406" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
