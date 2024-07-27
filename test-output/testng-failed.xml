@@ -7,13 +7,6 @@
   <test thread-count="5" name="Leadrat Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="web.test.TC006_SiteVisit">
-        <methods>
-          <include name="tearDown"/>
-          <include name="Scheduling_a_SiteVisit_and_Marking_it_as_Done"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- web.test.TC006_SiteVisit -->
       <class name="web.test.TC005_Meeting">
         <methods>
           <include name="tearDown"/>

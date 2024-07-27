@@ -68,14 +68,6 @@ public class ExtentReportManager implements ITestListener {
         test.log(Status.FAIL, "Test Failed");
         test.log(Status.FAIL, result.getThrowable().getMessage());
 
-        // Log if the test is being retried
-        if (result.getAttribute("retryAnalyzer") != null) {
-            RetryAnalyzer retryAnalyzer = (RetryAnalyzer) result.getAttribute("retryAnalyzer");
-            if (retryAnalyzer.retry(result)) {
-                test.log(Status.WARNING, "Retrying the failed test...");
-            }
-        }
-
         // Check if the test is an API test
         if (!ExtentUtils.isAPITest(result)) {
             // Capture and embed screenshot if not an API test
@@ -99,6 +91,13 @@ public class ExtentReportManager implements ITestListener {
             }
         }
 
+        // Log if the test is being retried
+        if (result.getAttribute("retryAnalyzer") != null) {
+            RetryAnalyzer retryAnalyzer = (RetryAnalyzer) result.getAttribute("retryAnalyzer");
+            if (retryAnalyzer.retry(result)) {
+                test.log(Status.WARNING, "Retrying the failed test...");
+            }
+        }
         // Add image if any
         ExtentUtils.addImageToReport(test, "leadrat_logo.jpg");
     }
