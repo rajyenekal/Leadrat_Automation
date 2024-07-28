@@ -19,6 +19,7 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
+import javax.mail.internet.MimeUtility;
 import org.testng.ITestResult;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
@@ -81,13 +82,16 @@ public class ExtentUtils {
             // Add multiple recipients
             InternetAddress[] recipients = {
                 new InternetAddress("rajyenekal@gmail.com"),
-                new InternetAddress("rajneesh.k@leadrat.com"),
-                new InternetAddress("jayakumar.k@leadrat.com"),
-                new InternetAddress("Nitish.s@leadrat.com"),
-                new InternetAddress("sudesh@leadrat.com"),
+//                new InternetAddress("rajneesh.k@leadrat.com"),
+//                new InternetAddress("jayakumar.k@leadrat.com"),
+//                new InternetAddress("Nitish.s@leadrat.com"),
+//                new InternetAddress("sudesh@leadrat.com"),
             };
             message.setRecipients(Message.RecipientType.TO, recipients);
-            message.setSubject("Smoke Test " + result + " ");
+
+            // Encode the subject to ensure proper display of emojis
+            String encodedSubject = MimeUtility.encodeText("Smoke Test " + result + " ", "UTF-8", "B");
+            message.setSubject(encodedSubject);
 
             // Create the email body part
             BodyPart messageBodyPart = new MimeBodyPart();
@@ -123,6 +127,8 @@ public class ExtentUtils {
 
         } catch (MessagingException e) {
             throw new RuntimeException(e);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
