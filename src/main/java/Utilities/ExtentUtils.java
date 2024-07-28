@@ -53,6 +53,9 @@ public class ExtentUtils {
     }
 
     public static void sendEmail(String result, String reportName) {
+        // Ensure UTF-8 encoding
+        System.setProperty("file.encoding", "UTF-8");
+
         final String username = "digilanterndigi@gmail.com";
         final String password = "fslr iwfg hhaz clnj";
 
@@ -78,10 +81,10 @@ public class ExtentUtils {
             // Add multiple recipients
             InternetAddress[] recipients = {
                 new InternetAddress("rajyenekal@gmail.com"),
-//                new InternetAddress("rajneesh.k@leadrat.com"),
-//                new InternetAddress("jayakumar.k@leadrat.com"),
-//                new InternetAddress("Nitish.s@leadrat.com"),
-//                new InternetAddress("sudesh@leadrat.com"),
+                new InternetAddress("rajneesh.k@leadrat.com"),
+                new InternetAddress("jayakumar.k@leadrat.com"),
+                new InternetAddress("Nitish.s@leadrat.com"),
+                new InternetAddress("sudesh@leadrat.com"),
             };
             message.setRecipients(Message.RecipientType.TO, recipients);
             message.setSubject("Smoke Test " + result + " ");
@@ -89,11 +92,15 @@ public class ExtentUtils {
             // Create the email body part
             BodyPart messageBodyPart = new MimeBodyPart();
             
+            String emailContent;
             if(result.equalsIgnoreCase("Passed 🏆")) {
-                messageBodyPart.setContent(successMsg, "text/html; charset=UTF-8");
+                emailContent = successMsg;
             } else {
-                messageBodyPart.setContent(failmsg, "text/html; charset=UTF-8");
+                emailContent = failmsg;
             }
+
+            // Explicitly set the content type and charset
+            messageBodyPart.setContent(emailContent, "text/html; charset=UTF-8");
 
             // Create the multipart message
             Multipart multipart = new MimeMultipart();
@@ -120,22 +127,22 @@ public class ExtentUtils {
     }
 
     static String successMsg = "Dear Team,<br><br>"
-            + "I’m excited to share that the Smoke Test for our project has been successfully completed, and all scripts have passed! 🏆✨<br><br>"
+            + "I&rsquo;m excited to share that the Smoke Test for our project has been successfully completed, and all scripts have passed! &#x1F3C6;&#x2728;<br><br>"
             + "Please find the execution report attached for your review. It includes detailed information on the tests performed, including metrics and screenshots where applicable.<br><br>"
             + "If you have any questions or need further details, feel free to reach out.<br><br>"
-            + "Thank you for your support and collaboration! 👍<br><br>"
+            + "Thank you for your support and collaboration! &#x1F44D;<br><br>"
             + "Best regards,<br>"
             + "Rajaneesh K B<br>"
             + "Quality Analyst<br>"
-            + "📞 +919741846197<br>";
+            + "&#x1F4DE; +919741846197<br>";
 
     static String failmsg = "Dear Team,<br><br>"
-            + "Unfortunately, our recent Smoke Test for the project encountered some issues, and not all scripts passed. 🚨🔍<br><br>"
+            + "Unfortunately, our recent Smoke Test for the project encountered some issues, and not all scripts passed. &#x1F6A8;&#x1F50D;<br><br>"
             + "Please find the execution report attached. It provides details on the tests performed and the specific errors encountered with screenshot.<br><br>"
-            + "If you have any questions or need more information, please don’t hesitate to contact me.<br><br>"
-            + "We appreciate your attention to this matter and will keep you updated on our progress. 🛠️<br><br>"
+            + "If you have any questions or need more information, please don&rsquo;t hesitate to contact me.<br><br>"
+            + "We appreciate your attention to this matter and will keep you updated on our progress. &#x1F527;<br><br>"
             + "Best regards,<br>"
             + "Rajaneesh K B<br>"
             + "Quality Analyst<br>"
-            + "📞 +919741846197<br>";
+            + "&#x1F4DE; +919741846197<br>";
 }
