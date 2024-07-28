@@ -54,9 +54,6 @@ public class ExtentUtils {
     }
 
     public static void sendEmail(String result, String reportName) {
-        // Ensure UTF-8 encoding
-        System.setProperty("file.encoding", "UTF-8");
-
         final String username = "digilanterndigi@gmail.com";
         final String password = "fslr iwfg hhaz clnj";
 
