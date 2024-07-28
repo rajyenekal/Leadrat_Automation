@@ -86,14 +86,14 @@ public class ExtentUtils {
             };
             message.setRecipients(Message.RecipientType.TO, recipients);
 
-            // Prepare the subject with emojis
+         // Prepare the subject with emojis
             String subjectPrefix = "Smoke Test ";
             String subjectEmoji = result.equalsIgnoreCase("Passed") ? "🏆" : "⚠️";
             String subject = subjectPrefix + result + " " + subjectEmoji;
 
-            // Encode the subject to ensure proper display of emojis
-            String encodedSubject = MimeUtility.encodeText(subject, "UTF-8", null);
-            message.setSubject(encodedSubject);
+            // Set the subject with the correct encoding
+            message.setSubject(MimeUtility.encodeText(subject, "UTF-8", "B"));
+
 
             // Create the email body part
             BodyPart messageBodyPart = new MimeBodyPart();
