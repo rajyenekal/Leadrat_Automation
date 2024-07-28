@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.util.Base64;
 import java.util.Properties;
-
 import javax.activation.DataHandler;
 import javax.activation.DataSource;
 import javax.activation.FileDataSource;
@@ -20,15 +19,12 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
-
 import org.testng.ITestResult;
-
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
 public class ExtentUtils {
 
-   
     public static void addImageToReport(ExtentTest test, String imageName) {
         String imagePath = "./src/test/resources/image/" + imageName;
         File imageFile = new File(imagePath);
@@ -82,22 +78,21 @@ public class ExtentUtils {
             // Add multiple recipients
             InternetAddress[] recipients = {
                 new InternetAddress("rajyenekal@gmail.com"),
-                new InternetAddress("rajneesh.k@leadrat.com"),
-                new InternetAddress("jayakumar.k@leadrat.com"),
-                new InternetAddress("Nitish.s@leadrat.com"),
-                new InternetAddress("sudesh@leadrat.com"),
+//                new InternetAddress("rajneesh.k@leadrat.com"),
+//                new InternetAddress("jayakumar.k@leadrat.com"),
+//                new InternetAddress("Nitish.s@leadrat.com"),
+//                new InternetAddress("sudesh@leadrat.com"),
             };
             message.setRecipients(Message.RecipientType.TO, recipients);
-            message.setSubject("Smoke Test "+result+" ");
+            message.setSubject("Smoke Test " + result + " ");
 
             // Create the email body part
             BodyPart messageBodyPart = new MimeBodyPart();
             
             if(result.equalsIgnoreCase("Passed 🏆")) {
-            	messageBodyPart.setText(successMsg);
-            }
-            else {
-            	messageBodyPart.setText(failmsg);
+                messageBodyPart.setContent(successMsg, "text/html; charset=UTF-8");
+            } else {
+                messageBodyPart.setContent(failmsg, "text/html; charset=UTF-8");
             }
 
             // Create the multipart message
@@ -123,36 +118,24 @@ public class ExtentUtils {
             throw new RuntimeException(e);
         }
     }
-    
-    static String successMsg = "Dear Team,\r\n"
-    		+ "\r\n"
-    		+ "I’m excited to share that the Smoke Test for our project has been successfully completed, and all scripts have passed! 🏆✨\r\n"
-    		+ "\r\n"
-    		+ "Please find the execution report attached for your review. It includes detailed information on the tests performed, including metrics and screenshots where applicable.\r\n"
-    		+ "\r\n"
-    		+ "If you have any questions or need further details, feel free to reach out.\r\n"
-    		+ "\r\n"
-    		+ "Thank you for your support and collaboration! 👍\r\n"
-    		+ "\r\n"
-    		+ "Best regards,\r\n"
-    		+ "Rajaneesh K B\r\n"
-    		+ "Quality Analyst\r\n"
-    		+ "📞 +919741846197\r\n"
-    		+ "\r\n"
-    		+ "";
-    
-    static String failmsg = "Dear Team,\r\n"
-    		+ "\r\n"
-    		+ "Unfortunately, our recent Smoke Test for the project encountered some issues, and not all scripts passed. 🚨🔍\r\n"
-    		+ "\r\n"
-    		+ "Please find the execution report attached. It provides details on the tests performed and the specific errors encountered with screenshot.\r\n"
-    		+ "\r\n"
-    		+ "If you have any questions or need more information, please don’t hesitate to contact me.\r\n"
-    		+ "\r\n"
-    		+ "We appreciate your attention to this matter and will keep you updated on our progress. 🛠️\r\n"
-    		+ "\r\n"
-    		+ "Best regards,\r\n"
-    		+ "Rajaneesh K B\r\n"
-    		+ "Quality Analyst\r\n"
-    		+ "📞 +919741846197";
+
+    static String successMsg = "Dear Team,<br><br>"
+            + "I’m excited to share that the Smoke Test for our project has been successfully completed, and all scripts have passed! 🏆✨<br><br>"
+            + "Please find the execution report attached for your review. It includes detailed information on the tests performed, including metrics and screenshots where applicable.<br><br>"
+            + "If you have any questions or need further details, feel free to reach out.<br><br>"
+            + "Thank you for your support and collaboration! 👍<br><br>"
+            + "Best regards,<br>"
+            + "Rajaneesh K B<br>"
+            + "Quality Analyst<br>"
+            + "📞 +919741846197<br>";
+
+    static String failmsg = "Dear Team,<br><br>"
+            + "Unfortunately, our recent Smoke Test for the project encountered some issues, and not all scripts passed. 🚨🔍<br><br>"
+            + "Please find the execution report attached. It provides details on the tests performed and the specific errors encountered with screenshot.<br><br>"
+            + "If you have any questions or need more information, please don’t hesitate to contact me.<br><br>"
+            + "We appreciate your attention to this matter and will keep you updated on our progress. 🛠️<br><br>"
+            + "Best regards,<br>"
+            + "Rajaneesh K B<br>"
+            + "Quality Analyst<br>"
+            + "📞 +919741846197<br>";
 }

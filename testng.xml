@@ -10,7 +10,7 @@
 	<parameter name="browser" value="chrome"/>
 	
 	 <classes>
-	
+	<!--
 		<class name="api.test.TC0001_api"/>
        	<class name="api.test.TC0002_api"/>
         <class name="api.test.TC0003_api"/>
@@ -29,7 +29,7 @@
 
       	<class name="web.test.TC003_dpTest"/>
       	
- 		<!-- <class name="mob.test.TC0001_mob"/>-->
+ 		 <class name="mob.test.TC0001_mob"/>-->
 
     </classes>
     
