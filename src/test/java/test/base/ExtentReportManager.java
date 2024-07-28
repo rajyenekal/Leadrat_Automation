@@ -118,9 +118,9 @@ public class ExtentReportManager implements ITestListener {
 
         boolean hasFailedTests = testContext.getFailedTests().size() > 0;
         if (!hasFailedTests) {
-        	ExtentUtils.sendEmail("Passed 🏆", repName);
+        	ExtentUtils.sendEmail("Passed", repName);
         } else {
-        	ExtentUtils.sendEmail("Failed ⚠️", repName);
+        	ExtentUtils.sendEmail("Failed", repName);
         }
     }
 }

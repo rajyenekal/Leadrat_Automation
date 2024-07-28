@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.util.Base64;
 import java.util.Properties;
+
 import javax.activation.DataHandler;
 import javax.activation.DataSource;
 import javax.activation.FileDataSource;
@@ -19,8 +20,9 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
-import javax.mail.internet.MimeUtility;
+
 import org.testng.ITestResult;
+
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
@@ -85,21 +87,13 @@ public class ExtentUtils {
 //                new InternetAddress("sudesh@leadrat.com"),
             };
             message.setRecipients(Message.RecipientType.TO, recipients);
-
-         // Prepare the subject with emojis
-            String subjectPrefix = "Smoke Test ";
-            String subjectEmoji = result.equalsIgnoreCase("Passed") ? "🏆" : "⚠️";
-            String subject = subjectPrefix + result + " " + subjectEmoji;
-
-            // Set the subject with the correct encoding
-            message.setSubject(MimeUtility.encodeText(subject, "UTF-8", "B"));
-
+            message.setSubject("Smoke Test "+result+" ");
 
             // Create the email body part
             BodyPart messageBodyPart = new MimeBodyPart();
             
             String emailContent;
-            if(result.equalsIgnoreCase("Passed 🏆")) {
+            if(result.equalsIgnoreCase("Passed")) {
                 emailContent = successMsg;
             } else {
                 emailContent = failmsg;
@@ -129,9 +123,7 @@ public class ExtentUtils {
 
         } catch (MessagingException e) {
             throw new RuntimeException(e);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        } 
     }
 
     static String successMsg = "Dear Team,<br><br>"
