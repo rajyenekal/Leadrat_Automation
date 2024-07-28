@@ -19,8 +19,9 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
-import javax.mail.internet.MimeUtility;
+
 import org.testng.ITestResult;
+
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
@@ -54,8 +55,9 @@ public class ExtentUtils {
     }
 
     public static void sendEmail(String result, String reportName) {
-        final String username = "digilanterndigi@gmail.com";
-        final String password = "fslr iwfg hhaz clnj";
+    	 final String username = "digilanterndigi@gmail.com";
+         final String password = "fslr iwfg hhaz clnj";
+
 
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
@@ -78,21 +80,21 @@ public class ExtentUtils {
 
             // Add multiple recipients
             InternetAddress[] recipients = {
-                new InternetAddress("rajyenekal@gmail.com"),
-//                new InternetAddress("rajneesh.k@leadrat.com"),
-//                new InternetAddress("jayakumar.k@leadrat.com"),
-//                new InternetAddress("Nitish.s@leadrat.com"),
-//                new InternetAddress("sudesh@leadrat.com"),
+            		 new InternetAddress("rajyenekal@gmail.com"),
+//                     new InternetAddress("rajneesh.k@leadrat.com"),
+//                     new InternetAddress("jayakumar.k@leadrat.com"),
+//                     new InternetAddress("Nitish.s@leadrat.com"),
+//                     new InternetAddress("sudesh@leadrat.com"),
+
             };
             message.setRecipients(Message.RecipientType.TO, recipients);
 
-            // Encode the subject to ensure proper display of emojis
-            String encodedSubject = MimeUtility.encodeText("Smoke Test " + result + " ", "UTF-8", "B");
-            message.setSubject(encodedSubject);
+            // Set the subject and encode it properly
+            String subject = "Smoke Test " + result;
+            message.setSubject(subject);
 
             // Create the email body part
             BodyPart messageBodyPart = new MimeBodyPart();
-            
             String emailContent;
             if(result.equalsIgnoreCase("Passed 🏆")) {
                 emailContent = successMsg;
@@ -124,28 +126,26 @@ public class ExtentUtils {
 
         } catch (MessagingException e) {
             throw new RuntimeException(e);
-        } catch (IOException e) {
-            e.printStackTrace();
         }
     }
 
     static String successMsg = "Dear Team,<br><br>"
-            + "I&rsquo;m excited to share that the Smoke Test for our project has been successfully completed, and all scripts have passed! &#x1F3C6;&#x2728;<br><br>"
+            + "I’m excited to share that the Smoke Test for our project has been successfully completed, and all scripts have passed! 🏆✨<br><br>"
             + "Please find the execution report attached for your review. It includes detailed information on the tests performed, including metrics and screenshots where applicable.<br><br>"
             + "If you have any questions or need further details, feel free to reach out.<br><br>"
-            + "Thank you for your support and collaboration! &#x1F44D;<br><br>"
+            + "Thank you for your support and collaboration! 👍<br><br>"
             + "Best regards,<br>"
             + "Rajaneesh K B<br>"
             + "Quality Analyst<br>"
-            + "&#x1F4DE; +919741846197<br>";
+            + "📞 +919741846197<br>";
 
     static String failmsg = "Dear Team,<br><br>"
-            + "Unfortunately, our recent Smoke Test for the project encountered some issues, and not all scripts passed. &#x1F6A8;&#x1F50D;<br><br>"
+            + "Unfortunately, our recent Smoke Test for the project encountered some issues, and not all scripts passed. ⚠️🔍<br><br>"
             + "Please find the execution report attached. It provides details on the tests performed and the specific errors encountered with screenshot.<br><br>"
-            + "If you have any questions or need more information, please don&rsquo;t hesitate to contact me.<br><br>"
-            + "We appreciate your attention to this matter and will keep you updated on our progress. &#x1F527;<br><br>"
+            + "If you have any questions or need more information, please don’t hesitate to contact me.<br><br>"
+            + "We appreciate your attention to this matter and will keep you updated on our progress. 🛠️<br><br>"
             + "Best regards,<br>"
             + "Rajaneesh K B<br>"
             + "Quality Analyst<br>"
-            + "&#x1F4DE; +919741846197<br>";
+            + "📞 +919741846197<br>";
 }
