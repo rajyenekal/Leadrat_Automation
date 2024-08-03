@@ -310,3 +310,21 @@ test.base.BaseTest - Logged as Rajaneesh Successfully
 
 web.test.TC005_Meeting - Meeting Scheduled successfully
 
+org.testng.log4testng.Logger - [TestNG] Running:
+  C:\Users\New User\eclipse-workspace1\LeadRat_Automation\testng.xml
+
+test.base.BaseTest - Logged as Rajaneesh Successfully
+
+web.test.TC001_AddLead - Entered mkayadaqoq  7301380418 mkayadaqoq@dfovu.com
+
+web.test.TC001_AddLead - Lead Added Successfully
+
+org.testng.log4testng.Logger - [TestNG] Running:
+  C:\Users\New User\eclipse-workspace1\LeadRat_Automation\testng.xml
+
+test.base.BaseTest - Logged as Rajaneesh Successfully
+
+web.test.TC001_AddLead - Entered tmogugaleg  9466839186 tmogugaleg@vzebi.com
+
+web.test.TC001_AddLead - Lead Added Successfully
+
