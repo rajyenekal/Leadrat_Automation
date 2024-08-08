@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results retried="3" ignored="3" total="34" passed="28" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-02T09:03:26 IST" name="LeadRatSuite" finished-at="2024-08-02T09:03:57 IST" duration-ms="30274">
+  <suite started-at="2024-08-08T21:51:22 IST" name="LeadRatSuite" finished-at="2024-08-08T21:57:54 IST" duration-ms="391747">
     <groups>
     </groups>
-    <test started-at="2024-08-02T09:03:26 IST" name="Leadrat Test" finished-at="2024-08-02T09:03:57 IST" duration-ms="30274">
-      <class name="web.test.TC001_AddLead">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:web.test.TC001_AddLead@207b8649]" started-at="2024-08-02T09:03:27 IST" name="setUp" finished-at="2024-08-02T09:03:38 IST" duration-ms="11593" status="PASS">
+    <test started-at="2024-08-08T21:51:22 IST" name="Leadrat Test" finished-at="2024-08-08T21:57:54 IST" duration-ms="391747">
+      <class name="web.test.TC006_SiteVisit">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:web.test.TC006_SiteVisit@1080b026]" started-at="2024-08-08T21:53:41 IST" name="setUp" finished-at="2024-08-08T21:53:52 IST" duration-ms="11255" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,546 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Creating_a_Lead_through_Web()[pri:0, instance:web.test.TC001_AddLead@207b8649]" started-at="2024-08-02T09:03:38 IST" name="Creating_a_Lead_through_Web" finished-at="2024-08-02T09:03:56 IST" duration-ms="17722" status="PASS">
+        <test-method retried="true" signature="Scheduling_a_SiteVisit_and_Marking_it_as_Done()[pri:0, instance:web.test.TC006_SiteVisit@1080b026]" started-at="2024-08-08T21:53:52 IST" name="Scheduling_a_SiteVisit_and_Marking_it_as_Done" finished-at="2024-08-08T21:54:09 IST" duration-ms="17173" status="SKIP">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button id="btnUpdateLeadStatus" data-automate-id="btnUpdateLeadStatus" class="btn-coal px-10 min-w-fit-content ng-star-inserted">...</button> is not clickable at point (1194, 485). Other element would receive the click: <div _ngcontent-qcr-c125="" class="cssload-container ng-star-inserted">...</div>
+  (Session info: chrome=127.0.6533.99)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8833f4e332ce123ea4428fa4a49e1e84, clickElement {id=f.E07CC3C9A3D9AC429D3625CEC5FEC58F.d.4DC6995153392F7A35CF3BA32F4032A8.e.330}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.99, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61572}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61572/devtoo..., se:cdpVersion: 127.0.6533.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8833f4e332ce123ea4428fa4a49e1e84)] -> id: btnUpdateLeadStatus]
+Session ID: 8833f4e332ce123ea4428fa4a49e1e84]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button id="btnUpdateLeadStatus" data-automate-id="btnUpdateLeadStatus" class="btn-coal px-10 min-w-fit-content ng-star-inserted">...</button> is not clickable at point (1194, 485). Other element would receive the click: <div _ngcontent-qcr-c125="" class="cssload-container ng-star-inserted">...</div>
+  (Session info: chrome=127.0.6533.99)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8833f4e332ce123ea4428fa4a49e1e84, clickElement {id=f.E07CC3C9A3D9AC429D3625CEC5FEC58F.d.4DC6995153392F7A35CF3BA32F4032A8.e.330}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.99, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61572}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61572/devtoo..., se:cdpVersion: 127.0.6533.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8833f4e332ce123ea4428fa4a49e1e84)] -> id: btnUpdateLeadStatus]
+Session ID: 8833f4e332ce123ea4428fa4a49e1e84
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
+at pomPages.UpdatesStatusPage.updatemeeting(UpdatesStatusPage.java:164)
+at web.test.TC006_SiteVisit.Scheduling_a_SiteVisit_and_Marking_it_as_Done(TC006_SiteVisit.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scheduling_a_SiteVisit_and_Marking_it_as_Done -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:web.test.TC006_SiteVisit@1080b026]" started-at="2024-08-08T21:54:09 IST" name="tearDown" finished-at="2024-08-08T21:54:09 IST" duration-ms="382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:web.test.TC006_SiteVisit@1080b026]" started-at="2024-08-08T21:54:09 IST" name="setUp" finished-at="2024-08-08T21:54:20 IST" duration-ms="10247" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Scheduling_a_SiteVisit_and_Marking_it_as_Done()[pri:0, instance:web.test.TC006_SiteVisit@1080b026]" started-at="2024-08-08T21:54:20 IST" name="Scheduling_a_SiteVisit_and_Marking_it_as_Done" finished-at="2024-08-08T21:54:39 IST" duration-ms="18965" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scheduling_a_SiteVisit_and_Marking_it_as_Done -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:web.test.TC006_SiteVisit@1080b026]" started-at="2024-08-08T21:54:39 IST" name="tearDown" finished-at="2024-08-08T21:54:39 IST" duration-ms="409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- web.test.TC006_SiteVisit -->
+      <class name="web.test.TC002_AddData">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:web.test.TC002_AddData@41813449]" started-at="2024-08-08T21:51:54 IST" name="setUp" finished-at="2024-08-08T21:52:03 IST" duration-ms="9136" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Creating_a_Data_through_Web()[pri:0, instance:web.test.TC002_AddData@41813449]" started-at="2024-08-08T21:52:03 IST" name="Creating_a_Data_through_Web" finished-at="2024-08-08T21:52:22 IST" duration-ms="18920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Creating_a_Data_through_Web -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:web.test.TC002_AddData@41813449]" started-at="2024-08-08T21:52:22 IST" name="tearDown" finished-at="2024-08-08T21:52:24 IST" duration-ms="1886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- web.test.TC002_AddData -->
+      <class name="api.test.TC0001_api">
+        <test-method signature="Creating_CommonFloor_Lead()[pri:0, instance:api.test.TC0001_api@f73dcd6]" started-at="2024-08-08T21:57:19 IST" name="Creating_CommonFloor_Lead" finished-at="2024-08-08T21:57:26 IST" duration-ms="6837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Creating_CommonFloor_Lead -->
+        <test-method signature="Creating_EstateDekho_Lead()[pri:0, instance:api.test.TC0001_api@f73dcd6]" started-at="2024-08-08T21:57:26 IST" name="Creating_EstateDekho_Lead" finished-at="2024-08-08T21:57:27 IST" duration-ms="1799" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Creating_EstateDekho_Lead -->
+        <test-method signature="Creating_GoogleAds_Lead()[pri:0, instance:api.test.TC0001_api@f73dcd6]" started-at="2024-08-08T21:57:27 IST" name="Creating_GoogleAds_Lead" finished-at="2024-08-08T21:57:30 IST" duration-ms="2148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Creating_GoogleAds_Lead -->
+        <test-method signature="Creating_Housing_Lead()[pri:0, instance:api.test.TC0001_api@f73dcd6]" started-at="2024-08-08T21:57:30 IST" name="Creating_Housing_Lead" finished-at="2024-08-08T21:57:31 IST" duration-ms="1597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Creating_Housing_Lead -->
+        <test-method signature="Creating_MagicBricks_Lead()[pri:0, instance:api.test.TC0001_api@f73dcd6]" started-at="2024-08-08T21:57:31 IST" name="Creating_MagicBricks_Lead" finished-at="2024-08-08T21:57:34 IST" duration-ms="3344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Creating_MagicBricks_Lead -->
+        <test-method signature="Creating_MicrosoftAds_Lead()[pri:0, instance:api.test.TC0001_api@f73dcd6]" started-at="2024-08-08T21:57:34 IST" name="Creating_MicrosoftAds_Lead" finished-at="2024-08-08T21:57:36 IST" duration-ms="1914" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Creating_MicrosoftAds_Lead -->
+        <test-method signature="Creating_NinetyNineAcres_Lead()[pri:0, instance:api.test.TC0001_api@f73dcd6]" started-at="2024-08-08T21:57:36 IST" name="Creating_NinetyNineAcres_Lead" finished-at="2024-08-08T21:57:37 IST" duration-ms="994" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Creating_NinetyNineAcres_Lead -->
+        <test-method signature="Creating_RoofFloor_Lead()[pri:0, instance:api.test.TC0001_api@f73dcd6]" started-at="2024-08-08T21:57:37 IST" name="Creating_RoofFloor_Lead" finished-at="2024-08-08T21:57:39 IST" duration-ms="1756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Creating_RoofFloor_Lead -->
+        <test-method signature="Creating_Website_Lead()[pri:0, instance:api.test.TC0001_api@f73dcd6]" started-at="2024-08-08T21:57:39 IST" name="Creating_Website_Lead" finished-at="2024-08-08T21:57:41 IST" duration-ms="1860" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Creating_Website_Lead -->
+        <test-method signature="Creating_quikrHomes_Lead()[pri:0, instance:api.test.TC0001_api@f73dcd6]" started-at="2024-08-08T21:57:41 IST" name="Creating_quikrHomes_Lead" finished-at="2024-08-08T21:57:43 IST" duration-ms="1735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Creating_quikrHomes_Lead -->
+      </class> <!-- api.test.TC0001_api -->
+      <class name="web.test.TC008_Drop">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:web.test.TC008_Drop@5b07730f]" started-at="2024-08-08T21:54:58 IST" name="setUp" finished-at="2024-08-08T21:55:06 IST" duration-ms="8472" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Updating_LeadStatus_to_Drop()[pri:0, instance:web.test.TC008_Drop@5b07730f]" started-at="2024-08-08T21:55:06 IST" name="Updating_LeadStatus_to_Drop" finished-at="2024-08-08T21:55:14 IST" duration-ms="7353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Updating_LeadStatus_to_Drop -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:web.test.TC008_Drop@5b07730f]" started-at="2024-08-08T21:55:14 IST" name="tearDown" finished-at="2024-08-08T21:55:14 IST" duration-ms="344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- web.test.TC008_Drop -->
+      <class name="api.test.TC0002_api">
+        <test-method signature="Creating_Lead_through_API()[pri:0, instance:api.test.TC0002_api@5c87bfe2]" started-at="2024-08-08T21:57:43 IST" name="Creating_Lead_through_API" finished-at="2024-08-08T21:57:45 IST" duration-ms="1979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Creating_Lead_through_API -->
+      </class> <!-- api.test.TC0002_api -->
+      <class name="api.test.TC0004_api">
+        <test-method signature="Creating_Project_through_API()[pri:1, instance:api.test.TC0004_api@40499e4f]" started-at="2024-08-08T21:57:46 IST" name="Creating_Project_through_API" finished-at="2024-08-08T21:57:48 IST" duration-ms="1280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Creating_Project_through_API -->
+        <test-method signature="Creating_a_Unit_to_Project_through_API()[pri:2, instance:api.test.TC0004_api@40499e4f]" started-at="2024-08-08T21:57:48 IST" name="Creating_a_Unit_to_Project_through_API" finished-at="2024-08-08T21:57:48 IST" duration-ms="574" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Creating_a_Unit_to_Project_through_API -->
+        <test-method signature="Creating_a_Block_to_Project_through_API()[pri:3, instance:api.test.TC0004_api@40499e4f]" started-at="2024-08-08T21:57:48 IST" name="Creating_a_Block_to_Project_through_API" finished-at="2024-08-08T21:57:49 IST" duration-ms="300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Creating_a_Block_to_Project_through_API -->
+        <test-method signature="Adding_Amenities_to_Project_through_API()[pri:4, instance:api.test.TC0004_api@40499e4f]" started-at="2024-08-08T21:57:49 IST" name="Adding_Amenities_to_Project_through_API" finished-at="2024-08-08T21:57:50 IST" duration-ms="1497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Adding_Amenities_to_Project_through_API -->
+        <test-method signature="Adding_images_to_Project()[pri:5, instance:api.test.TC0004_api@40499e4f]" started-at="2024-08-08T21:57:50 IST" name="Adding_images_to_Project" finished-at="2024-08-08T21:57:50 IST" duration-ms="357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Adding_images_to_Project -->
+      </class> <!-- api.test.TC0004_api -->
+      <class name="web.test.TC010_BookingForm">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:web.test.TC010_BookingForm@a4b2d8f]" started-at="2024-08-08T21:55:31 IST" name="setUp" finished-at="2024-08-08T21:55:38 IST" duration-ms="7836" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking()[pri:0, instance:web.test.TC010_BookingForm@a4b2d8f]" started-at="2024-08-08T21:55:38 IST" name="Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking" finished-at="2024-08-08T21:56:15 IST" duration-ms="36698" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(.,'click to Upload photo')]/../../../../../../../..//a[contains(@class,'green')]/..//span[contains(@class,'delete')]"}
+  (Session info: chrome=127.0.6533.99)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f34e04c64a12304bcbcec699d78aaf9c, findElement {using=xpath, value=//span[contains(.,'click to Upload photo')]/../../../../../../../..//a[contains(@class,'green')]/..//span[contains(@class,'delete')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.99, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61842}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61842/devtoo..., se:cdpVersion: 127.0.6533.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f34e04c64a12304bcbcec699d78aaf9c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(.,'click to Upload photo')]/../../../../../../../..//a[contains(@class,'green')]/..//span[contains(@class,'delete')]"}
+  (Session info: chrome=127.0.6533.99)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f34e04c64a12304bcbcec699d78aaf9c, findElement {using=xpath, value=//span[contains(.,'click to Upload photo')]/../../../../../../../..//a[contains(@class,'green')]/..//span[contains(@class,'delete')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.99, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61842}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61842/devtoo..., se:cdpVersion: 127.0.6533.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f34e04c64a12304bcbcec699d78aaf9c
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+at Utilities.ActionsUtil.uploadFile(ActionsUtil.java:101)
+at pomPages.BookingFormPage.fillBookingForm(BookingFormPage.java:170)
+at web.test.TC010_BookingForm.Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking(TC010_BookingForm.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:web.test.TC010_BookingForm@a4b2d8f]" started-at="2024-08-08T21:56:15 IST" name="tearDown" finished-at="2024-08-08T21:56:16 IST" duration-ms="492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:web.test.TC010_BookingForm@a4b2d8f]" started-at="2024-08-08T21:56:16 IST" name="setUp" finished-at="2024-08-08T21:56:25 IST" duration-ms="9910" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking()[pri:0, instance:web.test.TC010_BookingForm@a4b2d8f]" started-at="2024-08-08T21:56:25 IST" name="Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking" finished-at="2024-08-08T21:57:18 IST" duration-ms="52795" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:web.test.TC010_BookingForm@a4b2d8f]" started-at="2024-08-08T21:57:18 IST" name="tearDown" finished-at="2024-08-08T21:57:19 IST" duration-ms="422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- web.test.TC010_BookingForm -->
+      <class name="web.test.TC004_Callback">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:web.test.TC004_Callback@4678a2eb]" started-at="2024-08-08T21:52:24 IST" name="setUp" finished-at="2024-08-08T21:52:33 IST" duration-ms="8932" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Updating_LeadStatus_to_Callback()[pri:0, instance:web.test.TC004_Callback@4678a2eb]" started-at="2024-08-08T21:52:33 IST" name="Updating_LeadStatus_to_Callback" finished-at="2024-08-08T21:52:42 IST" duration-ms="8998" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Updating_LeadStatus_to_Callback -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:web.test.TC004_Callback@4678a2eb]" started-at="2024-08-08T21:52:42 IST" name="tearDown" finished-at="2024-08-08T21:52:42 IST" duration-ms="372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- web.test.TC004_Callback -->
+      <class name="web.test.TC001_AddLead">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:web.test.TC001_AddLead@5af3a0f]" started-at="2024-08-08T21:51:22 IST" name="setUp" finished-at="2024-08-08T21:51:32 IST" duration-ms="9091" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Creating_a_Lead_through_Web()[pri:0, instance:web.test.TC001_AddLead@5af3a0f]" started-at="2024-08-08T21:51:32 IST" name="Creating_a_Lead_through_Web" finished-at="2024-08-08T21:51:54 IST" duration-ms="22163" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Creating_a_Lead_through_Web -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:web.test.TC001_AddLead@207b8649]" started-at="2024-08-02T09:03:56 IST" name="tearDown" finished-at="2024-08-02T09:03:57 IST" duration-ms="405" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:web.test.TC001_AddLead@5af3a0f]" started-at="2024-08-08T21:51:54 IST" name="tearDown" finished-at="2024-08-08T21:51:54 IST" duration-ms="421" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- web.test.TC001_AddLead -->
+      <class name="web.test.TC007_NotInterested">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:web.test.TC007_NotInterested@58ebfd03]" started-at="2024-08-08T21:54:39 IST" name="setUp" finished-at="2024-08-08T21:54:48 IST" duration-ms="8909" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Updating_LeadStatus_to_NotInterested()[pri:0, instance:web.test.TC007_NotInterested@58ebfd03]" started-at="2024-08-08T21:54:48 IST" name="Updating_LeadStatus_to_NotInterested" finished-at="2024-08-08T21:54:56 IST" duration-ms="8056" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Updating_LeadStatus_to_NotInterested -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:web.test.TC007_NotInterested@58ebfd03]" started-at="2024-08-08T21:54:56 IST" name="tearDown" finished-at="2024-08-08T21:54:58 IST" duration-ms="1866" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- web.test.TC007_NotInterested -->
+      <class name="api.test.TC0003_api">
+        <test-method signature="Creating_Data_through_API()[pri:0, instance:api.test.TC0003_api@2fea7088]" started-at="2024-08-08T21:57:45 IST" name="Creating_Data_through_API" finished-at="2024-08-08T21:57:46 IST" duration-ms="1758" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Creating_Data_through_API -->
+      </class> <!-- api.test.TC0003_api -->
+      <class name="web.test.TC005_Meeting">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:web.test.TC005_Meeting@5b43fbf6]" started-at="2024-08-08T21:52:42 IST" name="setUp" finished-at="2024-08-08T21:52:51 IST" duration-ms="9014" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="Scheduling_a_Meeting_and_Marking_it_as_Done()[pri:0, instance:web.test.TC005_Meeting@5b43fbf6]" started-at="2024-08-08T21:52:51 IST" name="Scheduling_a_Meeting_and_Marking_it_as_Done" finished-at="2024-08-08T21:53:12 IST" duration-ms="20424" status="SKIP">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button id="btnUpdateLeadStatus" data-automate-id="btnUpdateLeadStatus" class="btn-coal px-10 min-w-fit-content ng-star-inserted">...</button> is not clickable at point (1194, 485). Other element would receive the click: <div _ngcontent-hso-c125="" class="cssload-container ng-star-inserted">...</div>
+  (Session info: chrome=127.0.6533.99)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6fe3a46113a4e3d01b7f3161c9d66265, clickElement {id=f.852E71C5BC940CA6A71BDD1AC0967BE2.d.5EE167B8D434B4CAE80832B7E29DD4B8.e.313}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.99, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61466}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61466/devtoo..., se:cdpVersion: 127.0.6533.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (6fe3a46113a4e3d01b7f3161c9d66265)] -> id: btnUpdateLeadStatus]
+Session ID: 6fe3a46113a4e3d01b7f3161c9d66265]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button id="btnUpdateLeadStatus" data-automate-id="btnUpdateLeadStatus" class="btn-coal px-10 min-w-fit-content ng-star-inserted">...</button> is not clickable at point (1194, 485). Other element would receive the click: <div _ngcontent-hso-c125="" class="cssload-container ng-star-inserted">...</div>
+  (Session info: chrome=127.0.6533.99)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6fe3a46113a4e3d01b7f3161c9d66265, clickElement {id=f.852E71C5BC940CA6A71BDD1AC0967BE2.d.5EE167B8D434B4CAE80832B7E29DD4B8.e.313}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.99, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\Users\NEWUSE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61466}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61466/devtoo..., se:cdpVersion: 127.0.6533.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (6fe3a46113a4e3d01b7f3161c9d66265)] -> id: btnUpdateLeadStatus]
+Session ID: 6fe3a46113a4e3d01b7f3161c9d66265
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
+at pomPages.UpdatesStatusPage.updatemeeting(UpdatesStatusPage.java:164)
+at web.test.TC005_Meeting.Scheduling_a_Meeting_and_Marking_it_as_Done(TC005_Meeting.java:20)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scheduling_a_Meeting_and_Marking_it_as_Done -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:web.test.TC005_Meeting@5b43fbf6]" started-at="2024-08-08T21:53:12 IST" name="tearDown" finished-at="2024-08-08T21:53:12 IST" duration-ms="393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:web.test.TC005_Meeting@5b43fbf6]" started-at="2024-08-08T21:53:12 IST" name="setUp" finished-at="2024-08-08T21:53:21 IST" duration-ms="8933" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Scheduling_a_Meeting_and_Marking_it_as_Done()[pri:0, instance:web.test.TC005_Meeting@5b43fbf6]" started-at="2024-08-08T21:53:21 IST" name="Scheduling_a_Meeting_and_Marking_it_as_Done" finished-at="2024-08-08T21:53:40 IST" duration-ms="19035" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scheduling_a_Meeting_and_Marking_it_as_Done -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:web.test.TC005_Meeting@5b43fbf6]" started-at="2024-08-08T21:53:40 IST" name="tearDown" finished-at="2024-08-08T21:53:41 IST" duration-ms="391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- web.test.TC005_Meeting -->
+      <class name="api.test.TC0005_api">
+        <test-method signature="Creating_a_Property_through_API()[pri:1, instance:api.test.TC0005_api@51cd7ffc]" started-at="2024-08-08T21:57:50 IST" name="Creating_a_Property_through_API" finished-at="2024-08-08T21:57:52 IST" duration-ms="1386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Creating_a_Property_through_API -->
+        <test-method signature="Adding_more_info_to_the_property()[pri:2, instance:api.test.TC0005_api@51cd7ffc]" started-at="2024-08-08T21:57:52 IST" name="Adding_more_info_to_the_property" finished-at="2024-08-08T21:57:54 IST" duration-ms="2271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Adding_more_info_to_the_property -->
+      </class> <!-- api.test.TC0005_api -->
+      <class name="web.test.TC009_EOP">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:web.test.TC009_EOP@1fdfafd2]" started-at="2024-08-08T21:55:14 IST" name="setUp" finished-at="2024-08-08T21:55:23 IST" duration-ms="8696" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Updating_LeadStatus_to_ExpressionofInterest()[pri:0, instance:web.test.TC009_EOP@1fdfafd2]" started-at="2024-08-08T21:55:23 IST" name="Updating_LeadStatus_to_ExpressionofInterest" finished-at="2024-08-08T21:55:30 IST" duration-ms="7443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Updating_LeadStatus_to_ExpressionofInterest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:web.test.TC009_EOP@1fdfafd2]" started-at="2024-08-08T21:55:30 IST" name="tearDown" finished-at="2024-08-08T21:55:31 IST" duration-ms="350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- web.test.TC009_EOP -->
     </test> <!-- Leadrat Test -->
   </suite> <!-- LeadRatSuite -->
 </testng-results>

@@ -8,7 +8,7 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <selenium.version>4.22.0</selenium.version>
+        <selenium.version>4.23.0</selenium.version>
         <testng.version>7.4.0</testng.version>
      </properties>
 

@@ -11,6 +11,7 @@
 	
 	 <classes>
 
+
 		<class name="web.test.TC001_AddLead"/>
    		<class name="web.test.TC002_AddData"/>
         <class name="web.test.TC004_Callback"/>
@@ -27,7 +28,8 @@
         <class name="api.test.TC0004_api"/>
       	<class name="api.test.TC0005_api"/>
       	
-		<!--
+		
+<!--
       	<class name="web.test.TC003_dpTest"/>
  		<class name="mob.test.TC0001_mob"/>-->
 

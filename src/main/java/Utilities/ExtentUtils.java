@@ -82,7 +82,7 @@ public class ExtentUtils {
             InternetAddress[] recipients = {
                 new InternetAddress("rajyenekal@gmail.com"),
                 new InternetAddress("rajneesh.k@leadrat.com"),
-                new InternetAddress("nowlak.s@gharoffice.com"),
+                new InternetAddress("nowlak.s@leadrat.com"),
                 new InternetAddress("jayakumar.k@leadrat.com"),
                 new InternetAddress("Nitish.s@leadrat.com"),
                 new InternetAddress("sudesh@leadrat.com"),
