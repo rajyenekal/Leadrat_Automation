@@ -484,3 +484,112 @@ api.test.TC0005_api - ---- New Property Created with ID Token: 27d66093-f26b-418
 api.test.TC0005_api - ---- Adding more info to the property ----
 api.test.TC0005_api - ----Property added with more info: 27d66093-f26b-418d-95a5-e2acac40c0d4
 
+test.base.BaseTest - Logged as Rajaneesh Successfully
+
+web.test.TC001_AddLead - Entered xsoqocopac  2030059261 xsoqocopac@blose.com
+
+web.test.TC001_AddLead - Lead Added Successfully
+
+test.base.BaseTest - Logged as Rajaneesh Successfully
+
+web.test.TC002_AddData - Data added Successfully
+
+test.base.BaseTest - Logged as Rajaneesh Successfully
+
+web.test.TC004_Callback - Status Updated Successfully
+
+test.base.BaseTest - Logged as Rajaneesh Successfully
+
+web.test.TC005_Meeting - Meeting Scheduled successfully
+
+web.test.TC005_Meeting - Scheduled Meeting updated successfully
+
+test.base.BaseTest - Logged as Rajaneesh Successfully
+
+web.test.TC006_SiteVisit - Site-Visit Scheduled Successfully
+
+web.test.TC006_SiteVisit - Scheduled Site-Visit updated successfully
+
+test.base.BaseTest - Logged as Rajaneesh Successfully
+
+web.test.TC007_NotInterested - Status updated successfully
+
+test.base.BaseTest - Logged as Rajaneesh Successfully
+
+web.test.TC008_Drop - Status updated successfully
+
+test.base.BaseTest - Logged as Rajaneesh Successfully
+
+web.test.TC009_EOP - Status updated successfully
+
+test.base.BaseTest - Logged as Rajaneesh Successfully
+
+test.base.RetryAnalyzer - Retrying test: Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking for the 1 time.
+
+test.base.BaseTest - Logged as Rajaneesh Successfully
+
+api.test.TC0001_api - ---- Creating commonFloor Lead ----
+api.test.TC0001_api - ---- commonFloor Lead Created ----
+
+api.test.TC0001_api - ---- Creating EstateDekho Lead ----
+api.test.TC0001_api - ---- EstateDekho Lead Created ----
+
+api.test.TC0001_api - ---- Creating GoogleAds Lead ----
+api.test.TC0001_api - ---- GoogleAds Lead Created ----
+
+api.test.TC0001_api - ---- Creating Housing Lead ----
+api.test.TC0001_api - ---- Housing Lead Created ----
+
+api.test.TC0001_api - ---- Creating MagicBricks Lead ----
+api.test.TC0001_api - ---- MagicBricks Lead Created ----
+
+api.test.TC0001_api - ---- Creating MicrosoftAds Lead ----
+api.test.TC0001_api - ---- MicrosoftAds Lead Created ----
+
+api.test.TC0001_api - ---- Creating NinetyNineAcres Lead ----
+api.test.TC0001_api - ---- NinetyNineAcres Lead Created ----
+
+api.test.TC0001_api - ---- Creating RoofandFloor Lead ----
+api.test.TC0001_api - ---- RoofandFloor Lead Created ----
+
+api.test.TC0001_api - ---- Creating Website Lead ----
+api.test.TC0001_api - ---- Website Lead Created ----
+
+api.test.TC0001_api - ---- Creating QuikrHomes Lead ----
+api.test.TC0001_api - ---- QuikrHomes Lead Created ----
+
+test.base.Api_Token - ---- Generating Bearer Token ----
+test.base.Api_Token - ---- Bearer Token Generated : Bearer eyJraWQiOiJhaUp4ZitQMXhVbmsxcHZrTTZzNVhLZWZlVTloVmVvdVFkN1g5K3ZRZ1lvPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyODQ0YzJkZC0yM2VlLTRmNDktODIyMS02ZjI3YTk1NTE2ZjQiLCJjdXN0b206bWZhX2VuYWJsZWQiOiJGYWxzZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiY3VzdG9tOnBhc3Nfc3RhbXAiOiJJakl3TWpRdE1EY3RNVGxVTURZNk5ERTZNelF1TmpreE16UTJNVm9pIiwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoLTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGgtMV9oV0doQzNPUzkiLCJjdXN0b206dXNlcl9pZCI6ImRlbW9fUmFqYW5lZXNoIiwicGhvbmVfbnVtYmVyX3ZlcmlmaWVkIjpmYWxzZSwiY29nbml0bzp1c2VybmFtZSI6InJhamFuZWVzaCIsImN1c3RvbTp0ZW5hbnRfaWQiOiJkZW1vIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiUmFqYW5lZXNoIiwiZ2l2ZW5fbmFtZSI6IlJhamFuZWVzaCIsIm9yaWdpbl9qdGkiOiI4MGJkYjg0ZS00MDE4LTRjMmYtYjVkYi0wOTE0MTAxZTkzMzQiLCJhdWQiOiI1Y205OTFuNXN1Ym5rb2VkOGlwY2xwNDg2byIsImV2ZW50X2lkIjoiZDdiOTgwNTItNjMyMS00YmI5LTgwNjYtYjc2YTdjMTI5OTA0IiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MjQ5Nzc0NTMsInBob25lX251bWJlciI6Iis5MTk3NDE4NDYxOTciLCJleHAiOjE3MjQ5ODEwNTMsImlhdCI6MTcyNDk3NzQ1MywiZmFtaWx5X25hbWUiOiJLIEIiLCJqdGkiOiJjYzlhYjEyNS03MzRlLTQ4NTMtOTYyYi1iYTkxNDRhMGQxZTEiLCJlbWFpbCI6InJhamFuZWVzaEBnbWFpbC5jb20ifQ.Xb9MvB49UE8jtj3hvz-wqtsi-smKomICaTo3FXirZ_AmBi6zciqH3nukCwYzRZS53453xnR4jqMJj9PuEK3NizH8aMjadXw7quKG_Gq6Yj6YceQM373c9zAV1ToLacpEHLb9nqdjIipESdR_V7LLLUoYSqDbucG5vPVkuI4TTyAVr_IQsApWtKCTYZsVEQPaA_lPbFymI31Pe3jvzGAZbxhmyS6svUEUe33hEZ_STxii2CBTqZE8igNjAlpjAH0loXmWm7rq30Rxsknr5cEZ1LrakjOu4AIgjtz315vY-oNYF1ihvbRgalBT30ma7llhNgvoZvZBiClwrNyquDzkSg----
+api.test.TC0002_api - ---- Creating new Lead ----
+api.test.TC0002_api - ---- New Lead Created with ID Token: 8490a3f1-e45e-4384-8463-77f376bc9c24
+
+test.base.Api_Token - ---- Generating Bearer Token ----
+test.base.Api_Token - ---- Bearer Token Generated : Bearer eyJraWQiOiJhaUp4ZitQMXhVbmsxcHZrTTZzNVhLZWZlVTloVmVvdVFkN1g5K3ZRZ1lvPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyODQ0YzJkZC0yM2VlLTRmNDktODIyMS02ZjI3YTk1NTE2ZjQiLCJjdXN0b206bWZhX2VuYWJsZWQiOiJGYWxzZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiY3VzdG9tOnBhc3Nfc3RhbXAiOiJJakl3TWpRdE1EY3RNVGxVTURZNk5ERTZNelF1TmpreE16UTJNVm9pIiwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoLTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGgtMV9oV0doQzNPUzkiLCJjdXN0b206dXNlcl9pZCI6ImRlbW9fUmFqYW5lZXNoIiwicGhvbmVfbnVtYmVyX3ZlcmlmaWVkIjpmYWxzZSwiY29nbml0bzp1c2VybmFtZSI6InJhamFuZWVzaCIsImN1c3RvbTp0ZW5hbnRfaWQiOiJkZW1vIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiUmFqYW5lZXNoIiwiZ2l2ZW5fbmFtZSI6IlJhamFuZWVzaCIsIm9yaWdpbl9qdGkiOiI0MWVlNjEyMi0yMmM0LTQ4NzktOWUyNi01ODgxYjZjMzY1MDkiLCJhdWQiOiI1Y205OTFuNXN1Ym5rb2VkOGlwY2xwNDg2byIsImV2ZW50X2lkIjoiNGMwNzMzYzYtMDJjMy00ZWUzLThmNTctOTdmMmNjZWRkOTgwIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MjQ5Nzc0NTUsInBob25lX251bWJlciI6Iis5MTk3NDE4NDYxOTciLCJleHAiOjE3MjQ5ODEwNTUsImlhdCI6MTcyNDk3NzQ1NSwiZmFtaWx5X25hbWUiOiJLIEIiLCJqdGkiOiI5NThmZDQ2MS01MzNhLTRmNjMtOWFkYS0xMTMwMmE0OTZkYmYiLCJlbWFpbCI6InJhamFuZWVzaEBnbWFpbC5jb20ifQ.T1ckCQ_lo8Fu3tGVSGh4ztzBuQ6vZg6dsk6d6w4rRdWG-hcHaWd3rvfAD3uog_FBczSONg137OLqyJIsQ2Q5F1mHgFpN26c29kR_giMLCEVqt8LnkJ-RGHR6CihVouDA5zC24sxJPAMYXazyDiTNc54cQw9_FbUwXyAD7aESPU-nkAEkFCNVH6TAUss2W7TfRgx58X0n0jgnFcDoaqm0EPFcuW-Ic61hx7h2-B9V_xhQZEJJCc_PYrMSgaNfdBeSedll1v4FBJv9DBQDo9O6aZZaQ0BmGN2772dhyU6ZCtBDc-0bzE79jLLT9jH6PIFgHqVW8UDebGsXt2RHy-zGaQ----
+api.test.TC0003_api - ---- Creating new Data ----
+api.test.TC0003_api - ---- New Data Created with ID Token: da272cf8-4cb8-40e9-b092-e5575db1f197
+
+test.base.Api_Token - ---- Generating Bearer Token ----
+test.base.Api_Token - ---- Bearer Token Generated : Bearer eyJraWQiOiJhaUp4ZitQMXhVbmsxcHZrTTZzNVhLZWZlVTloVmVvdVFkN1g5K3ZRZ1lvPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyODQ0YzJkZC0yM2VlLTRmNDktODIyMS02ZjI3YTk1NTE2ZjQiLCJjdXN0b206bWZhX2VuYWJsZWQiOiJGYWxzZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiY3VzdG9tOnBhc3Nfc3RhbXAiOiJJakl3TWpRdE1EY3RNVGxVTURZNk5ERTZNelF1TmpreE16UTJNVm9pIiwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoLTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGgtMV9oV0doQzNPUzkiLCJjdXN0b206dXNlcl9pZCI6ImRlbW9fUmFqYW5lZXNoIiwicGhvbmVfbnVtYmVyX3ZlcmlmaWVkIjpmYWxzZSwiY29nbml0bzp1c2VybmFtZSI6InJhamFuZWVzaCIsImN1c3RvbTp0ZW5hbnRfaWQiOiJkZW1vIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiUmFqYW5lZXNoIiwiZ2l2ZW5fbmFtZSI6IlJhamFuZWVzaCIsIm9yaWdpbl9qdGkiOiJmMjM1NmM5Ni0zZTY0LTQ0NmYtOWNlYy1hY2Q5ZmQ0NDlhZDQiLCJhdWQiOiI1Y205OTFuNXN1Ym5rb2VkOGlwY2xwNDg2byIsImV2ZW50X2lkIjoiNTczYjVjMjEtYTQyMi00NWVjLThiMWUtYTQxZjdiNzU3OTc0IiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MjQ5Nzc0NTcsInBob25lX251bWJlciI6Iis5MTk3NDE4NDYxOTciLCJleHAiOjE3MjQ5ODEwNTcsImlhdCI6MTcyNDk3NzQ1NywiZmFtaWx5X25hbWUiOiJLIEIiLCJqdGkiOiIwOTBkMGQ1Ni1mYWUwLTQyNGQtOTU4Ny1jNmZhZWI4MzNiNjgiLCJlbWFpbCI6InJhamFuZWVzaEBnbWFpbC5jb20ifQ.l-1Civf40uZxlM0_WIMrCj5-RP9RuPishToxzDp7d1590ZkhF-v53VKP3cKX58UVhB9aw9i9lFYCD8sDwgiZ2EHIeHARjREJZcJPNA7kqdYP0qsyX--lELGowbwOKZ-TSgODhqPA83Q9LvRaiJpdzLoXKT2pc6G0IWXCLmP-NueGyDupGPJy1Do7TTgawz34tmrDfOy-_yjQmqv4gbM1GhmykG-tEA_QFhN0_x8G7ty3DRPYH2vhuJVJhOAeLvlfcNiZELS6U-bCrmLUMC0Zyy2dtKxtji3Ozu76Nb1kiNNhguIDg4jOpcGMZc9a84G1IKzTVstH2x8jpav8MvpKmQ----
+api.test.TC0004_api - ---- Creating new Project ----
+api.test.TC0004_api - ---- New Project Created with ID Token: 53f0dd17-34e7-4c07-9ca0-ab2eabc200b0
+
+api.test.TC0004_api - ---- Creating new Unit ----
+api.test.TC0004_api - ---- New Unit Created with ID Token: 56cad6f3-5d7b-4186-8950-09c0d6adc989
+
+api.test.TC0004_api - ---- Creating new Block ----
+api.test.TC0004_api - ---- New Block Created with ID Token: 9c796ea8-3662-4015-b65e-d57d8cf47ca9
+
+api.test.TC0004_api - ---- Adding Amenities ----
+api.test.TC0004_api - ---- New Unit Created with ID Token: 53f0dd17-34e7-4c07-9ca0-ab2eabc200b0
+
+api.test.TC0004_api - ---- Adding images to project Gallery ----
+api.test.TC0004_api - ---- Images added to project gallery with ID Token: 53f0dd17-34e7-4c07-9ca0-ab2eabc200b0
+
+test.base.Api_Token - ---- Generating Bearer Token ----
+test.base.Api_Token - ---- Bearer Token Generated : Bearer eyJraWQiOiJhaUp4ZitQMXhVbmsxcHZrTTZzNVhLZWZlVTloVmVvdVFkN1g5K3ZRZ1lvPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyODQ0YzJkZC0yM2VlLTRmNDktODIyMS02ZjI3YTk1NTE2ZjQiLCJjdXN0b206bWZhX2VuYWJsZWQiOiJGYWxzZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiY3VzdG9tOnBhc3Nfc3RhbXAiOiJJakl3TWpRdE1EY3RNVGxVTURZNk5ERTZNelF1TmpreE16UTJNVm9pIiwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoLTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGgtMV9oV0doQzNPUzkiLCJjdXN0b206dXNlcl9pZCI6ImRlbW9fUmFqYW5lZXNoIiwicGhvbmVfbnVtYmVyX3ZlcmlmaWVkIjpmYWxzZSwiY29nbml0bzp1c2VybmFtZSI6InJhamFuZWVzaCIsImN1c3RvbTp0ZW5hbnRfaWQiOiJkZW1vIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiUmFqYW5lZXNoIiwiZ2l2ZW5fbmFtZSI6IlJhamFuZWVzaCIsIm9yaWdpbl9qdGkiOiJlYzNlYWRlYS0zYmYzLTRhNDEtYWU0MC02MDU3ZGQ3NDM3MWYiLCJhdWQiOiI1Y205OTFuNXN1Ym5rb2VkOGlwY2xwNDg2byIsImV2ZW50X2lkIjoiZGM4MmI4OTQtZjhhMy00OTM5LWIwNWYtOGY5NzkwNzkxOGQ1IiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MjQ5Nzc0NjAsInBob25lX251bWJlciI6Iis5MTk3NDE4NDYxOTciLCJleHAiOjE3MjQ5ODEwNjAsImlhdCI6MTcyNDk3NzQ2MCwiZmFtaWx5X25hbWUiOiJLIEIiLCJqdGkiOiI0YmY4Y2IzZS1iMjc3LTQwZmMtYTAyYy03NjJmMGRlMDNkMWQiLCJlbWFpbCI6InJhamFuZWVzaEBnbWFpbC5jb20ifQ.O0n_fShHjqs3QrP1zb_sCRbprdeN6fHhLxtyCh8bq_nLb6UXV_KOm6Rait2LRjxmATs8CEA7q8WiEcp8jQ-0dwAxoluRJTke8SOjMpkWbMba0R_GQ2jk9b83TxakKzEePcBrrASxXUHf0Vt5pYK7buWFuaAAqRHdY5m_CAaqyVfIU8GDEc0UDu8bJRJGvxOXp8Ie8UFuyDLgeKlRRONzZj7sY5UfmI7G6R1E7xhviUYRlzyEQY_jI0NwhXJAeHXFH4MvzhzuRMa08Z_OY-g50DYCP2QdsaxTQSvolwBg2Xv7Y3TBG0AlNl_cZ6tc2ld4sZwA7df-7ZpEksuMckZPTA----
+api.test.TC0005_api - ---- Creating new Property ----
+api.test.TC0005_api - ---- New Property Created with ID Token: f18dc856-757f-454e-9a76-b1bc6dfb9589
+
+api.test.TC0005_api - ---- Adding more info to the property ----
+api.test.TC0005_api - ----Property added with more info: f18dc856-757f-454e-9a76-b1bc6dfb9589
+
