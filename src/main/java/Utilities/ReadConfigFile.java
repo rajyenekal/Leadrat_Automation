@@ -75,4 +75,14 @@ public class ReadConfigFile {
 			String mail=prop.getProperty("Mail");
 			return mail;
 		}
+		
+		public String getAccessKey() {
+			String accessid=prop.getProperty("accessId");
+			return accessid;	
+			}
+		
+		public String getSecreKey() {
+			String secretKey=prop.getProperty("secretKey");
+			return secretKey;
+		}
 }

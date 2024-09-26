@@ -3,13 +3,10 @@ package Utilities;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.Base64;
 import java.util.Properties;
-import java.nio.file.Paths;
 
-import javax.activation.DataHandler;
-import javax.activation.DataSource;
-import javax.activation.FileDataSource;
 import javax.mail.BodyPart;
 import javax.mail.Message;
 import javax.mail.MessagingException;
@@ -39,10 +36,13 @@ public class S3ExtentUtils {
     private static final String BUCKET_NAME = "test-automation-report"; 
     private static final String REGION = "eu-north-1"; 
     private static final String S3_URL = "https://test-automation-report.s3." + REGION + ".amazonaws.com/";
+    static ReadConfigFile rcf = new ReadConfigFile();
+    public static String accessKey = rcf.getAccessKey();
+    public static String accessId = rcf.getSecreKey();
 
     // AWS credentials
-    private static final String ACCESS_KEY_ID = "AKIAQ3EGQH65SXMEHE7U"; 
-    private static final String SECRET_ACCESS_KEY = "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"; 
+    private static final String ACCESS_KEY_ID = accessKey; 
+    private static final String SECRET_ACCESS_KEY = accessId; 
 
     // Upload file to S3
     public static String uploadFileToS3(String localFilePath, String keyName) {
