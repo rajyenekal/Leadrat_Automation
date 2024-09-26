@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [LeadRatSuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="test.base.ExtentReportManager"/>
+  </listeners>
   <test thread-count="5" name="Leadrat Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
@@ -11,20 +14,6 @@
           <include name="Updating_leadStatus_as_Booked_by_filling_BookingForm_and_cancelling_Booking"/>
         </methods>
       </class> <!-- web.test.TC010_BookingForm -->
-      <class name="web.test.TC005_Meeting">
-        <methods>
-          <include name="tearDown"/>
-          <include name="Scheduling_a_Meeting_and_Marking_it_as_Done"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- web.test.TC005_Meeting -->
-      <class name="web.test.TC006_SiteVisit">
-        <methods>
-          <include name="tearDown"/>
-          <include name="Scheduling_a_SiteVisit_and_Marking_it_as_Done"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- web.test.TC006_SiteVisit -->
     </classes>
   </test> <!-- Leadrat Test(failed) -->
 </suite> <!-- Failed suite [LeadRatSuite] -->

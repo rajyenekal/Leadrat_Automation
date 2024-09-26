@@ -185,6 +185,13 @@
             <artifactId>javax.mail</artifactId>
             <version>${javax-mail.version}</version>
         </dependency>
+        
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>s3</artifactId>
+            <version>2.20.6</version> <!-- Use a stable version -->
+            <scope>compile</scope> <!-- Compile scope for S3 -->
+        </dependency>
     </dependencies>
 
     <build>

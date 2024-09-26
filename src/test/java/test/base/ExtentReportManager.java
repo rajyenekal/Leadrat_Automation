@@ -19,6 +19,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import Utilities.ExtentUtils;
+import Utilities.S3ExtentUtils;
 
 public class ExtentReportManager implements ITestListener {
 
@@ -118,9 +119,9 @@ public class ExtentReportManager implements ITestListener {
 
         boolean hasFailedTests = testContext.getFailedTests().size() > 0;
         if (!hasFailedTests) {
-        	ExtentUtils.sendEmail("Passed", repName);
+        	S3ExtentUtils.sendEmail("Passed", repName);
         } else {
-        	ExtentUtils.sendEmail("Failed", repName);
+        	S3ExtentUtils.sendEmail("Failed", repName);
         }
     }
 }
