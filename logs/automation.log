@@ -629,3 +629,19 @@ api.test.TC0005_api - ---- New Property Created with ID Token: 36959006-ce36-4e8
 api.test.TC0005_api - ---- Adding more info to the property ----
 api.test.TC0005_api - ----Property added with more info: 36959006-ce36-4e8b-b968-4c72a1d41a42
 
+test.base.BaseTest - Logged as Rajaneesh Successfully
+
+web.test.TC008_Drop - Status updated successfully
+
+test.base.BaseTest - Logged as Rajaneesh Successfully
+
+web.test.TC009_EOP - Status updated successfully
+
+test.base.Api_Token - ---- Generating Bearer Token ----
+test.base.Api_Token - ---- Bearer Token Generated : Bearer eyJraWQiOiJhaUp4ZitQMXhVbmsxcHZrTTZzNVhLZWZlVTloVmVvdVFkN1g5K3ZRZ1lvPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyODQ0YzJkZC0yM2VlLTRmNDktODIyMS02ZjI3YTk1NTE2ZjQiLCJjdXN0b206bWZhX2VuYWJsZWQiOiJGYWxzZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiY3VzdG9tOnBhc3Nfc3RhbXAiOiJJakl3TWpRdE1Ea3RNak5VTVRJNk16azZNall1TWpRMU1EWTVNbG9pIiwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoLTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGgtMV9oV0doQzNPUzkiLCJjdXN0b206dXNlcl9pZCI6ImRlbW9fUmFqYW5lZXNoIiwicGhvbmVfbnVtYmVyX3ZlcmlmaWVkIjpmYWxzZSwiY29nbml0bzp1c2VybmFtZSI6InJhamFuZWVzaCIsImN1c3RvbTp0ZW5hbnRfaWQiOiJkZW1vIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiUmFqYW5lZXNoIiwiZ2l2ZW5fbmFtZSI6IlJhamFuZWVzaCIsIm9yaWdpbl9qdGkiOiI3N2MwYmIyNS0yMGRlLTQ2ZWItOWE5NC1jODJhNzJmOGM4NjIiLCJhdWQiOiI1Y205OTFuNXN1Ym5rb2VkOGlwY2xwNDg2byIsImV2ZW50X2lkIjoiZTg4ZjA0ZmUtNjM5YS00MmYyLWE1MWEtY2NkNDFlZmM0YTE3IiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MjgyMTA2MTEsInBob25lX251bWJlciI6Iis5MTk3NDE4NDYxOTgiLCJleHAiOjE3MjgyMTQyMTAsImlhdCI6MTcyODIxMDYxMSwiZmFtaWx5X25hbWUiOiJLIEIiLCJqdGkiOiIwMTQ0MWY3Ni0xNzAyLTRhNDctYWY0Yi1hYzg3Mjc2OGZjNjIiLCJlbWFpbCI6InJhamFuZWVzaEBnbWFpbC5jb20ifQ.Jufye4WU-nv4VgULSH2HhcE4QIGY57mBmrr2Y79TvAYXoMSvSDX-Dbi2-ym4GLvQaLw0wwTbjVt8r-rU0OddOzDXTYZ8nHO-Evsg6uvwlm1X2Tt2KR15Xo5O8anWrCP0aptN9cYOrSE2J7A3nrstudkKyiEswmusR2p8tPVxD_8uFugMZeGZpOYWIFh7s49KTG_b_bQWQOJ7gdZvrX8U4xmTEnWTKJejF23pTZRSAXaMrK2MnNGKoQ1ZDwKt2mw_lDnMptuTS8QQ3Z_GEDK3-eJAps0TxMoyf_BIdkQcZspzVlIda9fZylrLWEVsGRPEHmTWC1RIIMefq9HXxXHX7Q----
+api.test.TC0005_api - ---- Creating new Property ----
+api.test.TC0005_api - ---- New Property Created with ID Token: ed3697d7-a39c-4e68-9281-169f5e3792e7
+
+api.test.TC0005_api - ---- Adding more info to the property ----
+api.test.TC0005_api - ----Property added with more info: ed3697d7-a39c-4e68-9281-169f5e3792e7
+

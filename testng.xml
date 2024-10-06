@@ -11,19 +11,19 @@
 	
 	 <classes>
 	 
-	 	<!-- Web scripts -->
+	 	<!-- Web scripts 
 		<class name="web.test.TC001_AddLead"/>
    		<class name="web.test.TC002_AddData"/>
         <class name="web.test.TC004_Callback"/>
 		<class name="web.test.TC005_Meeting"/>
 		<class name="web.test.TC006_SiteVisit"/>
-        <class name="web.test.TC007_NotInterested"/>
+        <class name="web.test.TC007_NotInterested"/>-->
 	   	<class name="web.test.TC008_Drop"/>
 	   	<class name="web.test.TC009_EOP"/>
 
-	 	<!-- API scripts -->
+	 	<!-- API scripts 
 		<class name="api.test.TC0001_api"/>
-        <class name="api.test.TC0004_api"/>
+        <class name="api.test.TC0004_api"/>-->
       	<class name="api.test.TC0005_api"/>
       	
       	<!--

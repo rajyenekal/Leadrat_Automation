@@ -33,12 +33,14 @@ import software.amazon.awssdk.services.s3.model.PutObjectRequest;
 
 public class ExtentUtils {
 
-    private static final String BUCKET_NAME = "test-automation-report"; 
-    private static final String REGION = "eu-north-1"; 
-    private static final String S3_URL = "https://test-automation-report.s3." + REGION + ".amazonaws.com/";
     static ReadConfigFile rcf = new ReadConfigFile();
-    public static String accessKey = rcf.getAccessKey();
-    public static String accessId = rcf.getSecreKey();
+    private static final String BUCKET_NAME = rcf.getbucketName();
+    private static final String REGION = rcf.getregion(); 
+    private static final String S3_URL = rcf.getS3Url();
+    private static final String accessKey = rcf.getAccessKey();
+    private static final String accessId = rcf.getSecreKey();
+    private static final String mailUser = rcf.getMailuserName();
+    private static final String appPwd = rcf.getappPwd();
 
     // AWS credentials
     private static final String ACCESS_KEY_ID = accessKey; 
@@ -97,8 +99,7 @@ public class ExtentUtils {
 
  // Updated method to send email with embedded S3 report link
     public static void sendEmail(String result, String reportName) {
-        final String username = "digilanterndigi@gmail.com";
-        final String password = "fslr iwfg hhaz clnj";
+       
 
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
@@ -111,22 +112,22 @@ public class ExtentUtils {
         Session session = Session.getInstance(props,
                 new javax.mail.Authenticator() {
                     protected PasswordAuthentication getPasswordAuthentication() {
-                        return new PasswordAuthentication(username, password);
+                        return new PasswordAuthentication(mailUser, appPwd);
                     }
                 });
 
         try {
             Message message = new MimeMessage(session);
-            message.setFrom(new InternetAddress(username));
+            message.setFrom(new InternetAddress(mailUser));
 
             // Add multiple recipients
             InternetAddress[] recipients = {
-                new InternetAddress("rajyenekal@gmail.com"),
-                new InternetAddress("rajneesh.k@leadrat.com"),
-                new InternetAddress("nowlak.s@leadrat.com"),
-                new InternetAddress("jayakumar.k@leadrat.com"),
-                new InternetAddress("Nitish.s@leadrat.com"),
-                new InternetAddress("sudesh@leadrat.com"),
+                new InternetAddress(rcf.getRajyenekalEmail()),
+                new InternetAddress(rcf.getRajLeadratEmail()),
+                new InternetAddress(rcf.getNowlakEmail()),
+                new InternetAddress(rcf.getJayakumarEmail()),
+                new InternetAddress(rcf.getNitishEmail()),
+                new InternetAddress(rcf.getSudeshEmail()),
             };
             message.setRecipients(Message.RecipientType.TO, recipients);
             message.setSubject("Smoke Test " + result + " ");

@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -111,6 +111,16 @@
                         <a href="#" panel-name="suite-LeadRatSuite" title="api.test.TC0005_api" class="method navigator-link" hash-for-method="Creating_a_Property_through_API">Creating_a_Property_through_API</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-LeadRatSuite" title="web.test.TC008_Drop" class="method navigator-link" hash-for-method="Updating_LeadStatus_to_Drop">Updating_LeadStatus_to_Drop</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-LeadRatSuite" title="web.test.TC009_EOP" class="method navigator-link" hash-for-method="Updating_LeadStatus_to_ExpressionofInterest">Updating_LeadStatus_to_ExpressionofInterest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-LeadRatSuite -->
                   </li>
                 </ul>
@@ -123,6 +133,36 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-LeadRatSuite" class="panel LeadRatSuite">
+          <div class="suite-LeadRatSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">web.test.TC009_EOP</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Updating_LeadStatus_to_ExpressionofInterest">
+                  </a> <!-- Updating_LeadStatus_to_ExpressionofInterest -->
+                  <span class="method-name">Updating_LeadStatus_to_ExpressionofInterest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LeadRatSuite-class-passed -->
+          <div class="suite-LeadRatSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">web.test.TC008_Drop</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Updating_LeadStatus_to_Drop">
+                  </a> <!-- Updating_LeadStatus_to_Drop -->
+                  <span class="method-name">Updating_LeadStatus_to_Drop</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LeadRatSuite-class-passed -->
           <div class="suite-LeadRatSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -161,6 +201,8 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Leadrat Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;web.test.TC008_Drop&quot;/&gt;
+      &lt;class name=&quot;web.test.TC009_EOP&quot;/&gt;
       &lt;class name=&quot;api.test.TC0005_api&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Leadrat Test --&gt;
@@ -175,7 +217,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Leadrat Test (1 class)</span>
+                <span class="test-name">Leadrat Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -201,20 +243,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Creating_a_Property_through_API')
-data.setCell(0, 2, 'api.test.TC0005_api')
-data.setCell(0, 3, 5303);
+data.setCell(0, 1, 'Updating_LeadStatus_to_Drop')
+data.setCell(0, 2, 'web.test.TC008_Drop')
+data.setCell(0, 3, 17550);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Adding_more_info_to_the_property')
-data.setCell(1, 2, 'api.test.TC0005_api')
-data.setCell(1, 3, 2485);
+data.setCell(1, 1, 'Updating_LeadStatus_to_ExpressionofInterest')
+data.setCell(1, 2, 'web.test.TC009_EOP')
+data.setCell(1, 3, 12248);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Adding_more_info_to_the_property')
+data.setCell(2, 2, 'api.test.TC0005_api')
+data.setCell(2, 3, 6612);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Creating_a_Property_through_API')
+data.setCell(3, 2, 'api.test.TC0005_api')
+data.setCell(3, 3, 5709);
 window.suiteTableData['LeadRatSuite']= { tableData: data, tableDiv: 'times-div-LeadRatSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 42 seconds</span>
               <div id="times-div-LeadRatSuite">
               </div> <!-- times-div-LeadRatSuite -->
             </div> <!-- times-div -->
@@ -240,14 +290,44 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+              <div class="chronological-class-name">web.test.TC008_Drop</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Updating_LeadStatus_to_Drop</span>
+                <span class="method-start">11749 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">29379 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">web.test.TC009_EOP</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">29774 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Updating_LeadStatus_to_ExpressionofInterest</span>
+                <span class="method-start">41795 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">54052 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">api.test.TC0005_api</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">Creating_a_Property_through_API</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">54415 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Adding_more_info_to_the_property</span>
-                <span class="method-start">5345 ms</span>
+                <span class="method-start">60131 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

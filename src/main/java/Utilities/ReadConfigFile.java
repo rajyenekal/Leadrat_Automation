@@ -85,4 +85,50 @@ public class ReadConfigFile {
 			String secretKey=prop.getProperty("secretKey");
 			return secretKey;
 		}
+		
+		public String getMailuserName() {
+			String accessid=prop.getProperty("User");
+			return accessid;	
+			}
+		
+		public String getappPwd() {
+			String secretKey=prop.getProperty("appPwd");
+			return secretKey;
+		}
+		
+		public String getRajyenekalEmail() {
+	        return prop.getProperty("rajyenekal");
+	    }
+
+	    public String getRajLeadratEmail() {
+	        return prop.getProperty("rajLeadrat");
+	    }
+
+	    public String getNowlakEmail() {
+	        return prop.getProperty("nowlak");
+	    }
+
+	    public String getJayakumarEmail() {
+	        return prop.getProperty("jayakumar");
+	    }
+
+	    public String getNitishEmail() {
+	        return prop.getProperty("Nitish");
+	    }
+
+	    public String getSudeshEmail() {
+	        return prop.getProperty("sudesh");
+	    }
+	    
+	    public String getS3Url() {
+	        return prop.getProperty("s3URL");
+	    }
+	    
+	    public String getbucketName() {
+	        return prop.getProperty("bucketName");
+	    }
+	    
+	    public String getregion() {
+	        return prop.getProperty("region");
+	    }
 }
